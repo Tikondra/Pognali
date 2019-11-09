@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo logo">
+
+      <a class="page-header__logo logo">
         <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
-      </div>
+      </a>
 
       <button class="page-header__btn-menu btn" type="button" aria-label="меню">MENU</button>
 
@@ -31,13 +31,16 @@
 
       <a class="page-header__btn-author btn">Авторизация</a>
 
-      <a class="page-header__tel tel" href="tel:88005558628">
-        8 800 555-86-28
-      </a>
+      <div class="page-header__contacts contacts">
+        <a class="contacts__tel tel" href="tel:88005558628">
+          8 800 555-86-28
+        </a>
 
-      <a class="page-header__email email" href="mailto:mail@htmlacademy.ru">
-        mail@htmlacademy.ru
-      </a>
+        <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+
       <div class="page-header__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -65,8 +68,8 @@
 
         <p class="intro__title">В путешествие с крутыми попутчиками!</p>
 
-        <a class="intro__tel" href="tel:"></a>
-        <a class="intro__email" href="mailto:"></a>
+        <a class="intro__tel" href="tel:88005558628"></a>
+        <a class="intro__email" href="mailto:mail@htmlacademy.ru"></a>
 
         <a class="intro__btn-author btn">Авторизация</a>
 
@@ -93,7 +96,7 @@
         <p class="about__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <p class="about__text_bold">
+        <p class="about__text about__text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
       </section>
@@ -141,7 +144,7 @@
           <li class="travelmates__item">
             <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Таня Фирсова">
             <h3 class="travelmates__title">Таня Фирсова</h3>
-            <p class="travelmates__text">
+            <p class="travelmates__hashtags">
               #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
             </p>
             <div class="travelmates__transport-box transport">
@@ -156,7 +159,7 @@
           <li class="travelmates__item">
             <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Петя Демин">
             <h3 class="travelmates__title">Петя Демин</h3>
-            <p class="travelmates__text">
+            <p class="travelmates__hashtags">
               #бургер #бар #футбол #концерт #крафт
             </p>
             <div class="travelmates__transport-box transport">
@@ -192,7 +195,29 @@
           </li>
         </ol>
 
-        <a class="rates__bisiness" href="#">Показать тарифы для бизнеса</a>
+        <a class="rates__bisiness-btn" href="#">Показать тарифы для бизнеса</a>
+        <div class="rates__bisiness-rates bisiness-rates">
+          <h2 class="bisiness-rates__title">Бизнес-тарифы</h2>
+          <ul class="bisiness-rates__list">
+            <li class="bisiness-rates__item">
+              <p class="bisiness-rates__text">Реклама у блоггера</p>
+              <p class="bisiness-rates__price">300 000 руб./пост</p>
+            </li>
+            <li class="bisiness-rates__item">
+              <p class="bisiness-rates__text">Накрутка подписчиков</p>
+              <p class="bisiness-rates__price">от 1 руб./шт.</p>
+            </li>
+            <li class="bisiness-rates__item">
+              <p class="bisiness-rates__text">Лайки от ботов</p>
+              <p class="bisiness-rates__price">от 20 коп./лайк</p>
+            </li>
+            <li class="bisiness-rates__item">
+              <p class="bisiness-rates__text">Ваш продакт-плейсмент</p>
+              <p class="bisiness-rates__price">Индивидуально</p>
+            </li>
+          </ul>
+          <button class="bisiness-rates__close-btn" type="button">Закрыть окно</button>
+        </div>
       </section>
 
       <section class="reg-form">
@@ -222,15 +247,15 @@
         </a>
       </section>
 
-      <section class="contacts">
+      <section class="location">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__adress adress">
+        <p class="location__address address">
           ул. Большая Конюшенная, 19/8
         </p>
 
-        <a class="contacts__btn btn" href="#">Проложить маршрут</a>
+        <a class="location__btn btn" href="#">Проложить маршрут</a>
 
-        <div class="contacts__map map"></div>
+        <div class="location__map map"></div>
       </section>
     </main>
     <footer class="page-footer">

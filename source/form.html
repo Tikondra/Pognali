@@ -3,17 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo logo">
-        <a href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
-        </a>
-      </div>
+
+      <a class="page-header__logo logo" href="index.html">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
+      </a>
 
       <button class="page-header__btn-menu btn" type="button" aria-label="меню">MENU</button>
 
@@ -33,13 +31,16 @@
 
       <a class="page-header__btn-author btn">Авторизация</a>
 
-      <a class="page-header__tel tel" href="tel:88005558628">
-        8 800 555-86-28
-      </a>
+      <div class="page-header__contacts contacts">
+        <a class="contacts__tel tel" href="tel:88005558628">
+          8 800 555-86-28
+        </a>
 
-      <a class="page-header__email email" href="mailto:mail@htmlacademy.ru">
-        mail@htmlacademy.ru
-      </a>
+        <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+
       <div class="page-header__social social">
         <ul class="social__list">
           <li class="social__item">
