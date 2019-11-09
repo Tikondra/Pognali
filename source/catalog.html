@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
 
-      <a class="page-header__logo logo" href="index.html">
+      <a class="page-header__logo" href="index.html">
         <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
       </a>
 
@@ -32,11 +32,11 @@
       <a class="page-header__btn-author btn">Авторизация</a>
 
       <div class="page-header__contacts contacts">
-        <a class="contacts__tel tel" href="tel:88005558628">
+        <a class="contacts__tel" href="tel:88005558628">
           8 800 555-86-28
         </a>
 
-        <a class="contacts__email email" href="mailto:mail@htmlacademy.ru">
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
         </a>
       </div>
@@ -64,11 +64,18 @@
     <main>
       <h1 class="main-title">Попутчики</h1>
 
-      <section class="filter-country">
+      <div class="filter-country">
         <button class="filter-country__btn">Фильтрация по странам</button>
 
+        <ul class="filter-country__country-patch">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
 
-      </section>
+
+      </div>
 
       <section class="travelmates">
         <h2 class="visually-hidden">Каталог попутчиков</h2>
@@ -109,7 +116,7 @@
 
             <div class="travelmates__level level">
               <h4 class="level__title">Левел</h4>
-              <img class="lvl__img" src="https://via.placeholder.com/150x150" width="50" height="50" alt="99 левел">
+              <p class="level__number">99</p>
             </div>
 
             <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
@@ -145,7 +152,7 @@
 
             <div class="travelmates__level level">
               <h4 class="level__title">Левел</h4>
-              <img class="lvl__img" src="https://via.placeholder.com/150x150" width="50" height="50" alt="80 левел">
+              <p class="level__number">80</p>
             </div>
 
             <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
@@ -184,7 +191,7 @@
 
             <div class="travelmates__level level">
               <h4 class="level__title">Левел</h4>
-              <img class="lvl__img" src="https://via.placeholder.com/150x150" width="50" height="50" alt="25 левел">
+              <p class="level__number">25</p>
             </div>
 
             <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
@@ -221,7 +228,7 @@
 
             <div class="travelmates__level level">
               <h4 class="level__title">Левел</h4>
-              <img class="lvl__img" src="https://via.placeholder.com/150x150" width="50" height="50" alt="50 левел">
+              <p class="level__number">50</p>
             </div>
 
             <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
@@ -236,7 +243,7 @@
 
     </main>
     <footer class="page-footer">
-      <div class="page-footer__logo logo">
+      <div class="page-footer__logo">
         <img class="logo__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
       </div>
 
