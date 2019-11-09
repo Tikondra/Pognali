@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+    <header class="page-header">
+
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
+      </a>
+
+      <button class="page-header__btn-menu btn" type="button" aria-label="меню">MENU</button>
+
+      <nav class="page-header__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">О сервисе</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Направления</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link">Попутчики</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="page-header__btn-author btn">Авторизация</a>
+
+      <div class="page-header__contacts contacts">
+        <a class="contacts__tel" href="tel:88005558628">
+          8 800 555-86-28
+        </a>
+
+        <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+      </div>
+
+      <div class="page-header__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" title="В Фейсбуке">
+              В Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Во Вконтакте">
+              Во вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="В Инстаграме">
+              В инстаграме
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <h1 class="main-title">Попутчики</h1>
+
+      <div class="filter-country">
+        <button class="filter-country__btn">Фильтрация по странам</button>
+
+        <ul class="filter-country__country-patch">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+
+      </div>
+
+      <section class="travelmates">
+        <h2 class="visually-hidden">Каталог попутчиков</h2>
+
+        <ul class="travelmates__list">
+          <li class="travelmates__item">
+            <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Таня Фирсова">
+            <h3 class="travelmates__name">Таня Фирсова</h3>
+            <p class="travelmates__likes">1.5M</p>
+            <p class="travelmates__hashtags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+
+            <div class="travelmates__like-country like-country">
+              <h4 class="like-country__title">хочет посетить:</h4>
+              <ul class="like-country__list">
+                <li class="like-country__item">
+                  Шри-ланка
+                </li>
+                <li class="like-country__item">
+                  Тайланд
+                </li>
+                <li class="like-country__item">
+                  Сейшелы
+                </li>
+              </ul>
+            </div>
+
+            <div class="travelmates__transport transport">
+              <h4 class="transport__title">транспорт</h4>
+              <ul class="transport__list">
+                <li class="transport__item" aria-label="Авиаперелеты">Иконка</li>
+                <li class="transport__item" aria-label="Автобусные туры">Иконка</li>
+                <li class="transport__item" aria-label="Велотуры">Иконка</li>
+                <li class="transport__item" aria-label="Пешие туры">Иконка</li>
+              </ul>
+            </div>
+
+            <div class="travelmates__level level">
+              <h4 class="level__title">Левел</h4>
+              <p class="level__number">99</p>
+            </div>
+
+            <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
+          </li>
+          <li class="travelmates__item">
+            <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Петя Демин">
+            <h3 class="travelmates__name">Петя Демин</h3>
+            <p class="travelmates__likes">150</p>
+            <p class="travelmates__hashtags">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <div class="travelmates__like-country like-country">
+              <h4 class="like-country__title">хочет посетить:</h4>
+              <ul class="like-country__list">
+                <li class="like-country__item">
+                  Бельгия
+                </li>
+                <li class="like-country__item">
+                  Чехия
+                </li>
+              </ul>
+            </div>
+
+            <div class="travelmates__transport transport">
+              <h4 class="transport__title">транспорт</h4>
+              <ul class="transport__list">
+                <li class="transport__item" aria-label="Авиаперелеты">Иконка</li>
+                <li class="transport__item" aria-label="Автобусные туры">Иконка</li>
+                <li class="transport__item" aria-label="Велотуры">Иконка</li>
+                <li class="transport__item" aria-label="Пешие туры">Иконка</li>
+              </ul>
+            </div>
+
+            <div class="travelmates__level level">
+              <h4 class="level__title">Левел</h4>
+              <p class="level__number">80</p>
+            </div>
+
+            <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
+          </li>
+          <li class="travelmates__item">
+            <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Марк Смолов">
+            <h3 class="travelmates__name">Марк Смолов</h3>
+            <p class="travelmates__likes">1700</p>
+            <p class="travelmates__hashtags">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </p>
+            <div class="travelmates__like-country like-country">
+              <h4 class="like-country__title">хочет посетить:</h4>
+              <ul class="like-country__list">
+                <li class="like-country__item">
+                  США
+                </li>
+                <li class="like-country__item">
+                  Астралия
+                </li>
+                <li class="like-country__item">
+                  Доминикана
+                </li>
+              </ul>
+            </div>
+
+            <div class="travelmates__transport transport">
+              <h4 class="transport__title">транспорт</h4>
+              <ul class="transport__list">
+                <li class="transport__item" aria-label="Авиаперелеты">Иконка</li>
+                <li class="transport__item" aria-label="Автобусные туры">Иконка</li>
+                <li class="transport__item" aria-label="Велотуры">Иконка</li>
+                <li class="transport__item" aria-label="Пешие туры">Иконка</li>
+              </ul>
+            </div>
+
+            <div class="travelmates__level level">
+              <h4 class="level__title">Левел</h4>
+              <p class="level__number">25</p>
+            </div>
+
+            <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
+          </li>
+          <li class="travelmates__item">
+            <img class="travelmates__img" src="https://via.placeholder.com/150x150" width="70" height="70" alt="Лариса Роговая">
+            <h3 class="travelmates__name">Лариса Роговая</h3>
+            <p class="travelmates__likes">23</p>
+            <p class="travelmates__hashtags">
+              #образование #карьера #учеба #линкедин
+            </p>
+
+            <div class="travelmates__like-country like-country">
+              <h4 class="like-country__title">хочет посетить:</h4>
+              <ul class="like-country__list">
+                <li class="like-country__item">
+                  Великобритания
+                </li>
+                <li class="like-country__item">
+                  Германия
+                </li>
+              </ul>
+            </div>
+
+            <div class="travelmates__transport transport">
+              <h4 class="transport__title">транспорт</h4>
+              <ul class="transport__list">
+                <li class="transport__item" aria-label="Авиаперелеты">Иконка</li>
+                <li class="transport__item" aria-label="Автобусные туры">Иконка</li>
+                <li class="transport__item" aria-label="Велотуры">Иконка</li>
+                <li class="transport__item" aria-label="Пешие туры">Иконка</li>
+              </ul>
+            </div>
+
+            <div class="travelmates__level level">
+              <h4 class="level__title">Левел</h4>
+              <p class="level__number">50</p>
+            </div>
+
+            <a class="travelmates__btn-invite btn" href="#">Позвать!</a>
+          </li>
+        </ul>
+
+        <a class="travelmates__btn-more" href="#">Показать еще</a>
+
+        <button class="travelmates__btn-pagination travelmates__btn-pagination--left" type="button" aria-label="назад">стрелочка</button>
+        <button class="travelmates__btn-pagination travelmates__btn-pagination--right" type="button" aria-label="вперед">стрелочка</button>
+      </section>
+
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Погнали">
+      </div>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" title="В Фейсбуке">
+              В Фейсбуке
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="Во Вконтакте">
+              Во вконтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" title="В Инстаграме">
+              В инстаграме
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#">
+          <img class="copyright__img" src="https://via.placeholder.com/150x150" width="150" height="150" alt="HTMLAcademy">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
