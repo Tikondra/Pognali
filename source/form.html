@@ -85,10 +85,10 @@
           <h3 class="">Транспорт</h3>
 
           <ul class="transport__list">
-            <li class="transport__item" aria-label="Авиаперелеты">Иконка</li>
-            <li class="transport__item" aria-label="Автобусные туры">Иконка</li>
-            <li class="transport__item" aria-label="Велотуры">Иконка</li>
-            <li class="transport__item" aria-label="Пешие туры">Иконка</li>
+            <li class="transport__item transport__item--active" aria-label="Авиаперелеты">Иконка</li>
+            <li class="transport__item transport__item--active" aria-label="Автобусные туры">Иконка</li>
+            <li class="transport__item transport__item--active" aria-label="Велотуры">Иконка</li>
+            <li class="transport__item transport__item--active" aria-label="Пешие туры">Иконка</li>
           </ul>
         </div>
       </section>
@@ -101,13 +101,13 @@
             <h3 class="plans__title">1. Франция, Италия</h3>
             <p class="plans__travelmates">3 попутчика</p>
             <p class="plans__date">26 мар - 29 мар</p>
-            <button class="plans__redact-btn">Изменить</button>
+            <a class="plans__redact-btn" href="#">Изменить</a>
           </li>
           <li class="plans__item">
             <h3 class="plans__title">2. Тайланд, Индонезия</h3>
             <p class="plans__travelmates">1 попутчик</p>
             <p class="plans__date">1 июл - 15 июл</p>
-            <button class="plans__redact-btn">Изменить</button>
+            <a class="plans__redact-btn" href="#">Изменить</a>
           </li>
         </ol>
       </section>
@@ -134,11 +134,11 @@
                     <span class="count-travelmates__label count-travelmates__label--gray">чел.</span>
                   </label>
 
-                  <button class="count-travelmates__btn-min" type="button">меньше</button>
+                  <button class="count-travelmates__btn-minus btn-minus" type="button">меньше</button>
 
                   <input class="count-travelmates" type="number" name="count-travelmates" id="count-travelmates">
 
-                  <button class="count-travelmates__btn-max" type="button">больше</button>
+                  <button class="count-travelmates__btn-plus btn-plus" type="button">больше</button>
               </div>
 
               <div class="step__duration duration">
@@ -147,11 +147,11 @@
                     <span class="duration__label duration__label--gray">дн.</span>
                   </label>
 
-                  <button class="duration__btn-min" type="button">меньше</button>
+                  <button class="duration__btn-minus btn-minus" type="button">меньше</button>
 
                   <input class="duration" type="number" name="duration" id="duration">
 
-                  <button class="duration__btn-max" type="button">больше</button>
+                  <button class="duration__btn-plus btn-plus" type="button">больше</button>
               </div>
 
               <input class="step__child-check" type="checkbox" name="child" value="child" id="child" checked>
@@ -375,21 +375,125 @@
                 Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
               </p>
               <div class="step__country-select country-select">
+
                 <div class="country-select__box">
-                  <select class="country-select__item" name="country">
-                    <option>Босния и Герцеговина</option>
-                    <option>Чехия</option>
-                    <option>Великобритания</option>
-                  </select>
+                  <input class="country-select__input" type="text" name="country" value="Босния и Герцеговина">
                   <img class="country-select__flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и Герцеговина">
                   <button class="country-select__del-dtn" type="button">убрать</button>
                 </div>
                 <div class="country-select__box">
-                  <select class="country-select__item" name="country">
-                    <option>Босния и Герцеговина</option>
-                    <option>Чехия</option>
-                    <option>Великобритания</option>
-                  </select>
+                  <input class="country-select__item" type="text" name="country" value="Чехия">
+                  <div class="country-select__popap country-popap">
+                    <p class="country-popap__title">Выберите страну</p>
+
+                    <ul class="country-popap__country-litter country-litter">
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">А</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Б</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">В</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Г</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Д</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Е</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">З</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">И</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">К</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Л</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">М</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Н</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">О</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">П</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Р</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">С</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Т</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">У</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Ф</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Х</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Ч</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Ш</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Э</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Ю</a>
+                      </li>
+                      <li class="country-litter__item">
+                        <a class="country-litter__link" href="#">Я</a>
+                      </li>
+                    </ul>
+
+                    <ul class="country-popap__country-select country-select">
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Афганистан</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Албания</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Алжир</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Андорра</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Аргентина</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Армения</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Австралия</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Австрия</a>
+                      </li>
+                      <li class="country-select__item">
+                        <a class="country-select__link" href="#">Азербайджан</a>
+                      </li>
+                    </ul>
+                  </div>
                   <img class="country-select__flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Босния и Герцеговина">
                   <button class="country-select__del-dtn" type="button">убрать</button>
                 </div>
