@@ -1,0 +1,49 @@
+.intro {
+  padding: 25px;
+  color: #ffffff;
+  background-color: #161c35;
+}
+
+.intro__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.intro__contacts {
+  display: flex;
+  align-items: center;
+}
+
+.intro__link {
+  display: block;
+  padding: 11px;
+  background-color: #ff8d30;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.intro__link--email {
+  background-color: #ffbd30;
+}
+
+.intro__btn-author {
+  padding: 5px 39px;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+.intro__quote-text {
+  font-weight: 300;
+}
+
+.intro__quote-author {
+  font-weight: 700;
+  font-style: normal;
+}
