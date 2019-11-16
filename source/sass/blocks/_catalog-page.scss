@@ -1,0 +1,26 @@
+.catalog-page__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 25px;
+  padding-bottom: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 0 0 20px 20px;
+  background-color: #161c35;
+}
+
+.catalog-page__title::after {
+  content: '';
+  width: 173px;
+  height: 5px;
+  margin-top: 15px;
+  border-radius: 2px;
+  background-color: #ff8d30;
+}
+
+.catalog-page__content {
+  padding: 0 25px;
+}

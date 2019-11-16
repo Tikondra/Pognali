@@ -1,0 +1,27 @@
+.country-litter {
+  @include list;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 270px;
+}
+
+.country-litter__link {
+  display: block;
+  padding: 11px;
+  width: 45px;
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cbced9;
+}
+
+.country-litter__link.active {
+  color: #ffffff;
+  background-color: #1d2e5b;
+}
