@@ -1,0 +1,31 @@
+.reg-form {
+  border-radius: 0 0 30px 30px;
+  background-color: #192144;
+}
+
+.reg-form__title {
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.reg-form__text {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.reg-form__link {
+  color: #ffd74b;
+  text-decoration: underline;
+}
+
+.reg-form__contacts-link {
+  color: #ffd74b;
+  font-weight: 700;
+  text-decoration: none;
+
+  &--email {
+    text-transform: uppercase;
+  }
+}

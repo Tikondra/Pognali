@@ -1,0 +1,18 @@
+.country-patch {
+  @include list;
+  padding: 37px 50px 25px;
+}
+
+.country-patch__link {
+  opacity: 0.3;
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--active {
+    opacity: 1;
+  }
+}

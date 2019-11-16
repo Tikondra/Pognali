@@ -1,0 +1,28 @@
+.transport-card__title {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.transport-card__list {
+  @include list;
+  display: flex;
+}
+
+.transport-card__item {
+  width: 33px;
+  height: 32px;
+  padding-top: 8px;
+  text-align: center;
+  background-color: #edeff6;
+  border-radius: 50%;
+}
+
+.travelmates-card__svg {
+  opacity: 0.15;
+
+  &--activ {
+    opacity: 1;
+  }
+}

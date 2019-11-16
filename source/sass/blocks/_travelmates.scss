@@ -1,0 +1,62 @@
+.travelmates {
+  background-color: #192144;
+  color: #ffffff;
+}
+
+.travelmates__main-title {
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.travelmates__main-text {
+  font-weight: 300;
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.travelmates__list {
+  @include list;
+}
+
+.travelmates__item {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.travelmates__level {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.travelmates__online {
+  width: 5px;
+  margin-right: 10px;
+  border: 3px solid #f97676;
+  border-radius: 3px;
+}
+
+.travelmates__name-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travelmates__name {
+  color: #1d2e5b;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.travelmates__hashtags {
+  max-width: 180px;
+  margin: auto;
+  color: #444444;
+  line-height: 18px;
+  text-align: center;
+}

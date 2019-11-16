@@ -1,0 +1,15 @@
+.social__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.social__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding-top: 13px;
+  background-color: #ffd74b;
+  border-radius: 50%;
+}

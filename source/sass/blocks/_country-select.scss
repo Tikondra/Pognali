@@ -1,0 +1,9 @@
+.country-select {
+  @include list;
+  padding: 30px;
+}
+
+.country-select__link {
+  color: #444444;
+  text-decoration: none;
+}
