@@ -1,0 +1,18 @@
+.music__title {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.music__list {
+  @include list;
+}
+
+.music__label {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}

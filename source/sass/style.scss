@@ -1,8 +1,8 @@
-@import "blocks/font";
-@import "blocks/mixin";
-@import "blocks/variables";
-@import "blocks/base";
-@import "blocks/btn";
+@import "font";
+@import "mixin";
+@import "variables";
+@import "base";
+@import "btn";
 @import "blocks/page-header";
 @import "blocks/navigation";
 @import "blocks/contacts";
@@ -27,3 +27,12 @@
 @import "blocks/country-litter";
 @import "blocks/country-select";
 @import "blocks/select-travelmates";
+@import "blocks/hobby";
+@import "blocks/music";
+@import "blocks/food";
+@import "blocks/transport-select";
+@import "blocks/level-select";
+@import "blocks/travelmates-card";
+@import "blocks/like-country";
+@import "blocks/transport-card";
+@import "blocks/level-card";

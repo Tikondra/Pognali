@@ -19,9 +19,9 @@
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #cbced9;
-}
 
-.country-litter__link.active {
-  color: #ffffff;
-  background-color: #1d2e5b;
+  &--active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
 }

@@ -1,0 +1,102 @@
+.travelmates-card__list {
+  @include list;
+}
+
+.travelmates-card__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.travelmates-card__img {
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.travelmates-card__name {
+  max-width: 105px;
+  margin: 0;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.travelmates-card__likes {
+  margin: 0;
+  color: #161c35;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.travelmates-card__online {
+  margin-left: auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #f97676;
+}
+
+.travelmates-card__hashtags {
+  max-width: 175px;
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.travelmates-card__like-country {
+  width: 100%;
+}
+
+.travelmates-card__level {
+  margin-left: auto;
+}
+
+.travelmates-card__btn-invite {
+  width: 100%;
+  padding: 7px 25px 3px;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+
+.travelmates-card__btn-more {
+  display: block;
+  color: #1d2e5b;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.travelmates-card__pagination {
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.travelmates-card__btn-pagination {
+  width: 130px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/triangle-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--right {
+    background-image: url("../img/triangle-arrow-right.svg");
+  }
+}

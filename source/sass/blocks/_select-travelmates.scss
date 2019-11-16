@@ -1,6 +1,26 @@
+.select-travelmates {
+  border-radius: 20px;
+  background-color: #ffd74b;
+}
+
 .select-travelmates__title {
+  padding-right: 70px;
+  margin-top: 0;
   color: #1d2e5b;
   font-size: 22px;
   font-weight: 700;
   line-height: 22.49px;
+}
+
+.select-travelmates__btn {
+  width: 100%;
+  padding: 5px 25px;
+  color: #161c35;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
 }

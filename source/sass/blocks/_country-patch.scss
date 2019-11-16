@@ -11,8 +11,8 @@
   line-height: 22px;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-.country-patch__link.active {
-  opacity: 1;
+  &--active {
+    opacity: 1;
+  }
 }
