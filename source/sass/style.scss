@@ -1,7 +1,8 @@
 @import "blocks/font";
+@import "blocks/mixin";
+@import "blocks/variables";
 @import "blocks/base";
 @import "blocks/btn";
-@import "blocks/mixin";
 @import "blocks/page-header";
 @import "blocks/navigation";
 @import "blocks/contacts";
@@ -11,3 +12,11 @@
 @import "blocks/countries";
 @import "blocks/travelmates";
 @import "blocks/level";
+@import "blocks/transport";
+@import "blocks/rates";
+@import "blocks/business-rates";
+@import "blocks/reg-form";
+@import "blocks/location";
+@import "blocks/page-footer";
+@import "blocks/copyright";
+@import "blocks/social";

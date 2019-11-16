@@ -5,7 +5,7 @@
 }
 
 .travelmates__main-title {
-  color: #ff8d30;
+  color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
@@ -52,4 +52,12 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+}
+
+.travelmates__hashtags {
+  max-width: 180px;
+  margin: auto;
+  color: #444444;
+  line-height: 18px;
+  text-align: center;
 }

@@ -1,0 +1,62 @@
+.rates {
+  padding: 37px 26px 37px 50px;
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+}
+
+.rates__title {
+  padding: 13.5px 0;
+  padding-right: 100px;
+  color: $orange;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.rates__list {
+  @include list;
+  color: #444444;
+  font-weight: 300;
+}
+
+.rates__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.rates__text {
+  margin: 0;
+}
+
+.rates__price {
+  margin: 0;
+}
+
+.rates__item-number {
+  padding: 10px 13px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 14px;
+  background-color: #ffa530;
+  border-radius: 50%;
+}
+
+.rates__item-number--2 {
+  background-color: #ffbd30;
+}
+
+.rates__item-number--3 {
+  background-color: #ffd74b;
+}
+
+.rates__business-btn {
+  color: #192144;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+}

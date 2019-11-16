@@ -1,0 +1,19 @@
+.transport__list {
+  @include list;
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  margin: auto;
+}
+
+.transport__item {
+  opacity: 0.15;
+}
+
+.transport__item svg {
+  fill: #1d2e5b;
+}
+
+.transport__item.active {
+  opacity: 1;
+}
