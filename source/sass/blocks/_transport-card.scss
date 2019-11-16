@@ -21,8 +21,8 @@
 
 .travelmates-card__svg {
   opacity: 0.15;
-}
 
-.travelmates-card__svg--activ {
-  opacity: 1;
+  &--activ {
+    opacity: 1;
+  }
 }

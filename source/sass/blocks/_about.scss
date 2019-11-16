@@ -12,8 +12,8 @@
 
 .about__text {
   font-weight: 300;
-}
 
-.about__text--bold {
-  font-weight: 700;
+  &--bold {
+    font-weight: 700;
+  }
 }

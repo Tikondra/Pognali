@@ -21,10 +21,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-}
 
-.intro__link--email {
-  background-color: #ffbd30;
+  &--email {
+    background-color: #ffbd30;
+  }
 }
 
 .intro__btn-author {

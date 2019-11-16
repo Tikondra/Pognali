@@ -12,10 +12,10 @@
 
 .travelmates__main-text {
   font-weight: 300;
-}
 
-.travelmates__main-text--bold {
-  font-weight: 700;
+  &--bold {
+    font-weight: 700;
+  }
 }
 
 .travelmates__list {

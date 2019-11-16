@@ -43,14 +43,14 @@
   line-height: 14px;
   background-color: #ffa530;
   border-radius: 50%;
-}
 
-.rates__item-number--2 {
-  background-color: #ffbd30;
-}
+  &--2 {
+    background-color: #ffbd30;
+  }
 
-.rates__item-number--3 {
-  background-color: #ffd74b;
+  &--3 {
+    background-color: #ffd74b;
+  }
 }
 
 .rates__business-btn {

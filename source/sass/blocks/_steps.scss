@@ -15,16 +15,16 @@
 .steps__item {
   padding: 31px;
   background-color: #ff8d30;
-}
 
-.steps__item--2 {
-  background-color: #ffa530;
-}
+  &--2 {
+    background-color: #ffa530;
+  }
 
-.steps__item--3 {
-  background-color: #ffbd30;
-}
+  &--3 {
+    background-color: #ffbd30;
+  }
 
-.steps__item--4 {
-  background-color: #ffd74b;
+  &--4 {
+    background-color: #ffd74b;
+  }
 }

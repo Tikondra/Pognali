@@ -20,7 +20,12 @@
   text-decoration: underline;
 }
 
-.contacts__link--reg {
+.reg-form__contacts-link {
   color: #ffd74b;
+  font-weight: 700;
   text-decoration: none;
+
+  &--email {
+    text-transform: uppercase;
+  }
 }
