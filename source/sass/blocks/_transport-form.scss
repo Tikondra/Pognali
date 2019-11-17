@@ -1,0 +1,41 @@
+.transport-form {
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
+}
+
+.transport-form__title {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.transport-form__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+}
+
+.transport-form__svg {
+  fill: #1d2e5b;
+  opacity: 0.15;
+}
+
+.transport-form__check {
+  display: none;
+}
+
+.transport-form__check:checked ~ .transport-form__svg {
+  opacity: 1;
+}
+
+.transport-form__item {
+  width: 33px;
+  height: 33px;
+  padding-top: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}

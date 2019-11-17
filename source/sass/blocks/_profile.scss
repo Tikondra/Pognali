@@ -1,8 +1,9 @@
-.profile {
+.profile__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 25px;
 }
 
 .profile__lvl-box {
@@ -45,21 +46,14 @@
   background-color: #dfe3f0;
 }
 
-.profile__hashtags {
-
+.profile__form {
+  padding: 25px 0;
 }
 
-.profile__hashtags-title {
-  color: #1d2e5b;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
+.profile__fieldset-box {
+  padding: 25px;
 }
 
-.profile__hashtags-tags {
-  color: #444444;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
+.profile__transport {
+  margin-top: 20px;
 }

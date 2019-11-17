@@ -1,0 +1,78 @@
+.calendar__title-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-bottom: 1px solid #cbced9;
+  border-top: 1px solid #cbced9;
+}
+
+.calendar__btn {
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/month-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+
+  &--after {
+    transform: rotate(180deg);
+  }
+}
+
+.calendar__month {
+  margin: 0;
+  color: #1d2e5b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.calendar__table {
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.calendar__day-week {
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--red {
+    color: #ff5c23;
+  }
+}
+
+.calendar__content {
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid;
+
+  &--available {
+    background-color: #edeff6;
+    opacity: 1;
+  }
+
+  &--active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+    opacity: 1;
+  }
+
+  &--focus {
+    border: 2px solid #ff5c23;
+  }
+}
+
+.calendar__input {
+  display: none;
+}
