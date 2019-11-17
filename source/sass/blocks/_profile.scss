@@ -1,0 +1,60 @@
+.profile__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+
+.profile__lvl-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__lvl-number {
+  margin: 0;
+  color: #161c35;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.profile__lvl-text {
+  margin: 0;
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.17px;
+}
+
+.profile__img {
+  border-radius: 50%;
+}
+
+.profile__photo-change {
+  width: 100%;
+  padding: 5px 25px;
+  margin-top: 20px;
+  color: #161c35;
+  font-family: "BloggerSans", "Tahoma", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  background-color: #dfe3f0;
+}
+
+.profile__form {
+  padding: 25px 0;
+}
+
+.profile__fieldset-box {
+  padding: 25px;
+}
+
+.profile__transport {
+  margin-top: 20px;
+}

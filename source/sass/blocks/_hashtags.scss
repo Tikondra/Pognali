@@ -1,0 +1,25 @@
+.hashtags {
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #cbced9;
+}
+
+.hashtags__title {
+  color: #1d2e5b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.hashtags__tags {
+  min-width: 215px;
+  font-family: inherit;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  background-color: transparent;
+}

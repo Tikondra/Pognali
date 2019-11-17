@@ -1,0 +1,27 @@
+.fun {
+  @include list;
+}
+
+.fun__country {
+  color: #1d2e5b;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.fun__text {
+  padding: 15px;
+  width: 100%;
+  min-height: 220px;
+  color: #444444;
+  font-family: "BloggerSans", "Tahoma", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

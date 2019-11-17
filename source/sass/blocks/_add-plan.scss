@@ -1,0 +1,23 @@
+.add-plan {
+  padding: 25px;
+  border-radius: 30px;
+  background-color: #d4d9eb;
+}
+
+.add-plan__section-title {
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.add-plan__list {
+  @include list;
+}
+
+.add-plan__step {
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
