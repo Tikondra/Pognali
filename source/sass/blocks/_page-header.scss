@@ -7,11 +7,6 @@
   background-color: #161c36;
 }
 
-// .page-header__logo {
-//   position: relative;
-//   z-index: 2;
-// }
-
 .page-header__menu-open {
   width: 25px;
   height: 11px;
@@ -51,4 +46,28 @@
   text-align: center;
   border-radius: 25px;
   background-color: #ffd74b;
+}
+
+@media (min-width: $tablet) {
+  .page-header__info {
+    display: block;
+    position: static;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    min-height: auto;
+    background-color: transparent;
+  }
+
+  .page-header__navigation {
+    display: none;
+  }
+
+  .page-header__contacts {
+    display: none;
+  }
+
+  .page-header__social {
+    display: none;
+  }
 }
