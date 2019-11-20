@@ -2,18 +2,42 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   padding: 27px 25px;
   background-color: #161c36;
 }
 
+.page-header__logo {
+  order: -1;
+  display: block;
+  width: 100px;
+  height: 19px;
+  position: relative;
+  z-index: 1;
+  background-image: url("../img/logo-mobile-white@1x.png");
+  background-repeat: no-repeat;
+}
+
+.page-header__info--open ~ .page-header__logo {
+  background-image: url("../img/logo-mobile-blue@1x.png");
+}
+
 .page-header__menu-open {
+  position: relative;
+  z-index: 1;
   width: 25px;
   height: 11px;
   border: none;
   background-color: transparent;
   background-image: url("../img/menu.svg");
   background-repeat: no-repeat;
+
+  &--close {
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/menu-close.svg");
+  }
 }
 
 .page-header__info {
@@ -21,23 +45,25 @@
   top: 0;
   left: 0;
   right: 0;
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   padding: 25px;
   padding-top: 121px;
   min-height: 568px;
   background-color: #ffffff;
-}
-// временно
-.page-header__menu-open:hover ~ .page-header__info,
-.page-header__info:hover {
-  display: flex;
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: flex;
+  }
 }
 
 .page-header__btn-author {
   display: block;
-  padding: 10px;
+  padding: 10px 38.5px;
   color: #161c35;
   font-size: 17px;
   font-weight: 700;
@@ -48,7 +74,36 @@
   background-color: #ffd74b;
 }
 
+@media (max-width: $mobile-only) {
+
+  .page-header--no-js .page-header__menu-open {
+    display: none;
+  }
+
+  .page-header--no-js .page-header__info {
+    position: static;
+    display: block;
+    min-height: 0;
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .page-header--no-js .page-header__contacts {
+    margin: 20px 0;
+  }
+}
+
 @media (min-width: $tablet) {
+  .page-header__logo {
+    width: 166px;
+    height: 42px;
+    background-image: url("../img/logo-tablet-white@1x.png");
+  }
+
+  .page-header__info--open ~ .page-header__logo {
+    background-image: url("../img/logo-tablet-blue@1x.png");
+  }
+
   .page-header__info {
     display: block;
     position: static;
