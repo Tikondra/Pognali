@@ -14,3 +14,11 @@
   text-decoration: none;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .navigation__link {
+    font-size: 60px;
+    line-height: 71.01px;
+    text-align: left;
+  }
+}

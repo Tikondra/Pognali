@@ -13,3 +13,9 @@
   background-color: #ffd74b;
   border-radius: 50%;
 }
+
+@media (min-width: $tablet) {
+  .social__list {
+    justify-content: flex-start;
+  }
+}
