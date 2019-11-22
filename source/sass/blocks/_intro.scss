@@ -1,9 +1,15 @@
 .intro {
+  padding: 21px 25px;
   color: #ffffff;
   background-color: #161c35;
+  background-image: url('../img/back-intro.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 -73px;
 }
 
 .intro__title {
+  max-width: 395px;
+  margin: auto;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -13,6 +19,7 @@
 .intro__contacts {
   display: flex;
   align-items: center;
+  margin-top: 245px;
 }
 
 .intro__link {
@@ -46,4 +53,34 @@
 .intro__quote-author {
   font-weight: 700;
   font-style: normal;
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    padding: 21px 25px;
+    color: #ffffff;
+    background-color: #161c35;
+    background-image: url('../img/back-intro2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .intro__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .intro__contacts {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro__contacts {
+    position: absolute;
+    top: 47px;
+    right: 60px;
+    display: flex;
+    margin: 0;
+  }
 }

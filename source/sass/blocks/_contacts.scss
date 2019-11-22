@@ -1,9 +1,52 @@
 .contacts__link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #192144;
   font-weight: 700;
+  text-decoration: none;
 
   &--email {
     text-transform: uppercase;
+  }
+}
+
+.contacts__svg-box {
+  padding: 13px 13.5px 7px;
+  margin-right: 16px;
+  background-color: #121936;
+  border-radius: 50%;
+
+  &--email {
+    padding: 13px 13.5px 10px;
+  }
+}
+
+.contacts__svg {
+  fill: #ffd74b;
+}
+
+@media (min-width: $tablet) {
+  .contacts__link {
+    align-items: baseline;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__svg-box {
+    padding: 21px 20.5px 13px;
+    margin-right: 23px;
+
+    &--email {
+      padding: 23px 20.5px 17px;
+    }
+  }
+
+  .contacts__svg {
+    width: 27px;
+    height: 27px;
+
+    &--email {
+      height: 20px;
+    }
   }
 }

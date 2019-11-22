@@ -20,5 +20,31 @@
     font-size: 60px;
     line-height: 71.01px;
     text-align: left;
+    letter-spacing: -0.7px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    align-items: center;
+    margin-right: 275px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #ffffff;
+    }
+  }
+
+  .navigation__link {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
