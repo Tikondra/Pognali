@@ -74,13 +74,3 @@
     display: none;
   }
 }
-
-@media (min-width: $desktop) {
-  .intro__contacts {
-    position: absolute;
-    top: 47px;
-    right: 60px;
-    display: flex;
-    margin: 0;
-  }
-}
