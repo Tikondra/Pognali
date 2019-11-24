@@ -55,6 +55,10 @@
 }
 
 @media (min-width: $desktop) {
+  .steps {
+    margin: auto;
+  }
+
   .steps__list {
     max-width: 1320px;
   }
