@@ -59,3 +59,43 @@
   line-height: 16px;
   text-decoration: none;
 }
+
+@media (min-width: $tablet) {
+  .rates__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .rates__item-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .rates__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__price {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__business-btn {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .rates__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 75px;
+  }
+
+  .rates__item-number {
+    order: -1;
+  }
+}

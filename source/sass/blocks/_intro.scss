@@ -62,6 +62,10 @@
     background-position: center bottom;
   }
 
+  .intro__content {
+    padding: 25px;
+  }
+
   .intro__title {
     margin-left: 70px;
     margin-top: 55px;
@@ -103,6 +107,12 @@
       url("../img/globe-back-desktop@1x.jpg");
     background-position: 60% bottom,
       center bottom;
+  }
+
+  .intro__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 75px;
   }
 
   .intro__title {

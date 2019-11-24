@@ -29,3 +29,17 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet) {
+  .reg-form__title {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .reg-form__text {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+  }
+}

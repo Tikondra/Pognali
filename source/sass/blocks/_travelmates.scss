@@ -60,3 +60,64 @@
   line-height: 18px;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .travelmates__content {
+    padding: 75px;
+  }
+
+  .travelmates__main-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .travelmates__main-text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--bold {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .travelmates__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .travelmates__item {
+    flex-basis: 198px;
+    border-radius: 20px;
+  }
+
+  .travelmates__btn {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .travelmates__content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .travelmates__section-description {
+    flex-grow: 1;
+    flex-basis: 500px;
+    padding: 0 70px;
+  }
+
+  .travelmates__list {
+    flex-basis: 630px;
+    flex-grow: 1;
+  }
+
+  .travelmates__btn {
+    flex-basis: 280px;
+    margin-top: -70px;
+  }
+}
