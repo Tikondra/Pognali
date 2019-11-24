@@ -1,5 +1,4 @@
 .steps {
-  background-color: #ffbd30;
   color: #161c35;
   font-size: 18px;
   font-weight: 700;
@@ -7,13 +6,12 @@
 }
 
 .steps__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list;
 }
 
 .steps__item {
   padding: 31px;
+  border-radius: 10px 10px 0 0;
   background-color: #ff8d30;
 
   &--2 {
@@ -25,6 +23,44 @@
   }
 
   &--4 {
+    border-radius: 10px;
     background-color: #ffd74b;
+  }
+}
+
+@media (min-width: $tablet) {
+  .steps__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 688px;
+    margin: auto;
+  }
+
+  .steps__item {
+    flex-basis: 344px;
+    flex-grow: 1;
+    padding: 31px 64px 30px 30px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px 20px 0 0;
+
+    &--3 {
+      border-radius: 0 0 20px 20px;
+    }
+
+    &--4 {
+      border-radius: 0 0 20px 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .steps__list {
+    max-width: 1320px;
+  }
+
+  .steps__item {
+    flex-basis: 315px;
+    border-radius: 20px;
   }
 }

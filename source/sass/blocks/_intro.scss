@@ -57,20 +57,56 @@
 
 @media (min-width: $tablet) {
   .intro {
-    padding: 21px 25px;
-    color: #ffffff;
     background-color: #182044;
     background-image: url("../img/back-intro2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
   }
 
   .intro__title {
+    margin-left: 70px;
+    margin-top: 55px;
+    margin-bottom: 85px;
+    text-align: left;
     font-size: 60px;
     line-height: 70px;
   }
 
   .intro__contacts {
     display: none;
+  }
+
+  .intro__quote-text {
+    max-width: 257px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .intro__quote-author {
+    display: block;
+    max-width: 243px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .intro__steps {
+    margin-top: 185px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-desktop@1x.png"),
+                      url("../img/globe-back-desktop@1x.jpg");                      ;
+    background-position: center bottom;
+  }
+
+  .intro__title {
+    margin-top: 55px;
+    margin-bottom: 85px;
+    font-size: 60px;
+    line-height: 70px;
   }
 }
