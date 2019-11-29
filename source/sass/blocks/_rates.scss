@@ -43,6 +43,7 @@
   line-height: 14px;
   background-color: #ffa530;
   border-radius: 50%;
+  text-align: center;
 
   &--2 {
     background-color: #ffbd30;
@@ -80,6 +81,13 @@
   .rates__price {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .rates__item-number {
+    order: -1;
+    padding: 19.5px 26.5px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   .rates__business-btn {

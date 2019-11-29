@@ -3,3 +3,10 @@
   text-align: center;
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
