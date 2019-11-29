@@ -44,3 +44,17 @@
   text-align: center;
   border: none;
 }
+
+@media (min-width: $tablet) {
+  .count-travelmates__label {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .count-travelmates__input {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}

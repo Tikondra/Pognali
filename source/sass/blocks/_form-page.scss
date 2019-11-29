@@ -20,3 +20,15 @@
     background-color: #ff8d30;
   }
 }
+
+@media (min-width: $tablet) {
+  .form-page__title {
+    font-size: 60px;
+    line-height: 70px;
+
+    &::after {
+      width: 355px;
+      height: 8px;
+    }
+  }
+}
