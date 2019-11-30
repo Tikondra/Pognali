@@ -44,3 +44,17 @@
   text-align: center;
   border: none;
 }
+
+@media (min-width: $tablet) {
+  .duration__label {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .duration__input {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}

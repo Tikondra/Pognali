@@ -1,4 +1,5 @@
 .about {
+  padding: 49px;
   background-color: #141b3b;
   color: #ffffff;
 }
@@ -62,9 +63,7 @@
 
 @media (min-width: $tablet) {
   .about__content {
-    max-width: 1440px;
-    padding: 25px;
-    margin: auto;
+    @include container;
   }
 
   .about__text {

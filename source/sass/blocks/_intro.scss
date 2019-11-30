@@ -110,9 +110,7 @@
   }
 
   .intro__content {
-    max-width: 1440px;
-    margin: auto;
-    padding: 75px;
+    @include container;
   }
 
   .intro__title {

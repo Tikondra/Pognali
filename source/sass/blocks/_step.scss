@@ -87,5 +87,15 @@
 
   .step__paginate {
     order: 2;
+    padding: 28.5px 25px;
+    max-width: 285px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-origin: content-box;
   }
 }

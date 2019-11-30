@@ -228,21 +228,29 @@
 
                   <div class="step__calendar calendar">
                     <div class="calendar__title-box">
-                      <button class="calendar__btn calendar__btn--before" type="button"></button>
+                      <button class="calendar__btn calendar__btn--before" type="button">
+                        <svg class="calendar__btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 34" width="9px" height="18px">
+                          <path d="M3.6 17l14-14.4c.6-.6.6-1.6 0-2.1-.6-.6-1.5-.6-2.1 0L.4 15.9c-.6.6-.6 1.6 0 2.1l15.1 15.5c.3.3.7.4 1 .4s.8-.1 1-.4c.6-.6.6-1.6 0-2.1L3.6 17z"/>
+                        </svg>
+                      </button>
                       <h4 class="calendar__month">Март 2019</h4>
-                      <button class="calendar__btn calendar__btn--after" type="button"></button>
+                      <button class="calendar__btn calendar__btn--after" type="button">
+                        <svg class="calendar__btn-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 34" width="9px" height="18px" style="enable-background:new 0 0 18 34;" xml:space="preserve">
+                          <path d="M14.4,17L0.4,2.6C-0.1,2-0.1,1,0.4,0.4c0.6-0.6,1.5-0.6,2.1,0l15.1,15.5c0.6,0.6,0.6,1.6,0,2.1L2.5,33.6c-0.3,0.3-0.7,0.4-1,0.4s-0.8-0.1-1-0.4c-0.6-0.6-0.6-1.6,0-2.1L14.4,17z"/>
+                        </svg>
+                      </button>
                     </div>
 
                     <table class="calendar__table">
 
                         <tr class="calendar__row">
-                          <th class="calendar__day-week">П</th>
-                          <th class="calendar__day-week">В</th>
-                          <th class="calendar__day-week">С</th>
-                          <th class="calendar__day-week">Ч</th>
-                          <th class="calendar__day-week">П</th>
-                          <th class="calendar__day-week calendar__day-week--red">С</th>
-                          <th class="calendar__day-week calendar__day-week--red">В</th>
+                          <th class="calendar__day-week">П<span class="calendar__day-week--more">н</span></th>
+                          <th class="calendar__day-week">В<span class="calendar__day-week--more">т</span></th>
+                          <th class="calendar__day-week">С<span class="calendar__day-week--more">р</span></th>
+                          <th class="calendar__day-week">Ч<span class="calendar__day-week--more">т</span></th>
+                          <th class="calendar__day-week">П<span class="calendar__day-week--more">т</span></th>
+                          <th class="calendar__day-week calendar__day-week--red">С<span class="calendar__day-week--more">б</span></th>
+                          <th class="calendar__day-week calendar__day-week--red">В<span class="calendar__day-week--more">с</span></th>
                         </tr>
 
                         <tr class="calendar__row">
@@ -449,125 +457,149 @@
                     <ul class="country-step__list">
                       <li class="country-step__item">
                         <input class="country-step__input" type="text" name="country" value="Босния и Герцеговина">
-                        <div class="country-step__flag"></div>
+                        <div class="country-step__flag">
+                          <img src="img/flag.jpg">
+                        </div>
+                        <button class="country-step__del-btn" type="button" aria-label="удалить">
+                          <svg class="country-step__del-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
+                            <path d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z"/>
+                          </svg>
+                        </button>
                       </li>
                       <li class="country-step__item">
                         <input class="country-step__input" type="text" name="country" value="Чехия">
-                        <div class="country-step__flag"></div>
-                        <div class="country-step__popup country-popup">
-                          <p class="country-popup__title">Выберите страну</p>
-
-                          <ul class="country-popup__country-litter country-litter">
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">А</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Б</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">В</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Г</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Д</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Е</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">З</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">И</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">К</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Л</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">М</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Н</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">О</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">П</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Р</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">С</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Т</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">У</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Ф</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Х</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Ч</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Ш</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Э</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Ю</a>
-                            </li>
-                            <li class="country-litter__item">
-                              <a class="country-litter__link" href="#">Я</a>
-                            </li>
-                          </ul>
-
-                          <ul class="country-popup__country-select country-select">
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Афганистан</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Албания</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Алжир</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Андорра</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Аргентина</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Армения</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Австралия</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Австрия</a>
-                            </li>
-                            <li class="country-select__item">
-                              <a class="country-select__link" href="#">Азербайджан</a>
-                            </li>
-                          </ul>
+                        <div class="country-step__flag">
+                          <img src="img/flag.jpg">
                         </div>
+                        <button class="country-step__del-btn" type="button" aria-label="удалить">
+                          <svg class="country-step__del-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
+                            <path d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z"/>
+                          </svg>
+                        </button>
                       </li>
                     </ul>
-                    <div class="country-step__select">Выберите страну</div>
+
+                    <div class="country-step__popup country-popup country-popup--no-js">
+                      <h4 class="country-popup__title country-popup__title--open">Выберите страну</h4>
+
+                      <button class="country-popup__open-btn" type="button" aria-label="Выбрать"></button>
+
+                      <button class="country-step__del-btn" type="button" aria-label="удалить">
+                        <svg class="country-step__del-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
+                          <path d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z"/>
+                        </svg>
+                      </button>
+
+                      <div class="country-popup__box">
+                        <ul class="country-popup__country-litter country-litter">
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">А</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Б</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">В</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Г</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Д</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Е</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">З</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">И</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">К</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Л</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">М</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Н</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">О</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">П</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Р</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">С</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Т</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">У</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Ф</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Х</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Ч</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Ш</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Э</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Ю</a>
+                              </li>
+                              <li class="country-litter__item">
+                                <a class="country-litter__link" href="#">Я</a>
+                              </li>
+                        </ul>
+
+                        <ul class="country-popup__country-select country-select">
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Афганистан</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Албания</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Алжир</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Андорра</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Аргентина</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Армения</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Австралия</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Австрия</a>
+                              </li>
+                              <li class="country-select__item">
+                                <a class="country-select__link" href="#">Азербайджан</a>
+                              </li>
+                        </ul>
+                      </div>
+                    </div>
                     <button class="country-step__new-box" type="button">Добавить страну</button>
                   </div>
 

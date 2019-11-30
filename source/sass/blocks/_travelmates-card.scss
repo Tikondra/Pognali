@@ -100,3 +100,11 @@
     background-image: url("../img/triangle-arrow-right.svg");
   }
 }
+
+@media (min-width: $tablet) {
+  .travelmates-card__img {
+    width: 190px;
+    height: 190px;
+    border-radius: 20px;
+  }
+}
