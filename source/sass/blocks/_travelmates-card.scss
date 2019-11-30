@@ -5,6 +5,7 @@
 .travelmates-card__item {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding: 15px;
   margin: 10px 0;
   border-radius: 20px;
@@ -16,8 +17,48 @@
   border-radius: 50%;
 }
 
+.travelmates-card__like-box {
+  @include center-flex;
+  flex-basis: 100%;
+  margin-left: 50px;
+  margin-top: -30px;
+}
+
+.travelmates-card__like-btn {
+  @include center-flex;
+  margin-right: 10px;
+  min-width: 31px;
+  height: 31px;
+  background-color: #edeff6;
+  border: none;
+  border-radius: 50%;
+
+  &--active {
+    background-color: #f9eaea;
+
+    .travelmates-card__like-active {
+      display: block;
+    }
+
+    .travelmates-card__like-svg {
+      display: none;
+    }
+  }
+}
+
+.travelmates-card__like-active {
+  display: none;
+}
+
+.travelmates-card__name-box {
+  flex-basis: 145px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
 .travelmates-card__name {
-  max-width: 105px;
+  padding-right: 50px;
   margin: 0;
   color: #1d2e5b;
   font-size: 20px;
@@ -27,6 +68,7 @@
 
 .travelmates-card__likes {
   margin: 0;
+  flex-basis: 100%;
   color: #161c35;
   font-size: 14px;
   font-weight: 700;
@@ -36,14 +78,14 @@
 
 .travelmates-card__online {
   margin-left: auto;
-  width: 6px;
+  min-width: 6px;
   height: 6px;
   border-radius: 3px;
   background-color: #f97676;
 }
 
 .travelmates-card__hashtags {
-  max-width: 175px;
+  padding-right: 46px;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
@@ -52,6 +94,12 @@
 
 .travelmates-card__like-country {
   width: 100%;
+}
+
+.travelmates-card__box-levtr {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
 }
 
 .travelmates-card__level {
@@ -106,5 +154,16 @@
     width: 190px;
     height: 190px;
     border-radius: 20px;
+  }
+
+  .travelmates-card__name {
+    padding-right: 0;
+    max-width: none;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .travelmates-card__online {
+    margin-left: 23px;
   }
 }
