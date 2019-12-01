@@ -1,3 +1,10 @@
-.wrapper--page-header {
+.wrapper-header {
   background-color: #182044;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  &--scroll {
+    background-color: #ffffff;
+  }
 }
