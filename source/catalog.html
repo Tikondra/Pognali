@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
-    <div class="wrapper-header">
-      <header class="page-header page-header--no-js">
-
+    <header class="page-header page-header--no-js">
+      <div class="wrapper page-header__content page-header__content">
         <button class="page-header__menu-open" type="button" aria-label="меню"></button>
 
         <div class="page-header__info page-header__info--close">
@@ -91,9 +90,15 @@
           </div>
         </div>
 
-        <a class="page-header__logo" aria-label="Погнали" href="index.html"></a>
-      </header>
-    </div>
+        <a class="page-header__logo" aria-label="Погнали" href="index.html">
+          <picture class="page-header__logo-pic">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x"/>
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x"/>
+            <img class="page-header__logo-img" src="img/logo-mobile-white@1x.png" alt="Погнали"/>
+          </picture>
+        </a>
+      </div>
+    </header>
     <main class="catalog-page">
       <div class="catalog-page__title-box">
         <h1 class="catalog-page__title">Попутчики</h1>
