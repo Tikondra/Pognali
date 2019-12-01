@@ -69,3 +69,13 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .catalog-page__content {
+    display: flex;
+  }
+
+  .catalog-page__select-travelmates {
+    order: 1;
+  }
+}

@@ -22,7 +22,33 @@
 .travelmates-card__svg {
   opacity: 0.15;
 
-  &--activ {
+  &--active {
     opacity: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .transport-card__item {
+    background-color: #ffffff;
+  }
+
+  .travelmates-card__svg {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
   }
 }

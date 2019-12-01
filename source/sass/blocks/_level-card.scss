@@ -6,8 +6,28 @@
 }
 
 .level-card__number {
+  @include center-flex;
+  min-width: 45px;
+  min-height: 45px;
+  padding-top: 5px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
   line-height: 18px;
+  border: 3px solid #ff8d30;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet) {
+  .level-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .level-card__number {
+    order: -1;
+    min-width: 60px;
+    min-height: 60px;
+    line-height: 24px;
+  }
 }

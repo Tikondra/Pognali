@@ -36,12 +36,12 @@
   &--active {
     background-color: #f9eaea;
 
-    .travelmates-card__like-active {
-      display: block;
-    }
-
     .travelmates-card__like-svg {
       display: none;
+
+      &--active {
+        display: block;
+      }
     }
   }
 }
@@ -131,12 +131,15 @@
 }
 
 .travelmates-card__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 20px;
   background-color: #ffffff;
 }
 
 .travelmates-card__btn-pagination {
-  width: 130px;
+  width: 50px;
   height: 50px;
   border: none;
   background-color: transparent;
@@ -147,6 +150,10 @@
   &--right {
     background-image: url("../img/triangle-arrow-right.svg");
   }
+}
+
+.travelmates-card__pagination-list {
+  display: none;
 }
 
 @media (min-width: $tablet) {
@@ -165,5 +172,49 @@
 
   .travelmates-card__online {
     margin-left: 23px;
+    height: 7px;
+    min-width: 7px;
+  }
+
+  .travelmates-card__hashtags {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .travelmates-card__btn-invite {
+    flex-basis: 148px;
+  }
+
+  .travelmates-card__like-btn {
+    min-width: 50px;
+    height: 50px;
+  }
+
+  .travelmates-card__like-svg {
+    width: 20px;
+    height: 17px;
+  }
+
+  .travelmates-card__likes {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .travelmates-card__btn-more {
+    font-size: 20px;
+  }
+
+  .travelmates-card__pagination-list {
+    @include list;
+    display: flex;
+    margin-right: auto;
+  }
+
+  .travelmates-card__pagination-item {
+    color: #161c35;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
   }
 }
