@@ -3,14 +3,16 @@
 }
 
 .country-step__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .country-step__input {
-  max-width: 168px;
+  flex-grow: 1;
   padding: 11px;
-  margin-bottom: 22px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #1d2e5b;
   font-size: 14px;
@@ -22,6 +24,7 @@
 }
 
 .country-step__flag {
+  @include center-flex;
   width: 52px;
   height: 42px;
   padding: 5px;
@@ -29,17 +32,15 @@
   border: 1px solid #cbced9;
 }
 
-.country-step__select {
-  padding: 11px;
-  margin-bottom: 22px;
-  color: #1d2e5b;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  border: 1px solid #cbced9;
-  background-color: #ffffff;
+.country-step__del-btn {
+  @include center-flex;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
 }
 
 .country-step__new-box {
@@ -56,4 +57,35 @@
   border-radius: 4px;
   border: 1px solid #cbced9;
   background-color: #edeff6;
+}
+
+@media (min-width: $tablet) {
+  .country-step__item {
+    justify-content: space-between;
+  }
+
+  .country-step__input {
+    padding: 23px 15px;
+    max-width: 369px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .country-step__flag {
+    width: 80px;
+    height: 70px;
+    padding: 5px;
+    border: none;
+  }
+
+  .country-step__del-btn {
+    position: static;
+    background-color: transparent;
+  }
+
+  .country-step__del-svg {
+    width: 18px;
+    height: 18px;
+    opacity: 0.2;
+  }
 }

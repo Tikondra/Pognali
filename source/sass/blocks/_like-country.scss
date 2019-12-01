@@ -16,3 +16,15 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet) {
+  .like-country__list {
+    display: flex;
+  }
+
+  .like-country__item {
+    margin-right: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

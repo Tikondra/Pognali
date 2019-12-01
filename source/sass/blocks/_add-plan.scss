@@ -21,3 +21,19 @@
   border-radius: 10px;
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet) {
+  .add-plan {
+    padding: 25px 75px;
+  }
+
+  .add-plan__section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .add-plan__list {
+    margin: auto;
+    max-width: 660px;
+  }
+}

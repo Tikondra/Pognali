@@ -14,7 +14,7 @@
   color: #444444;
 }
 
-.step__child-label {
+.child__label {
   color: #444444;
   font-size: 15px;
   font-weight: 400;
@@ -41,5 +41,61 @@
 
   &--back {
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet) {
+  .add-plan__step--1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .step__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    &--step1 {
+      order: 1;
+    }
+  }
+
+  .step__description {
+    font-size: 20px;
+    line-height: 24px;
+
+    &--step1 {
+      order: 1;
+    }
+  }
+
+  .step__count-travelmates {
+    order: 1;
+  }
+
+  .step__duration {
+    order: 2;
+  }
+
+  .step__child {
+    order: 1;
+    margin: 15px 0;
+  }
+
+  .step__calendar {
+    order: 2;
+  }
+
+  .step__paginate {
+    order: 2;
+    padding: 28.5px 25px;
+    max-width: 285px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+    background-image: url("../img/triangle-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-origin: content-box;
   }
 }

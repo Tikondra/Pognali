@@ -1,8 +1,99 @@
 .contacts__link {
+  display: flex;
+  align-items: center;
   color: #192144;
   font-weight: 700;
+  text-decoration: none;
 
   &--email {
     text-transform: uppercase;
+  }
+}
+
+.contacts__link-text {
+  margin: 0;
+
+  &--email {
+    letter-spacing: 0.15px;
+  }
+
+  &--reg {
+    color: #ffd74b;
+  }
+}
+
+.contacts__svg-box {
+  @include center-flex;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  background-color: #121936;
+  border-radius: 50%;
+}
+
+.contacts__svg {
+  fill: #ffd74b;
+}
+
+.contacts__icon {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .contacts__link {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__svg-box {
+    width: 68px;
+    height: 68px;
+    margin-right: 16px;
+    background-color: #121936;
+    border-radius: 50%;
+  }
+
+  .contacts__svg {
+    width: 27px;
+    height: 27px;
+
+    &--email {
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    display: flex;
+  }
+
+  .contacts__link-text {
+    display: none;
+
+    &--reg {
+      display: block;
+    }
+  }
+
+  .contacts__icon {
+    @include center-flex;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: #ff8d30;
+
+    &--email {
+      background-color: #ffbd30;
+    }
+  }
+
+  .contacts__svg-box {
+    display: none;
+
+    &--reg {
+      display: flex;
+    }
   }
 }

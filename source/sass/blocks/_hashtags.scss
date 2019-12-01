@@ -1,20 +1,27 @@
 .hashtags {
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
   text-align: center;
+  flex-basis: 100%;
   border-radius: 10px;
   border: 1px solid #cbced9;
 }
 
 .hashtags__title {
+  margin: -24px auto 0;
+  padding: 0 15px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  background-color: #edeff6;
 }
 
 .hashtags__tags {
-  min-width: 215px;
+  margin-top: 6px;
+  min-width: 220px;
   font-family: inherit;
   color: #444444;
   font-size: 16px;
@@ -22,4 +29,20 @@
   line-height: 22px;
   border: none;
   background-color: transparent;
+}
+
+@media (min-width: $tablet) {
+  .hashtags__title {
+    order: 2;
+    margin: 0 auto -24px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  .hashtags__tags {
+    margin: 0 0 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

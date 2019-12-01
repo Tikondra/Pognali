@@ -1,4 +1,5 @@
 .reg-form {
+  padding: 25px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
 }
@@ -20,12 +21,29 @@
   text-decoration: underline;
 }
 
-.reg-form__contacts-link {
-  color: #ffd74b;
-  font-weight: 700;
-  text-decoration: none;
+@media (min-width: $tablet) {
+  .reg-form__title {
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
 
-  &--email {
-    text-transform: uppercase;
+  .reg-form__text {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .reg-form__text {
+    max-width: 615px;
+    margin: auto;
+  }
+
+  .reg-form__contacts {
+    justify-content: space-between;
+    max-width: 968px;
+    margin: auto;
   }
 }

@@ -1,4 +1,5 @@
 .rates {
+  padding: 37px 26px 37px 50px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
 }
@@ -43,6 +44,7 @@
   line-height: 14px;
   background-color: #ffa530;
   border-radius: 50%;
+  text-align: center;
 
   &--2 {
     background-color: #ffbd30;
@@ -58,4 +60,51 @@
   font-weight: 700;
   line-height: 16px;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .rates__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .rates__item-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .rates__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__price {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__item-number {
+    order: -1;
+    padding: 19.5px 26.5px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .rates__business-btn {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .rates__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 75px;
+  }
+
+  .rates__item-number {
+    order: -1;
+  }
 }

@@ -35,7 +35,7 @@
 .profile__photo-change {
   width: 100%;
   padding: 5px 25px;
-  margin-top: 20px;
+  margin: 20px 0;
   color: #161c35;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   font-size: 17px;
@@ -51,10 +51,39 @@
   padding: 25px 0;
 }
 
-.profile__fieldset-box {
-  padding: 25px;
-}
-
 .profile__transport {
   margin-top: 20px;
+}
+
+@media (min-width: $tablet) {
+  .profile__info {
+    justify-content: space-between;
+    padding: 25px 75px;
+  }
+
+  .profile__transport {
+    order: 1;
+    margin: 0;
+  }
+
+  .profile__img {
+    order: 2;
+    width: 94px;
+    height: 94px;
+    border-radius: 5px;
+  }
+
+  .profile__photo-change {
+    order: 2;
+    padding: 21px 25px;
+    color: #1d2e5b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .profile__hashtags {
+    order: 2;
+  }
 }
