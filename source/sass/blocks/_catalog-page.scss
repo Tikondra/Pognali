@@ -39,7 +39,7 @@
 }
 
 @media (min-width: $tablet) {
-  .catalog-page__title-box {
+  .catalog-page__title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,7 +72,12 @@
 }
 
 @media (min-width: $desktop) {
+  .catalog-page__title-container {
+    @include container;
+  }
+
   .catalog-page__content {
+    @include container;
     display: flex;
   }
 

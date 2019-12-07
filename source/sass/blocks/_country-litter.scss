@@ -1,9 +1,9 @@
 .country-litter {
   @include list;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
-  max-width: 270px;
+  max-width: 220px;
 }
 
 .country-litter__link {
@@ -23,5 +23,33 @@
   &--active {
     color: #ffffff;
     background-color: #1d2e5b;
+  }
+}
+
+@media (min-width: $tablet) {
+  .country-litter {
+    max-width: 410px;
+  }
+
+  .country-litter__item {
+    @include center-flex;
+    flex-basis: 80px;
+    margin-bottom: 15px;
+  }
+
+  .country-litter__link {
+    width: auto;
+    color: #192144;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    opacity: 0.2;
+
+    &--active {
+      opacity: 1;
+
+    }
   }
 }

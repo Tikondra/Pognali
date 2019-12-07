@@ -1,21 +1,38 @@
 .filter-country {
-  padding: 25px;
+  padding: 25px 0;
   border-radius: 0 0 20px 20px;
   background-color: #e2e5f2;
 }
 
-.filter-country__btn {
+.filter-country__content {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.filter-country__btn-label {
+  padding-left: 30px;
+  margin: 0;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #192144;
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+  background-image: url("../img/filter.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.filter-country__btn {
+  @include center-flex;
+  margin: auto;
   border: none;
   background-color: transparent;
 }
 
-.filter-country__box {
+.filter-country__btn-text {
   display: none;
 }
 
@@ -35,4 +52,32 @@
   border: none;
   border-radius: 20px;
   background-color: #d6daed;
+}
+
+@media (min-width: $tablet) {
+  .filter-country__btn {
+    flex-basis: 200px;
+  }
+
+  .filter-country__btn-label {
+    display: none;
+  }
+
+  .filter-country__btn-text {
+    display: block;
+    color: #192144;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .filter-country__svg1 {
+    width: 18px;
+    height: 18px;
+  }
+
+  .filter-country__country-patch {
+    order: -1;
+  }
 }
