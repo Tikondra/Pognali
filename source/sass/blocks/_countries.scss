@@ -1,6 +1,11 @@
 .countries {
-  padding: 25px;
+  padding: 52px 25px;
   background-color: #edeff6;
+}
+
+.countries__section-description {
+  padding-left: 25px;
+  padding-right: 45px;
 }
 
 .countries__section-title {
@@ -11,6 +16,7 @@
 }
 
 .countries__section-text {
+  margin-bottom: 59px;
   color: #444444;
   font-weight: 300;
 }
@@ -19,9 +25,18 @@
   @include list;
 }
 
+.countries__img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
 .countries__description {
+  position: relative;
+  z-index: 2;
+  margin-top: -15px;
   padding: 10px;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .countries__title {
