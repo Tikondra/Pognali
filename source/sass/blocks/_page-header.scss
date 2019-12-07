@@ -45,14 +45,14 @@
   background-image: url("../img/menu.svg");
   background-repeat: no-repeat;
 
+  &--scroll {
+    background-image: url("../img/menu-scroll.svg");
+  }
+
   &--close {
     width: 19px;
     height: 19px;
     background-image: url("../img/menu-close.svg");
-  }
-
-  &--scroll {
-    background-image: url("../img/menu-scroll.svg");
   }
 }
 
@@ -191,7 +191,6 @@
 
 @media (min-width: $desktop) {
   .page-header {
-    background-color: #182044;
     position: fixed;
     width: 100%;
     z-index: 5;

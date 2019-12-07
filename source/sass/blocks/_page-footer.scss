@@ -5,7 +5,8 @@
 }
 
 @media (min-width: $tablet) {
-  .page-footer {
+  .page-footer__content {
+    @include container;
     display: flex;
     justify-content: space-between;
   }
