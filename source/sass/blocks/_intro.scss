@@ -1,10 +1,10 @@
 .intro {
-  padding: 73px 25px 21px;
+  padding: 94px 25px 21px;
   color: #ffffff;
   background-color: #161c35;
   background-image: url("../img/back-intro.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -73px;
+  background-position: 0 0;
 }
 
 .intro__title {
@@ -46,8 +46,13 @@
   border-radius: 20px;
 }
 
+.intro__quote {
+ margin: 25px 75px 30px 25px;
+}
+
 .intro__quote-text {
   font-weight: 300;
+  margin-bottom: 19px;
 }
 
 .intro__quote-author {
