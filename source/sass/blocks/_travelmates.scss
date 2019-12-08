@@ -1,7 +1,31 @@
 .travelmates {
-  padding: 25px;
+  position: relative;
+  z-index: -1;
+  margin-top: -25px;
+  padding: 64px 25px;
   background-color: #192144;
   color: #ffffff;
+  background-image: url("../img/smolov-back-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-origin: content-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 63px;
+    left: -19px;
+    width: 132px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: #141b3b;
+  }
+}
+
+.travelmates__section-description {
+  padding: 13px 25px;
+  margin-bottom: 27px;
 }
 
 .travelmates__main-title {
@@ -9,12 +33,14 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: -0.3px;
 }
 
 .travelmates__main-text {
   font-weight: 300;
 
   &--bold {
+    margin-top: 21px;
     font-weight: 700;
   }
 }
@@ -23,9 +49,18 @@
   @include list;
 }
 
+.travelmates__box1 {
+  background-color: #192144;
+}
+
 .travelmates__item {
   position: relative;
   background-color: #ffffff;
+}
+
+.travelmates__img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .travelmates__level {
