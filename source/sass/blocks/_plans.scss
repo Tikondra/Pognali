@@ -103,3 +103,9 @@
     letter-spacing: 2px;
   }
 }
+
+@media (min-width: $desktop) {
+  .plans__content {
+    @include container;
+  }
+}

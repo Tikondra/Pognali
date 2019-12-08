@@ -1,7 +1,11 @@
 .about {
-  padding: 49px;
+  padding: 41px 49px 65px;
   background-color: #141b3b;
   color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  background-image: url("../img/about-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 18px 28px;
 }
 
 .about__title {
@@ -16,6 +20,7 @@
 
   &--bold {
     font-weight: 700;
+    margin-top: 18px;
   }
 }
 

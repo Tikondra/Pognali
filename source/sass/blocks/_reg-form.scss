@@ -4,6 +4,10 @@
   background-color: #192144;
 }
 
+.reg-form__content {
+  @include container;
+}
+
 .reg-form__title {
   color: $orange;
   font-size: 24px;
@@ -21,6 +25,33 @@
   text-decoration: underline;
 }
 
+.reg-form__form {
+  display: flex;
+  margin: 30px 0;
+}
+
+.reg-form__input {
+  width: 100%;
+  padding: 21px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
+  border-radius: 10px;
+}
+
+.reg-form__btn {
+  margin-left: -60px;
+  width: 60px;
+  background-color: #ffd74b;
+  border: none;
+  border-radius: 10px;
+}
+
+.reg-form__btn-text {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .reg-form__title {
     font-size: 45px;
@@ -32,6 +63,23 @@
     font-size: 28px;
     line-height: 33px;
     text-align: center;
+  }
+
+  .reg-form__form {
+    margin: 60px 0;
+  }
+
+  .reg-form__input {
+    padding: 27.5px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .reg-form__btn {
+    margin-left: 0;
+    width: 82px;
+    border-radius: 0 20px 20px 0;
   }
 }
 
@@ -45,5 +93,23 @@
     justify-content: space-between;
     max-width: 968px;
     margin: auto;
+  }
+
+  .reg-form__btn {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    padding: 0 25px;
+    width: auto;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .reg-form__btn-text {
+    display: block;
+    padding-right: 30px;
+    color: #1d2e5b;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
   }
 }

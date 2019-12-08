@@ -37,3 +37,13 @@
     max-width: 660px;
   }
 }
+
+@media (min-width: $desktop) {
+  .add-plan__content {
+    @include container;
+  }
+
+  .add-plan__list {
+    max-width: none;
+  }
+}

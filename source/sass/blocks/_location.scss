@@ -4,6 +4,10 @@
   background-color: #ffd74b;
 }
 
+.location__content {
+  @include container;
+}
+
 .location__address {
   display: flex;
   align-items: center;
@@ -37,6 +41,10 @@
   max-width: 145px;
 }
 
+.location__map-iframe {
+  width: 100%;
+}
+
 @media (min-width: $tablet) {
   .location__pin {
     width: 68px;
@@ -61,7 +69,7 @@
 }
 
 @media (min-width: $tablet) {
-  .location {
+  .location__content {
     display: flex;
     justify-content: space-around;
     align-items: center;

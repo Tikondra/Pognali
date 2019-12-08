@@ -98,4 +98,9 @@
     background-position: center right;
     background-origin: content-box;
   }
+
+  .step__button-box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
