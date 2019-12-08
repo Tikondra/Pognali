@@ -27,7 +27,7 @@
   border-collapse: collapse;
 }
 
-.calendar__day-week {
+.calendar__day {
   color: #444444;
   font-size: 14px;
   font-weight: 400;
@@ -38,10 +38,10 @@
   &--red {
     color: #ff5c23;
   }
+}
 
-  &--more {
-    display: none;
-  }
+.calendar__day-more {
+  display: none;
 }
 
 .calendar__content {
@@ -90,15 +90,15 @@
     height: 34px;
   }
 
-  .calendar__day-week {
+  .calendar__day {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 1.8px;
     text-transform: none;
+  }
 
-    &--more {
-      display: inline;
-    }
+  .calendar__day-more {
+    display: inline;
   }
 
   .calendar__content {
