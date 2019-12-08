@@ -1,6 +1,4 @@
 .travelmates {
-  position: relative;
-  z-index: -1;
   margin-top: -25px;
   padding: 64px 25px;
   background-color: #192144;
@@ -49,16 +47,21 @@
   @include list;
 }
 
+.travelmates__item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
 .travelmates__box1 {
   background-color: #192144;
 }
 
-.travelmates__item {
-  position: relative;
+.travelmates__box2 {
   background-color: #ffffff;
 }
 
 .travelmates__img {
+  display: block;
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
