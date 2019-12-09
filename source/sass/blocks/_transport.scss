@@ -1,12 +1,13 @@
-.transport__list {
+.transport {
   @include list;
   display: flex;
-  justify-content: space-between;
-  max-width: 120px;
+  justify-content: center;
+  width: 100%;
   margin: auto;
 }
 
 .transport__item {
+  margin: 0 2.8%;
   opacity: 0.15;
 
   &--active {

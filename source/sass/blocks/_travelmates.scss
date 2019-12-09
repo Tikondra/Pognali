@@ -1,17 +1,18 @@
 .travelmates {
+  position: relative;
   margin-top: -25px;
-  padding: 64px 25px;
+  padding: 64px 25px 29px;
   background-color: #192144;
   color: #ffffff;
   background-image: url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: right top;
   background-origin: content-box;
+  border-radius: 0 0 30px 30px;
 
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
     top: 63px;
     left: -19px;
     width: 132px;
@@ -19,6 +20,11 @@
     border-radius: 20px;
     background-color: #141b3b;
   }
+}
+
+.travelmates__content {
+  position: relative;
+  z-index: 1;
 }
 
 .travelmates__section-description {
@@ -49,7 +55,7 @@
 
 .travelmates__item {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .travelmates__box1 {
@@ -57,7 +63,12 @@
 }
 
 .travelmates__box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
   background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
 }
 
 .travelmates__img {
@@ -68,36 +79,51 @@
 
 .travelmates__level {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 16px;
+  left: 17px;
 }
 
-.travelmates__online {
-  width: 5px;
-  margin-right: 10px;
-  border: 3px solid #f97676;
-  border-radius: 3px;
-}
-
-.travelmates__name-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.travelmates__flags {
+  margin-top: -11px;
+  margin-bottom: -20px;
 }
 
 .travelmates__name {
+  position: relative;
+  margin: 11px 0 15px;
+  padding: 0 17px;
   color: #1d2e5b;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #f97676;
+    border-radius: 4px;
+  }
+
+  &--active::before {
+    border: 3px solid #81e31e;
+  }
 }
 
 .travelmates__hashtags {
   max-width: 180px;
-  margin: auto;
+  margin: 0 auto 16px;
   color: #444444;
   line-height: 18px;
   text-align: center;
+}
+
+.travelmates__btn {
+  margin-top: 21px;
 }
 
 @media (min-width: $tablet) {
