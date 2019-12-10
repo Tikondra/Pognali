@@ -130,8 +130,9 @@
 
 @media (min-width: $tablet) {
   .page-header {
+    background-color: #182044;
     justify-content: flex-start;
-    padding: 45px 40px 0;
+    padding: 18px 15px 0;
   }
 
   .page-header__logo {
@@ -162,7 +163,7 @@
   }
 
   .page-header__menu-open {
-    left: -50%;
+    left: -48%;
   }
 
   .page-header__navigation {

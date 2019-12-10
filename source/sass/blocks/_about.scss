@@ -29,8 +29,16 @@
 }
 
 @media (min-width: $tablet) {
+  .about {
+    padding: 12px 49px 88px;
+    background-color: #182044;
+    background-image: url("../img/about-tablet@1x.png");
+    background-position: right 8px top 55px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .about__content {
-    max-width: 300px;
+    padding-left: 25px;
   }
 
   .about__title {
@@ -39,10 +47,14 @@
   }
 
   .about__text {
+    padding-right: 335px;
+    margin: 40px 0 31px;
     font-size: 28px;
     line-height: 33px;
 
     &--bold {
+      margin: 0;
+      margin-bottom: 51px;
       font-size: 21px;
       line-height: 25px;
     }
@@ -50,7 +62,7 @@
 
   .about__btn {
     display: block;
-    padding: 28.5px 30px;
+    padding: 28.5px 34px;
     max-width: 274px;
     color: #1d2e5b;
     font-size: 24px;
@@ -66,7 +78,7 @@
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .about__content {
     @include container;
   }

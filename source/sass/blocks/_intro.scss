@@ -3,12 +3,10 @@
   color: #ffffff;
   background-color: #161c35;
   background-image: url("../img/traveller-illustration-mobile@1x.png"),
-        url("../img/globe-back-mobile@1x.jpg");
+    url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 79px 223px,
-        center top;
-  background-size: auto,
-        contain;
+    left top;
 }
 
 .intro__title {
@@ -68,19 +66,21 @@
 
 @media (min-width: $tablet) {
   .intro {
-    background-image: url("../img/back-intro2.jpg");
-    background-position: center bottom;
+    background-color: #182044;
+    background-image: url("../img/traveller-illustration-tablet@1x.png"),
+      url("../img/globe-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right 112px bottom 369px,
+      center bottom 231px;
+    background-size: auto;
   }
 
   .intro__content {
-    padding: 25px;
+    padding: 68px 15px;
   }
 
   .intro__title {
-    margin-left: 70px;
-    margin-top: 55px;
-    margin-bottom: 85px;
-    text-align: left;
+    margin-bottom: 48px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -89,21 +89,28 @@
     display: none;
   }
 
+  .intro__quote {
+    margin: 0;
+    padding: 10px 34px;
+    background-color: transparent;
+  }
+
   .intro__quote-text {
-    max-width: 257px;
+    margin-bottom: 44px;
+    max-width: 290px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .intro__quote-author {
     display: block;
-    max-width: 243px;
+    max-width: 250px;
     font-size: 21px;
     line-height: 25px;
   }
 
   .intro__steps {
-    margin-top: 185px;
+    margin-top: 201px;
   }
 }
 

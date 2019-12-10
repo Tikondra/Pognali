@@ -1,0 +1,9 @@
+.br-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .br-tablet {
+    display: inline;
+  }
+}

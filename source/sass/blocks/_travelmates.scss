@@ -127,8 +127,16 @@
 }
 
 @media (min-width: $tablet) {
-  .travelmates__content {
-    padding: 75px;
+  .travelmates {
+    margin-top: -60px;
+    padding: 150px 48px 29px;
+
+    &::before {
+      top: 138px;
+      left: 39px;
+      width: 213px;
+      height: 213px;
+    }
   }
 
   .travelmates__main-title {
@@ -137,10 +145,14 @@
   }
 
   .travelmates__main-text {
+    margin: 55px 0 0;
+    padding: 0 140px 0 2px;
     font-size: 28px;
     line-height: 33px;
 
     &--bold {
+      margin-top: 40px;
+      padding-right: 250px;
       font-size: 21px;
       line-height: 25px;
     }
@@ -153,7 +165,7 @@
   }
 
   .travelmates__item {
-    flex-basis: 198px;
+    flex-basis: 45%;
     border-radius: 20px;
   }
 
