@@ -1,5 +1,7 @@
 .rates {
-  padding: 14px 26px 37px 51px;
+  position: relative;
+  z-index: 5;
+  padding: 14px 26px 35px 49px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
 }
@@ -7,10 +9,12 @@
 .rates__title {
   padding: 13.5px 0;
   padding-right: 100px;
+  margin-bottom: 35px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.4px;
   background-image: url("../img/rates@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,6 +23,8 @@
 
 .rates__list {
   @include list;
+  counter-reset: rates;
+  margin-bottom: 40px;
   color: #444444;
   font-weight: 300;
 }
@@ -27,6 +33,29 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 16px;
+
+  &::after {
+    @include center-flex;
+    width: 34px;
+    height: 34px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    background-color: #ffa530;
+    border-radius: 50%;
+    counter-increment: rates;
+    content: counter(rates);
+  }
+
+  &--2::after {
+    background-color: #ffbd30;
+  }
+
+  &--3::after {
+    background-color: #ffd74b;
+  }
 }
 
 .rates__text {

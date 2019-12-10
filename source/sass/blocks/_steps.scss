@@ -7,6 +7,7 @@
 
 .steps__list {
   @include list;
+  counter-reset: steps;
 }
 
 .steps__item {
@@ -20,8 +21,8 @@
   &::after {
     margin-left: 30px;
     color: #ffffff;
-    counter-increment: section;
-    content: counter(section);
+    counter-increment: steps;
+    content: counter(steps);
   }
 
   &--2 {

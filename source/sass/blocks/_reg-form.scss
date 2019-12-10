@@ -1,5 +1,8 @@
 .reg-form {
-  padding: 25px;
+  position: relative;
+  z-index: 4;
+  padding: 78px 0 30px;
+  margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
 }
@@ -9,15 +12,24 @@
 }
 
 .reg-form__title {
+  margin-bottom: 0;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  text-align: center;
 }
 
 .reg-form__text {
+  padding: 0 35px;
+  margin-top: 19px;
   color: #ffffff;
   font-weight: 300;
+  text-align: center;
+
+  &--2 {
+    padding: 0 25px;
+  }
 }
 
 .reg-form__link {
@@ -27,7 +39,7 @@
 
 .reg-form__form {
   display: flex;
-  margin: 30px 0;
+  margin: 30px 0 28px;
 }
 
 .reg-form__input {

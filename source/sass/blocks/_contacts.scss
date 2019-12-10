@@ -12,9 +12,10 @@
 
 .contacts__link-text {
   margin: 0;
+  margin-top: 5px;
 
   &--email {
-    letter-spacing: 0.15px;
+    letter-spacing: -0.05px;
   }
 
   &--reg {
