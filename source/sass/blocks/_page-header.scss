@@ -64,7 +64,6 @@
   flex-direction: column;
   padding: 25px 25px 28px;
   padding-top: 117px;
-  min-height: 568px;
   background-color: #ffffff;
 
   &--close {
@@ -73,6 +72,7 @@
 
   &--open {
     display: flex;
+    min-height: 568px;
   }
 }
 
@@ -148,7 +148,7 @@
   .page-header__info {
     display: flex;
     justify-content: flex-start;
-    padding: 41px 40px 79px 97px;
+    padding: 41px 40px 0 97px;
     background-color: transparent;
 
     &--open {

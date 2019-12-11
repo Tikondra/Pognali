@@ -1,12 +1,14 @@
 .travelmates {
   position: relative;
   margin-top: -25px;
-  padding: 64px 25px 29px;
+  padding: 64px 25px 30px;
   background-color: #192144;
   color: #ffffff;
-  background-image: url("../img/smolov-back-desktop@1x.png");
+  background-image: url("../img/smolov-back-desktop@1x.png"),
+    url("../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right top,
+    left -35px top 273px;
   background-origin: content-box;
   border-radius: 0 0 30px 30px;
 
@@ -33,6 +35,7 @@
 }
 
 .travelmates__main-title {
+  margin-bottom: 19px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
@@ -66,7 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  padding: 16px 15px 14px;
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
 }
@@ -80,11 +83,15 @@
 .travelmates__level {
   position: absolute;
   top: 16px;
-  left: 17px;
+  left: 16px;
+
+  &--2 {
+    left: 15px;
+  }
 }
 
 .travelmates__flags {
-  margin-top: -11px;
+  margin-top: -12px;
   margin-bottom: -20px;
 }
 
@@ -105,12 +112,12 @@
     left: 0;
     width: 5px;
     height: 5px;
-    border: 3px solid #f97676;
+    background-color: #f97676;
     border-radius: 4px;
   }
 
   &--active::before {
-    border: 3px solid #81e31e;
+    background-color: #81e31e;
   }
 }
 
@@ -120,20 +127,35 @@
   color: #444444;
   line-height: 18px;
   text-align: center;
+
+  &--demin {
+    padding-left: 15px;
+    margin: 0 auto 17px;
+  }
 }
 
 .travelmates__btn {
   margin-top: 21px;
+  padding: 23px 23px 21px;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
 }
 
 @media (min-width: $tablet) {
   .travelmates {
     margin-top: -60px;
-    padding: 150px 48px 29px;
+    padding: 150px 48px 88px;
+    background-image: url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-position: left -8px top 336px,
+      right 27px top -10px;
+    border-radius: 0 0 60px 60px;
 
     &::before {
-      top: 138px;
-      left: 39px;
+      top: 140px;
+      left: 40px;
       width: 213px;
       height: 213px;
     }
@@ -146,12 +168,12 @@
 
   .travelmates__main-text {
     margin: 55px 0 0;
-    padding: 0 140px 0 2px;
+    padding: 2px 140px 0 2px;
     font-size: 28px;
     line-height: 33px;
 
     &--bold {
-      margin-top: 40px;
+      margin-top: 37px;
       padding-right: 250px;
       font-size: 21px;
       line-height: 25px;
@@ -162,15 +184,63 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 18px 27px;
   }
 
   .travelmates__item {
-    flex-basis: 45%;
+    flex-basis: 46%;
     border-radius: 20px;
   }
 
+  .travelmates__img {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .travelmates__level {
+    top: 20px;
+    left: 20px;
+  }
+
+  .travelmates__box2 {
+    padding: 22px 15px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .travelmates__name {
+    padding: 0 21px;
+    margin: 11px 0 21px;
+    font-size: 24px;
+    line-height: 24px;
+
+    &::before {
+      top: 33%;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      background-color: #f97676;
+      border-radius: 4px;
+    }
+
+    &--active::before {
+      background-color: #81e31e;
+    }
+  }
+
+  .travelmates__hashtags {
+    max-width: 90%;
+    margin: 0 auto 24px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   .travelmates__btn {
-    margin-top: 80px;
+    margin: 52px auto 0;
+    padding: 30px 36px 27px 33px;
+    max-width: 92%;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
   }
 }
 

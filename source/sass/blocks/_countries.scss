@@ -12,14 +12,16 @@
 }
 
 .countries__section-title {
+  margin-bottom: 19px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .countries__section-text {
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   color: #444444;
   font-weight: 300;
 }
@@ -84,6 +86,10 @@
   font-weight: 500;
   line-height: 18px;
 
+  &--2 {
+    letter-spacing: -0.2px;
+  }
+
   &--count {
     order: 1;
     flex-basis: 10%;
@@ -99,6 +105,7 @@
 
 .countries__btn {
   margin-top: 27px;
+  padding: 22px 23px;
   background-image: url("../img/triangle-arrow-right.svg");
   background-repeat: no-repeat;
   background-position: right center;
@@ -112,10 +119,10 @@
   }
 
   .countries__content {
-    padding: 0 23px 80px;
+    padding: 0 23px 78px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
-    background-position: right 15px top 8px;
+    background-position: right 15px top 7px;
   }
 
   .countries__section-title {
@@ -132,7 +139,19 @@
   }
 
   .countries__list {
+    position: relative;
     padding: 45px 27px 39px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -7px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 
   .countries__item {
@@ -154,7 +173,7 @@
     flex-wrap: nowrap;
     width: 70%;
     margin-top: 0;
-    padding: 32px 24px 16px 29px;
+    padding: 30px 24px 16px 30px;
     border-radius: 20px 0 0 20px;
 
     &::before {
@@ -168,7 +187,7 @@
 
   .countries__title {
     margin: 0;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -179,13 +198,13 @@
     line-height: 17.68px;
 
     &--2 {
-      letter-spacing: -0.2px;
+      letter-spacing: -0.3px;
     }
 
     &--count {
       order: 2;
       margin-top: auto;
-      padding: 5px 0 5px 30px;
+      padding: 5px 0 5px 28px;
       background-size: 20px 20px;
       background-position: 0 0;
     }

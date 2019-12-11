@@ -9,6 +9,11 @@
     left top;
 }
 
+.intro__content {
+  position: relative;
+  z-index: 2;
+}
+
 .intro__title {
   max-width: 395px;
   margin: auto;
@@ -71,7 +76,7 @@
       url("../img/globe-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: right 112px bottom 369px,
-      center bottom 231px;
+      center bottom 230px;
     background-size: auto;
   }
 
