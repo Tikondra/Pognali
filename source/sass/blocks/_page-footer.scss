@@ -12,6 +12,18 @@
 }
 
 @media (min-width: $tablet) {
+  .page-footer {
+    border-radius: 60px 60px 0 0;
+    padding: 17px 40px 25px;
+  }
+
+  .page-footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop) {
   .page-footer__content {
     @include container;
     display: flex;

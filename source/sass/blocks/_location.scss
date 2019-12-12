@@ -2,13 +2,9 @@
   position: relative;
   z-index: 3;
   margin-top: -30px;
-  padding: 47px 0 34px;
+  padding: 47px 25.5px 34px;
   border-radius: 0 0 30px 30px;
   background-color: #ffd74b;
-}
-
-.location__content {
-  @include container;
 }
 
 .location__address {
@@ -47,9 +43,23 @@
 }
 
 @media (min-width: $tablet) {
+  .location {
+    margin-top: -60px;
+    padding: 100px 0 85px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .location__content {
+    display: flex;
+    flex-direction: column;
+    width: 80.5%;
+    margin: auto;
+  }
+
   .location__pin {
     width: 68px;
     height: 68px;
+    margin-right: 25px;
   }
 
   .location__svg {
@@ -64,15 +74,16 @@
   }
 
   .location__btn {
+    margin-top: 35px;
+    padding: 27.5px 33px 23.5px;
+    border-radius: 20px;
     font-size: 24px;
     line-height: 24px;
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .location__content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include container;
   }
 }

@@ -6,3 +6,13 @@
   width: 100%;
   min-height: 325px;
 }
+
+@media (min-width: $tablet) {
+  .map {
+    margin: -60px 0;
+  }
+
+  .map__iframe {
+    min-height: 574px;
+  }
+}

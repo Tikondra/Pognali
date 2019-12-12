@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet) {
+  .contacts {
+    padding: 11px 20px 29px 50px;
+  }
+
   .contacts__link {
     font-size: 28px;
     line-height: 28px;
@@ -49,7 +53,7 @@
   .contacts__svg-box {
     width: 68px;
     height: 68px;
-    margin-right: 16px;
+    margin-right: 23px;
     background-color: #121936;
     border-radius: 50%;
   }
