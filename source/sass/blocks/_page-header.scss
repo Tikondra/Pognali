@@ -15,6 +15,10 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 27px 25px;
+
+  &--catalog {
+    padding: 19px 25px;
+  }
 }
 
 .page-header__logo {

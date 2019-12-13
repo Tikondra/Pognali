@@ -1,15 +1,21 @@
 .country-litter {
   @include list;
   margin: auto;
+  margin-right: 24px;
   display: flex;
   flex-wrap: wrap;
   max-width: 220px;
 }
 
+.country-litter__item {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
 .country-litter__link {
-  display: block;
-  padding: 11px;
-  width: 44px;
+  @include center-flex;
+  width: 45px;
+  height: 42px;
   color: #1d2e5b;
   font-size: 14px;
   font-weight: 500;

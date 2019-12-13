@@ -1,18 +1,17 @@
 .filter-country {
-  padding: 25px 0;
   border-radius: 0 0 20px 20px;
   background-color: #e2e5f2;
 }
 
 .filter-country__content {
-  @include container;
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  padding: 16px 25px 25px 25px;
 }
 
 .filter-country__btn-label {
-  padding-left: 30px;
+  padding-left: 27px;
   margin: 0;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #192144;
@@ -27,7 +26,8 @@
 
 .filter-country__btn {
   @include center-flex;
-  margin: auto;
+  margin-left: auto;
+  margin-right: 1px;
   border: none;
   background-color: transparent;
 }
@@ -42,7 +42,7 @@
 
 .filter-country__close-btn {
   width: 100%;
-  padding: 5.5px 25px;
+  padding: 5.5px 19px 5.5px 13px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #161c35;
   font-size: 17px;
