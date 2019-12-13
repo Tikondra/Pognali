@@ -112,17 +112,37 @@
 @media (min-width: $desktop) {
   .about {
     margin-top: 0;
+    padding: 0;
+
+    &::before {
+      top: 71px;
+      left: 4.1%;
+      width: 14.9%;
+    }
   }
 
   .about__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 95px 129px 163px;
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: right 60px top 84px;
   }
 
   .about__text {
-    max-width: 620px;
+    margin: 58px 0 38px;
+    padding-left: 2px;
+    max-width: 950px;
 
     &--bold {
-      max-width: 470px;
+      max-width: 755px;
+      margin: 0;
+      margin-bottom: 84px;
     }
+  }
+
+  .about__btn {
+    margin-left: 2px;
+    padding: 30px 35px 27px 33px;
   }
 }

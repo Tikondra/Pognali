@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet) and (max-width: 769px) {
   .br-tablet {
     display: inline;
   }
