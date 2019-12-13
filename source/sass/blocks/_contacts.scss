@@ -76,6 +76,7 @@
 
   .contacts__link-text {
     display: none;
+    margin-top: 3px;
 
     &--reg {
       display: block;
@@ -97,9 +98,24 @@
 
   .contacts__svg-box {
     display: none;
+    width: 90px;
+    height: 90px;
+    margin-right: 30px;
 
     &--reg {
       display: flex;
+    }
+  }
+
+  .contacts__svg {
+    &--tel {
+      width: 36px;
+      height: 36px;
+    }
+
+    &--email {
+      width: 36px;
+      height: 26px;
     }
   }
 }

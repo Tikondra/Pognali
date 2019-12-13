@@ -8,7 +8,7 @@
 }
 
 .reg-form__content {
-  @include container;
+  padding: 0 25px;
 }
 
 .reg-form__title {
@@ -106,29 +106,51 @@
 }
 
 @media (min-width: $desktop) {
-  .reg-form__text {
-    max-width: 615px;
+  .reg-form {
+    padding: 0;
+    margin-top: -100px;
+  }
+
+  .reg-form__content {
+    max-width: 1440px;
     margin: auto;
+    padding: 162px 134px 103px 132px;
+  }
+
+  .reg-form__title {
+    margin-bottom: 57px;
+  }
+
+  .reg-form__text {
+    max-width: 690px;
+    margin: auto;
+    margin-bottom: 43px;
+  }
+
+  .reg-form__form {
+    margin: 57px 0 68px 0;
+    width: 100%;
   }
 
   .reg-form__contacts {
     justify-content: space-between;
-    max-width: 968px;
+    max-width: 870px;
     margin: auto;
+    padding-right: 2px;
   }
 
   .reg-form__btn {
     display: flex;
     align-items: center;
     margin-left: 0;
-    padding: 0 25px;
-    width: auto;
+    padding: 0 0 0 35px;
+    width: 37.6%;
     border-radius: 0 20px 20px 0;
   }
 
   .reg-form__btn-text {
     display: block;
-    padding-right: 30px;
+    padding-right: 37%;
     color: #1d2e5b;
     font-size: 24px;
     font-weight: 700;
