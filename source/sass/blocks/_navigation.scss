@@ -27,8 +27,6 @@
 @media (min-width: $desktop) {
   .navigation__list {
     display: flex;
-    justify-content: space-between;
-    max-width: 500px;
     align-items: center;
 
     &::before {
@@ -36,9 +34,14 @@
       display: block;
       width: 60px;
       height: 2px;
+      margin-right: 5.7%;
       border-radius: 1px;
       background-color: #ffffff;
     }
+  }
+
+  .navigation__item {
+    margin-right: 4.4%;
   }
 
   .navigation__link {
@@ -46,5 +49,6 @@
     color: #ffffff;
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: -0.1px;
   }
 }

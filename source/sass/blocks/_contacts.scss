@@ -71,6 +71,7 @@
 @media (min-width: $desktop) {
   .contacts {
     display: flex;
+    padding: 0;
   }
 
   .contacts__link-text {

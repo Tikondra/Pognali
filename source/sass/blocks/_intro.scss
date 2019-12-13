@@ -121,31 +121,37 @@
 
 @media (min-width: $desktop) {
   .intro {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 120px;
-    background-image: url("../img/traveller-illustration-desktop@1x.png"),
-      url("../img/globe-back-desktop@1x.jpg");
-    background-position: right 112px center, center top 230px;
+    padding: 0;
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-position: center bottom;
     background-color: #161c34;
   }
 
   .intro__content {
-    @include container;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+    padding: 162px 60px 123px;
+    background-image: url("../img/traveller-illustration-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 604px bottom;
   }
 
   .intro__title {
-    margin-top: 90px;
-    margin-left: 101px;
-    margin-bottom: 100px;
+    margin-top: 47px;
+    margin-left: 67px;
+    margin-bottom: 101px;
+    text-align: left;
   }
 
   .intro__quote {
-    margin-top: 72px;
-    margin-right: 63px;
+    margin-top: 20px;
+    padding: 10px 0;
   }
 
   .intro__quote-text {
     margin-bottom: 45px;
+    max-width: 286px;
   }
 }
