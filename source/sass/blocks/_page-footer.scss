@@ -19,7 +19,18 @@
 
   .page-footer__content {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    padding-top: 39px;
+  }
+
+  .page-footer__social {
+    margin: 30px 88px 30px;
+  }
+
+  .page-footer__copyright {
+    margin-left: auto;
   }
 }
 
