@@ -223,13 +223,53 @@
 }
 
 @media (min-width: $desktop) {
+  .rates {
+    padding: 0;
+  }
+
   .rates__content {
+    align-items: flex-start;
     max-width: 1440px;
     margin: auto;
-    padding: 75px;
+    padding: 49px 46px 33px;
+
+    &::before {
+      right: 88px;
+      bottom: 233px;
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .rates__title {
+    margin-bottom: 132px;
+  }
+
+  .rates__list {
+    flex-basis: 87%;
+    margin-bottom: 37px;
+
+    &::before {
+      top: -50px;
+      right: 200px;
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .rates__item {
+    margin-right: 359px;
+  }
+
+  .rates__item-content {
+    margin: 0 0px 0 -67px;
   }
 
   .rates__item-number {
     order: -1;
+  }
+
+  .rates__business-btn {
+    margin-left: 85px;
   }
 }
