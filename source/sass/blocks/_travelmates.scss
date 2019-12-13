@@ -11,22 +11,23 @@
     left -35px top 273px;
   background-origin: content-box;
   border-radius: 0 0 30px 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 63px;
-    left: -19px;
-    width: 132px;
-    height: 132px;
-    border-radius: 20px;
-    background-color: #141b3b;
-  }
 }
 
 .travelmates__content {
   position: relative;
   z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: -44px;
+    width: 132px;
+    height: 132px;
+    border-radius: 20px;
+    background-color: #141b3b;
+  }
 }
 
 .travelmates__section-description {
@@ -152,10 +153,12 @@
     background-position: left -8px top 336px,
       right 27px top -10px;
     border-radius: 0 0 60px 60px;
+  }
 
+  .travelmates__content {
     &::before {
-      top: 140px;
-      left: 40px;
+      top: -10px;
+      left: -7px;
       width: 213px;
       height: 213px;
     }
@@ -245,11 +248,30 @@
 }
 
 @media (min-width: $desktop) {
+  .travelmates {
+    padding: 0;
+    background-image: none;
+  }
+
   .travelmates__content {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     max-width: 1440px;
     margin: auto;
+    padding: 152px 59px 86px;
+
+    background-image: url("../img/smolov-back-desktop@1x.png"),
+      url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: left 488px top 41px,
+      left 132px top 293px;
+    background-origin: content-box;
+
+    &::before {
+      top: 127px;
+      left: 60px;
+    }
   }
 
   .travelmates__section-description {
@@ -258,14 +280,33 @@
     padding: 0 70px;
   }
 
+  .travelmates__main-text {
+    padding: 2px 0 0 2px;
+  }
+
   .travelmates__list {
     flex-basis: 630px;
     flex-grow: 1;
+    padding: 41px 1px 38px 95px;
+  }
+
+  .travelmates__item {
+    flex-basis: 45.2%;
+  }
+
+  .travelmates__level {
+    top: 23px;
+    left: 23px;
+  }
+
+  .travelmates__name {
+    padding: 2px 21px 0;
+    margin: 11px 0 19px;
   }
 
   .travelmates__btn {
     flex-basis: 280px;
-    margin-top: -10px;
-    margin-left: 65px;
+    margin-top: -129px;
+    margin-left: 72px;
   }
 }

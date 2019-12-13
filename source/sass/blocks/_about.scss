@@ -115,9 +115,7 @@
     padding: 0;
 
     &::before {
-      top: 71px;
-      left: 4.1%;
-      width: 14.9%;
+      display: none;
     }
   }
 
@@ -127,6 +125,18 @@
     padding: 95px 129px 163px;
     background-image: url("../img/about-desktop@1x.png");
     background-position: right 60px top 84px;
+
+    &::before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 71px;
+      left: 59px;
+      width: 14.9%;
+      height: 213px;
+      border-radius: 20px;
+      background-color: #141b3b;
+    }
   }
 
   .about__text {
