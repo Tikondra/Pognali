@@ -83,7 +83,34 @@
 }
 
 @media (min-width: $desktop) {
+  .location {
+    padding: 0;
+  }
+
   .location__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 114px 134px 56px 283px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .location__btn {
+    margin-top: 0;
+    padding: 27.5px 64px 23.5px 33px;
+  }
+
+  .location__pin {
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+    margin-right: 31px;
+  }
+
+  .location__svg {
+    width: 28px;
+    height: 43px;
   }
 }

@@ -16,3 +16,9 @@
     min-height: 574px;
   }
 }
+
+@media (min-width: $desktop) {
+  .map__iframe {
+    min-height: 509px;
+  }
+}

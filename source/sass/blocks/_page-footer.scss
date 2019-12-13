@@ -35,9 +35,19 @@
 }
 
 @media (min-width: $desktop) {
+  .page-footer {
+    padding: 0;
+  }
+
   .page-footer__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 12px 60px 25px 60px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-footer__social {
+    margin: 36px 30px 30px 369px;
   }
 }

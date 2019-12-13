@@ -23,3 +23,13 @@
     margin-left: 25px;
   }
 }
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-top: 15px;
+  }
+
+  .copyright__text {
+    padding-top: 3px;
+  }
+}
