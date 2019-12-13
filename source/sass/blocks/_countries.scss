@@ -221,32 +221,68 @@
 }
 
 @media (min-width: $desktop) {
+  .countries {
+    padding: 0;
+  }
+
   .countries__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 161px 131px 138px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    background-position: right 60px top 88px;
   }
 
   .countries__section-description {
     flex-grow: 1;
     flex-basis: 500px;
-    padding: 0 70px;
+    padding: 5px 100px 0 172px;
+  }
+
+  .countries__section-title {
+    margin: 0;
+    margin-bottom: 58px;
   }
 
   .countries__section-text {
     margin-bottom: 70px;
+    padding: 0;
   }
 
   .countries__list {
     order: -1;
     flex-basis: 559px;
-    flex-grow: 1;
+    padding: 0;
+
+    &::before {
+      top: -72px;
+      left: -71px;
+    }
+  }
+
+  .countries__description {
+    padding: 24px 24px 16px 30px;
+    width: 66.7%;
+
+    &::before {
+      top: 23px;
+    }
+  }
+
+  .countries__img-box {
+    width: 33.3%;
+  }
+
+  .countries__title {
+    margin-bottom: 6px;
   }
 
   .countries__btn {
     flex-basis: 274px;
-    margin-right: 274px;
-    margin-top: -70px;
+    margin-right: 171px;
+    margin-top: -82px;
+    padding: 30px 35px 27px 33px;
   }
 }
