@@ -37,4 +37,29 @@ function menu () {
     });
 };
 
+function countryFilter () {
+  let filter = document.querySelector('.filter-country__content');
+  let btnOpen = filter.querySelector('.filter-country__btn');
+  let btnClose = filter.querySelector('.filter-country__close-btn');
+  let elMobile = filter.querySelectorAll('.filter-country__js-el');
+
+  for (var i = 0; i < elMobile.length; i++) {
+    elMobile[i].classList.add('filter-country__js-el--hide');
+  };
+
+  btnOpen.classList.remove('filter-country__btn--hide');
+
+  btnOpen.addEventListener('click', function() {
+    btnOpen.classList.toggle('filter-country__btn--open');
+    for (var i = 0; i < elMobile.length; i++) {
+      elMobile[i].classList.toggle('filter-country__js-el--hide');
+    };
+  });
+};
+
 menu();
+
+if (document.querySelector('.filter-country__content')) {
+  countryFilter();
+};
+
