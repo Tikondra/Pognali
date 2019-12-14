@@ -136,7 +136,16 @@
   .page-header {
     justify-content: flex-start;
     padding: 18px 15px 0;
-    background-color: #182044;
+
+    &--index {
+      background-color: #182044;
+    }
+  }
+
+  .page-header__content {
+    &--catalog {
+      padding: 27px 25px;
+    }
   }
 
   .page-header__logo {
