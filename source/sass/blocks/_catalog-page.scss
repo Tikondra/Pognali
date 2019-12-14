@@ -100,11 +100,16 @@
 
 @media (min-width: $desktop) {
   .catalog-page__title-container {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 101px;
+    padding-right: 98px;
   }
 
   .catalog-page__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 111px 60px 62px;
     display: flex;
   }
 
