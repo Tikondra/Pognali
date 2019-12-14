@@ -55,6 +55,12 @@ function countryFilter () {
       elMobile[i].classList.toggle('filter-country__js-el--hide');
     };
   });
+
+  btnClose.addEventListener('click', function() {
+    for (var i = 0; i < elMobile.length; i++) {
+      elMobile[i].classList.add('filter-country__js-el--hide');
+    };
+  });
 };
 
 menu();
@@ -62,4 +68,3 @@ menu();
 if (document.querySelector('.filter-country__content')) {
   countryFilter();
 };
-

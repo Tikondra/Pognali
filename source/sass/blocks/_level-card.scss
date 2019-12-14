@@ -1,4 +1,9 @@
 .level-card__title {
+  position: relative;
+  z-index: 2;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0 6px 0 12px;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
@@ -9,7 +14,8 @@
   @include center-flex;
   min-width: 45px;
   min-height: 45px;
-  padding-top: 5px;
+  margin: 6px 0 0 9px;
+  padding-top: 7px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;

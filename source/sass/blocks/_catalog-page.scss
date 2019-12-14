@@ -1,5 +1,5 @@
 .catalog-page__title-box {
-  padding: 94px 25px 0px;
+  padding: 94px 25px 0;
   border-radius: 0 0 20px 20px;
   background-color: #161c35;
 }
@@ -33,10 +33,6 @@
 
 .catalog-page__content {
   padding: 25px 25px 46px;
-}
-
-.catalog-page__select-travelmates {
-  padding: 20px;
 }
 
 @media (min-width: $tablet) {

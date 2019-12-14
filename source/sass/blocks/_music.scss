@@ -1,4 +1,15 @@
+.music {
+  padding: 12px 1px;
+}
+
+.music__title-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
 .music__title {
+  margin: 0;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;

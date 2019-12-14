@@ -1,4 +1,6 @@
 .select-travelmates {
+  padding: 26px 25px;
+  margin-bottom: 28px;
   border-radius: 20px;
   background-color: #ffd74b;
 }
@@ -6,10 +8,12 @@
 .select-travelmates__title {
   padding-right: 70px;
   margin-top: 0;
+  margin-bottom: 22px;
   color: #1d2e5b;
   font-size: 22px;
   font-weight: 700;
   line-height: 22.49px;
+  letter-spacing: 0.3px;
 }
 
 .select-travelmates__btn {

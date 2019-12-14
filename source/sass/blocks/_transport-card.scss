@@ -1,12 +1,32 @@
 .transport-card__title {
+  position: relative;
+  margin: 0;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    width: 205%;
+    height: 1px;
+    background-color: #edeff6;
+  }
+}
+
+.transport-card__title-span {
+  position: relative;
+  z-index: 2;
+  padding: 0 8px;
+  background-color: #ffffff;
 }
 
 .transport-card__list {
   @include list;
+  padding: 14px 5px;
   display: flex;
 }
 
