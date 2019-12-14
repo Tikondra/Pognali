@@ -191,17 +191,37 @@
 }
 
 @media (min-width: $tablet) {
+  .travelmates-card__item {
+    padding: 33px 20px 11px 35px;
+    margin: 40px 0;
+  }
+
   .travelmates-card__img {
+    display: block;
+    flex-basis: 33%;
+    margin-bottom: -160px;
+    padding-top: 2px;
     width: 190px;
-    height: 190px;
     border-radius: 20px;
   }
 
   .travelmates-card__name {
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+    margin-left: 17px;
     padding-right: 0;
     max-width: none;
     font-size: 30px;
     line-height: 30px;
+
+    &::after {
+      position: static;
+      display: block;
+      margin-left: 22px;
+      width: 7px;
+      height: 7px;
+    }
   }
 
   .travelmates-card__online {
@@ -211,12 +231,49 @@
   }
 
   .travelmates-card__hashtags {
+    order: 2;
+    flex-basis: 100%;
+    margin: 16px 150px 45px 219px;
+    padding: 0 30px 0 7px;
     font-size: 20px;
     line-height: 24px;
   }
 
+  .travelmates-card__box-levtr {
+    order: 1;
+    flex-basis: 11%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -200px;
+    margin-left: auto;
+  }
+
+  .travelmates-card__level {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+
+  .travelmates-card__like-box {
+    order: 3;
+    margin: 0 0 0 2px;
+    flex-basis: 20%;
+  }
+
+  .travelmates-card__like-country {
+    order: 4;
+    flex-basis: 100%;
+    margin-top: 23px;
+    margin-bottom: 5px;
+  }
+
   .travelmates-card__btn-invite {
     flex-basis: 148px;
+    order: 2;
+    margin-left: 219px;
+    padding: 12px 22px 8px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 25px;
   }
 
   .travelmates-card__like-btn {
@@ -235,7 +292,28 @@
   }
 
   .travelmates-card__btn-more {
+    justify-content: center;
+    margin: 41px 0 47px;
+    padding: 0 68px 0 60px;
     font-size: 20px;
+  }
+
+  .transport-card__btn-span {
+    margin-left: 25px;
+    padding-top: 5px;
+  }
+
+  .travelmates-card__btn-svg {
+    width: 27px;
+    height: 27px;
+  }
+
+  .travelmates-card__pagination {
+    padding: 26px 19px 24px 28px;
+  }
+
+  .travelmates-card__btn-pagination {
+    width: 6.6%;
   }
 
   .travelmates-card__pagination-list {
@@ -245,10 +323,18 @@
   }
 
   .travelmates-card__pagination-item {
+    @include center-flex;
+    width: 50px;
+    height: 50px;
     color: #161c35;
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
+
+    &--active {
+      border-radius: 50%;
+      background-color: #ffd74b;
+    }
   }
 }

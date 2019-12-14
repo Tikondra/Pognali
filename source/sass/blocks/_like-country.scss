@@ -45,13 +45,30 @@
 }
 
 @media (min-width: $tablet) {
+  .like-country__title {
+    margin-left: 40px;
+  }
+
   .like-country__list {
     display: flex;
+    padding: 16px 0 0;
   }
 
   .like-country__item {
-    margin-right: 25px;
+    margin-right: 28px;
     font-size: 20px;
     line-height: 30px;
+    align-items: stretch;
+    margin-bottom: 5px;
+  }
+
+  .like-country__img {
+    display: block;
+    width: 35px;
+    height: 24px;
+  }
+
+  .like-country__country {
+    margin-left: 11px;
   }
 }

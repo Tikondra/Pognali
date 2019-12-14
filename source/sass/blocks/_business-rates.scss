@@ -1,5 +1,4 @@
 .business-rates {
-  display: none;
   background-color: #ffffff;
   box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
   border-radius: 20px;
@@ -7,6 +6,10 @@
 
 .business-rates__content {
   padding: 25px;
+
+  &--hide {
+    display: none;
+  }
 }
 
 .business-rates__title {

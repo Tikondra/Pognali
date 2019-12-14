@@ -63,8 +63,29 @@ function countryFilter () {
   });
 };
 
+function business () {
+  let btnOpen = document.querySelector('.rates__business-btn');
+  let btnClose = document.querySelector('.business-rates__close-btn');
+  let businessRates = document.querySelector('.business-rates__content');
+
+  businessRates.classList.add('business-rates__content--hide');
+
+  btnOpen.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    businessRates.classList.remove('business-rates__content--hide');
+  });
+
+  btnClose.addEventListener('click', function() {
+    businessRates.classList.add('business-rates__content--hide');
+  });
+};
+
 menu();
 
 if (document.querySelector('.filter-country__content')) {
   countryFilter();
+};
+
+if (document.querySelector('.business-rates__content')) {
+  business();
 };

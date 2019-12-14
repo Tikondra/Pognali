@@ -1,6 +1,5 @@
 .select-travelmates {
   padding: 26px 25px;
-  margin-bottom: 28px;
   border-radius: 20px;
   background-color: #ffd74b;
 }
@@ -28,4 +27,15 @@
   border: none;
   border-radius: 20px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .select-travelmates {
+    padding: 36px 34px 2px;
+  }
+
+  .select-travelmates__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }

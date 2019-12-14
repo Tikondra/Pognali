@@ -35,7 +35,15 @@
   padding: 25px 25px 46px;
 }
 
+.catalog-page__select-travelmates {
+  margin-bottom: 28px;
+}
+
 @media (min-width: $tablet) {
+  .catalog-page__content {
+    padding: 46px 40px 62px;
+  }
+
   .catalog-page__title-box {
     position: relative;
     z-index: 10;
@@ -83,6 +91,10 @@
     margin-top: -100px;
     position: relative;
     z-index: 9;
+  }
+
+  .catalog-page__select-travelmates {
+    margin-bottom: 40px;
   }
 }
 
