@@ -28,7 +28,11 @@
   }
 
   .country-patch__item {
-    margin-right: 20px;
+    margin-right: 26px;
+
+    &--dop {
+      margin: 0 30px 0 2px;
+    }
   }
 
   .country-patch__link {

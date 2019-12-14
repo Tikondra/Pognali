@@ -3,7 +3,48 @@
   padding: 47px 25px 38px;
 }
 
+.country-select__item {
+  &--hide {
+    display: none;
+  }
+}
+
 .country-select__link {
   color: #444444;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .country-select {
+    display: flex;
+    flex-direction: column;
+    padding: 52px 20px 38px 54px;
+  }
+
+  .country-select__item {
+    &--hide {
+      display: block;
+    }
+
+    &--1 {
+      order: 1;
+    }
+
+    &--2 {
+      order: 2;
+    }
+
+    &--3 {
+      order: 3;
+    }
+
+    &--4 {
+      order: 4;
+    }
+  }
+
+  .country-select__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
