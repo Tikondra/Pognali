@@ -80,10 +80,53 @@ function business () {
   });
 };
 
+function statusBar () {
+
+  let status = document.querySelector('.lvl');
+
+  progressBarUpdate(80, 100, status);
+
+
+  function rotate(element, degree) {
+    element.style.transform = 'rotate(' + degree + 'deg)';
+    element.style.zoom = 1;
+  };
+
+  function progressBarUpdate(x, outOf, elem) {
+      var firstHalfAngle = 180;
+      var secondHalfAngle = 0;
+
+      // caluclate the angle
+      var drawAngle = x / outOf * 360;
+
+      // calculate the angle to be displayed if each half
+      if (drawAngle <= 180) {
+          firstHalfAngle = drawAngle;
+      } else {
+          secondHalfAngle = drawAngle - 180;
+      }
+
+      // set the transition
+      rotate(elem.querySelector(".lvl__slice1"), firstHalfAngle);
+      rotate(elem.querySelector(".lvl__slice2"), secondHalfAngle);
+
+      // set the values on the text
+      let statusText = document.createElement('div');
+      statusText.className = "lvl__status";
+      statusText.innerHTML = x;
+      status.append(statusText);
+  }
+}
+
+statusBar();
 menu();
 
 if (document.querySelector('.filter-country__content')) {
   countryFilter();
+};
+
+if (document.querySelector('.business-rates__content')) {
+  business();
 };
 
 if (document.querySelector('.business-rates__content')) {
