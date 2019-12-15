@@ -118,7 +118,7 @@ function statusBar () {
   }
 }
 
-statusBar();
+
 menu();
 
 if (document.querySelector('.filter-country__content')) {
@@ -129,6 +129,6 @@ if (document.querySelector('.business-rates__content')) {
   business();
 };
 
-if (document.querySelector('.business-rates__content')) {
-  business();
+if (document.querySelector('.lvl')) {
+  statusBar();
 };

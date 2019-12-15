@@ -12,14 +12,14 @@
   left: 0;
   width: 100px;
   height: 100px;
-  clip: rect(0px, 100px, 100px, 50px);
+  clip: rect(0, 100px, 100px, 50px);
 }
 
 .lvl__slice1 {
   position: absolute;
   width: 100px;
   height: 100px;
-  clip: rect(0px, 50px, 100px, 0px);
+  clip: rect(0, 50px, 100px, 0);
   border-radius: 50%;
   background-color: #ff8d30;
   border-color: #ff8d30;
@@ -32,14 +32,14 @@
   left: 0;
   width: 100px;
   height: 100px;
-  clip: rect(0, 50px, 100px, 0px);
+  clip: rect(0, 50px, 100px, 0);
 }
 
 .lvl__slice2 {
   position: absolute;
   width: 100px;
   height: 100px;
-  clip: rect(0px, 100px, 100px, 50px);
+  clip: rect(0, 100px, 100px, 50px);
   border-radius: 50%;
   background-color: #ff8d30;
   border-color: #ff8d30;
