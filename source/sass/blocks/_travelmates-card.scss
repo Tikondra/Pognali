@@ -166,11 +166,6 @@
   text-align: center;
 }
 
-.transport-card__btn-span {
-  margin-left: 15px;
-  padding-top: 2px;
-}
-
 .travelmates-card__pagination {
   display: flex;
   justify-content: space-between;
@@ -313,11 +308,6 @@
     font-size: 20px;
   }
 
-  .transport-card__btn-span {
-    margin-left: 25px;
-    padding-top: 5px;
-  }
-
   .travelmates-card__btn-svg {
     width: 27px;
     height: 27px;
@@ -427,5 +417,18 @@
     flex-direction: row;
     margin: 0;
     margin-left: auto;
+  }
+
+  .travelmates-card__btn-more {
+    margin: 61px 0 66px;
+    padding: 0 75px 0 0;
+  }
+
+  .travelmates-card__pagination {
+    padding: 26px 26px 24px 28px;
+  }
+
+  .travelmates-card__btn-pagination {
+    width: 5%;
   }
 }

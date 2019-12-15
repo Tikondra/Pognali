@@ -47,6 +47,11 @@
   }
 }
 
+.transport-card__btn-span {
+  margin-left: 15px;
+  padding-top: 2px;
+}
+
 @media (min-width: $tablet) {
   .transport-card__title {
     display: none;
@@ -82,11 +87,20 @@
       width: 20px;
     }
   }
+
+  .transport-card__btn-span {
+    margin-left: 25px;
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: $desktop) {
   .transport-card__list {
     flex-direction: row;
     padding-top: 12px;
+  }
+
+  .transport-card__btn-span {
+    margin-left: 24px;
   }
 }
