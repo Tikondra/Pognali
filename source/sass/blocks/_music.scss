@@ -1,5 +1,5 @@
 .music {
-  padding: 12px 1px;
+  padding: 10px 1px 8px;
 }
 
 .music__title-box {
@@ -9,19 +9,56 @@
 }
 
 .music__title {
+  width: 100%;
   margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
+  background-color: transparent;
+  background-image: url("../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right -1px top 6px;
+  border: none;
+
+  &--open {
+    background-image: url("../img/dropdown-up.svg");
+  }
 }
 
 .music__list {
   @include list;
 }
 
+.music__item {
+  margin-bottom: 11px;
+}
+
+.music__input:checked ~ .music__label .music__btn {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+}
+
+.music__btn {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8.5px 1px -1px;
+  margin-left: -1px;
+  margin-right: 9px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
 .music__label {
+  display: flex;
+  align-items: flex-end;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
