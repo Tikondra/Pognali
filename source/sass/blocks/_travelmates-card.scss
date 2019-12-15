@@ -355,12 +355,19 @@
 }
 
 @media (min-width: $desktop) {
+  .travelmates-card {
+    margin-right: 85px;
+    flex-basis: 71.96%;
+  }
+
   .travelmates-card__content {
-    padding: 47px 34px 0;
+    padding: 47px 11px 0 34px;
   }
 
   .travelmates-card__item {
     padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
   }
 
   .travelmates-card__img {
@@ -385,19 +392,40 @@
 
   .travelmates-card__like-country {
     order: 0;
-    flex-basis: 35%;
+    flex-basis: 39.5%;
     margin: 0;
     padding: 2px 0;
     margin-left: auto;
-    margin-bottom: -61px;
   }
 
-  .like-country__list {
-    flex-direction: column;
-    padding: 0;
+  .travelmates-card__hashtags {
+    order: 1;
+    flex-basis: 100%;
+    margin: -67px 0 33px 21px;
+    padding: 0 305px 0 7px;
   }
 
-  .like-country__title {
-    display: none;
+  .travelmates-card__btn-invite {
+    order: 1;
+    margin-left: 22px;
+    margin-top: 12px;
+  }
+
+  .travelmates-card__like-box {
+    order: 2;
+    flex-basis: 20%;
+    margin-top: 12px;
+  }
+
+  .travelmates-card__like-btn {
+    margin-right: 7px;
+  }
+
+  .travelmates-card__box-levtr {
+    order: 2;
+    flex-basis: 40.6%;
+    flex-direction: row;
+    margin: 0;
+    margin-left: auto;
   }
 }

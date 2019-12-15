@@ -39,3 +39,15 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $tablet) {
+  .select-travelmates {
+    padding: 0;
+    flex-basis: 21.59%;
+  }
+
+  .select-travelmates__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

@@ -83,3 +83,10 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .transport-card__list {
+    flex-direction: row;
+    padding-top: 12px;
+  }
+}
