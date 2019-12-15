@@ -1,28 +1,52 @@
 .business-rates {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -135px;
+  margin-top: -221.5px;
+  width: 270px;
+  height: 443px;
   background-color: #ffffff;
   box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
   border-radius: 20px;
-}
-
-.business-rates__content {
-  padding: 25px;
 
   &--hide {
     display: none;
   }
+
+  &--no-js {
+    display: block;
+    position: static;
+    margin: 25px -1px 0 -24px;
+  }
+}
+
+.business-rates__content {
+  padding: 33px 25px;
 }
 
 .business-rates__title {
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .business-rates__list {
   @include list;
   color: #444444;
   font-weight: 300;
+}
+
+.business-rates__item {
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+  padding: 12px 0 9px;
+  margin-top: -1px;
 }
 
 .business-rates__text {
@@ -35,7 +59,7 @@
 
 .business-rates__close-btn {
   width: 100%;
-  padding: 17.5px 5px;
+  padding: 20px 5px 16px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #1d2e5b;
   font-size: 16px;
@@ -49,11 +73,31 @@
 }
 
 @media (min-width: $tablet) {
+  .business-rates {
+    order: 5;
+    z-index: 15;
+    width: 688px;
+    height: 526px;
+    margin-left: -344px;
+    margin-top: -263px;
+    border-radius: 30px;
+
+    &--no-js {
+      margin: 25px auto;
+    }
+  }
+
+  .business-rates__content {
+    padding: 51px 91px 50px 92px;
+  }
+
   .business-rates__title {
+    margin-bottom: 47px;
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
     text-align: center;
+    letter-spacing: -0.2px;
   }
 
   .business-rates__list {
@@ -64,10 +108,31 @@
   .business-rates__item {
     display: flex;
     justify-content: space-between;
+    padding: 13px 0 14px;
   }
 
   .business-rates__close-btn {
+    padding: 42px 5px 43px;
     font-size: 24px;
     line-height: 24px;
+    text-transform: none;
+    border-radius: 0 0 30px 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .business-rates {
+    width: 750px;
+    height: 526px;
+    margin-left: -375px;
+    margin-top: -263px;
+
+    &--no-js {
+      margin: 0 auto 25px;
+    }
+  }
+
+  .business-rates__content {
+    padding: 51px 59px 50px;
   }
 }

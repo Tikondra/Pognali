@@ -66,17 +66,18 @@ function countryFilter () {
 function business () {
   let btnOpen = document.querySelector('.rates__business-btn');
   let btnClose = document.querySelector('.business-rates__close-btn');
-  let businessRates = document.querySelector('.business-rates__content');
+  let businessRates = document.querySelector('.business-rates');
 
-  businessRates.classList.add('business-rates__content--hide');
+  businessRates.classList.add('business-rates--hide');
+  businessRates.classList.remove('business-rates--no-js');
 
   btnOpen.addEventListener('click', function(evt) {
     evt.preventDefault();
-    businessRates.classList.remove('business-rates__content--hide');
+    businessRates.classList.remove('business-rates--hide');
   });
 
   btnClose.addEventListener('click', function() {
-    businessRates.classList.add('business-rates__content--hide');
+    businessRates.classList.add('business-rates--hide');
   });
 };
 
