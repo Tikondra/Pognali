@@ -4,6 +4,7 @@ function menu () {
   var navMain = header.querySelector('.page-header__info');
   var navToggle = header.querySelector('.page-header__menu-open');
   var logo = header.querySelector('.page-header__logo');
+  var menu = header.querySelector('.navigation__list');
 
   header.classList.remove('page-header--no-js');
 
@@ -26,11 +27,13 @@ function menu () {
 
       if(navMain.classList.contains("page-header__info--close")) {
         header.classList.add("page-header--scroll");
+        menu.classList.add('navigation__list--scroll');
         logo.classList.add('page-header__logo--blue');
         navToggle.classList.add('page-header__menu-open--scroll');
       }
       if(pageYOffset === 0 && navMain.classList.contains("page-header__info--close")) {
         header.classList.remove("page-header--scroll");
+        menu.classList.remove('navigation__list--scroll');
         logo.classList.remove('page-header__logo--blue');
         navToggle.classList.remove('page-header__menu-open--scroll');
       }
@@ -84,6 +87,8 @@ function business () {
 function statusBar () {
 
   let status = document.querySelector('.lvl');
+  let statusText = status.querySelector('.lvl__status');
+
 
   progressBarUpdate(80, 100, status);
 
@@ -97,25 +102,18 @@ function statusBar () {
       var firstHalfAngle = 180;
       var secondHalfAngle = 0;
 
-      // caluclate the angle
       var drawAngle = x / outOf * 360;
 
-      // calculate the angle to be displayed if each half
       if (drawAngle <= 180) {
           firstHalfAngle = drawAngle;
       } else {
           secondHalfAngle = drawAngle - 180;
       }
 
-      // set the transition
       rotate(elem.querySelector(".lvl__slice1"), firstHalfAngle);
       rotate(elem.querySelector(".lvl__slice2"), secondHalfAngle);
 
-      // set the values on the text
-      let statusText = document.createElement('div');
-      statusText.className = "lvl__status";
       statusText.innerHTML = x;
-      status.append(statusText);
   }
 }
 

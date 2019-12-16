@@ -38,6 +38,16 @@
       border-radius: 1px;
       background-color: #ffffff;
     }
+
+    &--scroll {
+      .navigation__link {
+        color: #161c35;
+      }
+
+      &::before {
+        background-color: #161c35;
+      }
+    }
   }
 
   .navigation__item {

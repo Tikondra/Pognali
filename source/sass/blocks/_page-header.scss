@@ -140,6 +140,10 @@
     &--index {
       background-color: #182044;
     }
+
+    &--scroll {
+      background-color: #ffffff;
+    }
   }
 
   .page-header__content {
@@ -207,6 +211,7 @@
 
     &--scroll {
       background-color: #ffffff;
+      padding-bottom: 20px;
     }
   }
 

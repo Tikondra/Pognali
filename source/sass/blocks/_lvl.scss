@@ -21,9 +21,9 @@
   height: 100px;
   clip: rect(0, 50px, 100px, 0);
   border-radius: 50%;
-  background-color: #ff8d30;
-  border-color: #ff8d30;
-  transform: rotate(0);
+  border: 4px solid #ff8d30;
+  transform: rotate(180deg);
+  zoom: 1;
 }
 
 .lvl__clip2 {
@@ -41,9 +41,9 @@
   height: 100px;
   clip: rect(0, 100px, 100px, 50px);
   border-radius: 50%;
-  background-color: #ff8d30;
-  border-color: #ff8d30;
-  transform: rotate(0);
+  border: 4px solid #ff8d30;
+  transform: rotate(180deg);
+  zoom: 1;
 }
 
 .lvl__status {
@@ -61,7 +61,7 @@
   line-height: 38px;
   border-radius: 50%;
   text-align: center;
-  background: #edeff6;
+  background: transparent;
 }
 
 .lvl__text {
