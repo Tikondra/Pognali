@@ -1,3 +1,25 @@
+var map;
+
+function initMap() {
+
+  map = new google.maps.Map(document.getElementById('map'), {
+
+    center: {lat: 59.936000, lng: 30.321000},
+    zoom: 17,
+    disableDefaultUI: true
+  });
+
+  var imgpin = 'img/map-marker.svg'
+  var marker = new google.maps.Marker({
+
+    position: {lat: 59.935900, lng: 30.321000},
+
+    map: map,
+    title: 'Погнали',
+    icon: imgpin
+  });
+}
+
 function menu () {
 
   var header = document.querySelector('.page-header');
@@ -86,12 +108,17 @@ function business () {
 
 function statusBar () {
 
-  let status = document.querySelector('.lvl');
-  let statusText = status.querySelector('.lvl__status');
+  let status = document.querySelectorAll('.lvl');
+  let lvl = document.querySelectorAll('.lvl__status');
+  let arrayLvl = [];
 
+  for (var i = 0; i < lvl.length; i++) {
+    arrayLvl.push(lvl[i].innerHTML);
+  };
 
-  progressBarUpdate(80, 100, status);
-
+  for (var i = 0; i < arrayLvl.length; i++) {
+    progressBarUpdate(arrayLvl[i], 100, status[i]);
+  };
 
   function rotate(element, degree) {
     element.style.transform = 'rotate(' + degree + 'deg)';
@@ -112,11 +139,8 @@ function statusBar () {
 
       rotate(elem.querySelector(".lvl__slice1"), firstHalfAngle);
       rotate(elem.querySelector(".lvl__slice2"), secondHalfAngle);
-
-      statusText.innerHTML = x;
   }
 }
-
 
 menu();
 

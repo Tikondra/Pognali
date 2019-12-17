@@ -27,6 +27,7 @@
   flex-basis: 40%;
   margin-bottom: 43px;
   margin-top: 15px;
+  padding-left: 1px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
@@ -36,6 +37,7 @@
 
 .rates__list {
   @include list;
+  flex-basis: 88.36%;
   counter-reset: rates;
   margin-bottom: 32px;
   color: #444444;
@@ -55,7 +57,7 @@
     @include center-flex;
     position: relative;
     right: -29px;
-    top: -1px;
+    top: -2px;
     width: 34px;
     height: 34px;
     color: #ffffff;
@@ -73,6 +75,7 @@
   }
 
   &--3::after {
+    top: -1px;
     background-color: #ffd74b;
   }
 }
@@ -104,6 +107,8 @@
 }
 
 .rates__business-btn {
+  flex-basis: 100%;
+  padding-left: 1px;
   color: #192144;
   font-weight: 700;
   line-height: 16px;
@@ -204,6 +209,7 @@
   .rates__business-btn {
     display: flex;
     align-items: center;
+    flex-basis: 70%;
     font-size: 20px;
     line-height: 20px;
 

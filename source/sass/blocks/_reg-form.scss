@@ -1,7 +1,7 @@
 .reg-form {
   position: relative;
   z-index: 4;
-  padding: 78px 0 30px;
+  padding: 78px 0 28px;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
@@ -21,14 +21,14 @@
 }
 
 .reg-form__text {
-  padding: 0 35px;
-  margin-top: 19px;
+  padding: 0 35px 0 34px;
+  margin: 19px 0 18px;
   color: #ffffff;
   font-weight: 300;
   text-align: center;
 
   &--2 {
-    padding: 0 25px;
+    padding: 0 26px 0 25px;
   }
 }
 
@@ -39,22 +39,33 @@
 
 .reg-form__form {
   display: flex;
-  margin: 30px 0 28px;
+  margin: 29px 0;
 }
 
 .reg-form__input {
   width: 100%;
-  padding: 21px;
+  padding: 21px 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   border: none;
   border-radius: 10px;
+
+  &::placeholder {
+    opacity: 0.3;
+    color: #444444;
+    font-family: "BloggerSans", "Tahoma", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
 }
 
 .reg-form__btn {
+  @include center-flex;
+  padding-right: 2px;
   margin-left: -60px;
-  width: 60px;
+  min-width: 60px;
   background-color: #ffd74b;
   border: none;
   border-radius: 10px;

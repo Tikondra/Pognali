@@ -104,11 +104,12 @@
 }
 
 .countries__btn {
-  margin-top: 27px;
-  padding: 22px 23px;
+  margin-top: 26px;
+  margin-bottom: 1px;
+  padding: 23px 23px 21px;
   background-image: url("../img/triangle-arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top -2px;
   background-origin: content-box;
 }
 

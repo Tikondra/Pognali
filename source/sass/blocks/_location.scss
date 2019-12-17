@@ -2,7 +2,7 @@
   position: relative;
   z-index: 3;
   margin-top: -30px;
-  padding: 47px 25.5px 34px;
+  padding: 47px 25px 35px;
   border-radius: 0 0 30px 30px;
   background-color: #ffd74b;
 }
@@ -19,7 +19,7 @@
 
 .location__btn {
   margin-top: 15px;
-  padding: 20px;
+  padding: 19.8px 20px 18px;
   border-radius: 10px;
   border: 3px solid #192144;
   background-image: url("../img/triangle-arrow-right.svg");
@@ -30,9 +30,11 @@
 
 .location__pin {
   @include center-flex;
+  padding: 4px 0 0 1px;
   width: 45px;
   height: 45px;
-  margin-right: 15px;
+  margin-right: 16px;
+  margin-bottom: 2px;
   background-color: #121936;
   border-radius: 50%;
 }
@@ -44,6 +46,7 @@
 .location__address-text {
   display: block;
   max-width: 145px;
+  padding-top: 1px;
 }
 
 @media (min-width: $tablet) {

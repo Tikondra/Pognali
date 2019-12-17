@@ -31,7 +31,7 @@
 }
 
 .travelmates__section-description {
-  padding: 13px 25px;
+  padding: 13px 25px 13px 24px;
   margin-bottom: 27px;
 }
 
@@ -70,9 +70,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 15px 14px;
+  padding: 16px 15px 15px;
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
+
+  &--demin {
+    padding-bottom: 14px;
+  }
 }
 
 .travelmates__img {
@@ -81,13 +85,13 @@
   border-radius: 10px 10px 0 0;
 }
 
-.travelmates__level {
+.travelmates__lvl {
   position: absolute;
   top: 16px;
-  left: 16px;
+  left: 17px;
 
   &--2 {
-    left: 15px;
+    left: 16px;
   }
 }
 
@@ -125,6 +129,7 @@
 .travelmates__hashtags {
   max-width: 180px;
   margin: 0 auto 16px;
+  padding: 0 0 0 1px;
   color: #444444;
   line-height: 18px;
   text-align: center;
@@ -136,7 +141,7 @@
 }
 
 .travelmates__btn {
-  margin-top: 21px;
+  margin-top: 20px;
   padding: 23px 23px 21px;
   background-image: url("../img/triangle-arrow-right.svg");
   background-repeat: no-repeat;
@@ -197,11 +202,6 @@
 
   .travelmates__img {
     border-radius: 20px 20px 0 0;
-  }
-
-  .travelmates__level {
-    top: 20px;
-    left: 20px;
   }
 
   .travelmates__box2 {
