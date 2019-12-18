@@ -169,6 +169,10 @@
     }
   }
 
+  .travelmates__section-description {
+    padding: 14px 25px 13px 25px;
+  }
+
   .travelmates__main-title {
     font-size: 45px;
     line-height: 45px;
@@ -196,7 +200,7 @@
   }
 
   .travelmates__item {
-    flex-basis: 46%;
+    flex-basis: 46.1%;
     border-radius: 20px;
   }
 
@@ -205,8 +209,17 @@
   }
 
   .travelmates__box2 {
-    padding: 22px 15px;
+    padding: 21px 15px 22px;
     border-radius: 0 0 20px 20px;
+  }
+
+  .travelmates__lvl {
+    top: 20px;
+    left: 20px;
+
+    &--2 {
+      left: 21px;
+    }
   }
 
   .travelmates__name {
@@ -244,6 +257,7 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
+    background-position: right top 1px;
   }
 }
 

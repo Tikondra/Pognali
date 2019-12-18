@@ -163,7 +163,7 @@
   .page-header__info {
     display: flex;
     justify-content: flex-start;
-    padding: 41px 40px 0 97px;
+    padding: 40px 40px 0 97px;
     background-color: transparent;
 
     &--open {
@@ -178,7 +178,7 @@
   }
 
   .page-header__menu-open {
-    left: -48%;
+    left: -48.1%;
   }
 
   .page-header__navigation {
@@ -200,7 +200,7 @@
   .page-header__btn-author {
     order: -1;
     align-self: flex-end;
-    padding: 10px 29px;
+    padding: 12px 30px 8px 28px;
     font-size: 20px;
   }
 }

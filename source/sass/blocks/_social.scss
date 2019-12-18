@@ -24,6 +24,16 @@
   .social__link {
     width: 60px;
     height: 60px;
+    padding-top: 0;
+
+    &--vk {
+      padding-top: 2px;
+      padding-right: 2px;
+    }
+
+    &--inst {
+      padding-left: 0;
+    }
   }
 
   .social__svg {

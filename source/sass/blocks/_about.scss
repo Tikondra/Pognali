@@ -59,8 +59,8 @@
       content: "";
       position: absolute;
       top: 258px;
-      left: 5%;
-      width: 90%;
+      left: 5.2%;
+      width: 89.6%;
       height: 213px;
       border-radius: 20px;
       background-color: #141b3b;
@@ -70,12 +70,13 @@
   .about__content {
     background-image: url("../img/about-tablet@1x.png");
     background-position: right top 84px;
-    padding-left: 25px;
+    padding-left: 26px;
   }
 
   .about__title {
     font-size: 45px;
     line-height: 45px;
+    letter-spacing: -0.1px;
   }
 
   .about__text {
@@ -94,7 +95,7 @@
 
   .about__btn {
     display: block;
-    padding: 28.5px 34px;
+    padding: 29.5px 36px 27px 33px;
     max-width: 274px;
     color: #1d2e5b;
     font-size: 24px;
@@ -105,7 +106,7 @@
     background-color: #ffd74b;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right top 1px;
     background-origin: content-box;
   }
 }

@@ -86,7 +86,9 @@
   }
 
   .intro__title {
+    padding-right: 1px;
     margin-bottom: 48px;
+    max-width: 400px;
     font-size: 60px;
     line-height: 70px;
   }
@@ -102,7 +104,8 @@
   }
 
   .intro__quote-text {
-    margin-bottom: 44px;
+    margin-bottom: 43px;
+    padding: 1px 0 0 0;
     max-width: 290px;
     font-size: 28px;
     line-height: 33px;
