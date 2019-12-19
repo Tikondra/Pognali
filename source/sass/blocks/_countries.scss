@@ -230,7 +230,7 @@
   .countries__content {
     max-width: 1440px;
     margin: auto;
-    padding: 161px 131px 138px;
+    padding: 161px 131px 139px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -240,12 +240,13 @@
   .countries__section-description {
     flex-grow: 1;
     flex-basis: 500px;
-    padding: 5px 100px 0 172px;
+    padding: 5px 100px 0 171px;
   }
 
   .countries__section-title {
     margin: 0;
     margin-bottom: 58px;
+    padding-left: 1px;
   }
 
   .countries__section-text {
@@ -270,11 +271,12 @@
 
     &::before {
       top: 23px;
+      right: -35px;
     }
   }
 
   .countries__img-box {
-    width: 33.3%;
+    width: 33.29%;
   }
 
   .countries__title {
@@ -284,7 +286,7 @@
   .countries__btn {
     flex-basis: 274px;
     margin-right: 171px;
-    margin-top: -82px;
-    padding: 30px 35px 27px 33px;
+    margin-top: -81px;
+    padding: 30px 36px 27px 33px;
   }
 }

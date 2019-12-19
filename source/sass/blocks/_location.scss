@@ -99,7 +99,7 @@
   .location__content {
     max-width: 1440px;
     margin: auto;
-    padding: 114px 134px 56px 283px;
+    padding: 114px 134px 54px 283px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -107,9 +107,9 @@
   }
 
   .location__btn {
-    margin-top: 0;
-    padding: 27.5px 64px 23.5px 33px;
-    background-position: right -32px center;
+    margin-top: -1px;
+    padding: 26.5px 64px 24.5px 33px;
+    background-position: right -31px top 1px;
   }
 
   .location__pin {
@@ -122,5 +122,9 @@
   .location__svg {
     width: 28px;
     height: 43px;
+  }
+
+  .location__adress-text {
+    padding-top: 0;
   }
 }

@@ -126,7 +126,7 @@
     margin: auto;
     padding: 95px 129px 163px;
     background-image: url("../img/about-desktop@1x.png");
-    background-position: right 60px top 84px;
+    background-position: right 60px top 85px;
 
     &::before {
       content: "";
@@ -139,6 +139,10 @@
       border-radius: 20px;
       background-color: #141b3b;
     }
+  }
+
+  .about__title {
+    padding-left: 1px;
   }
 
   .about__text {
@@ -155,6 +159,6 @@
 
   .about__btn {
     margin-left: 2px;
-    padding: 30px 35px 27px 33px;
+    padding: 30px 36px 27px 33px;
   }
 }
