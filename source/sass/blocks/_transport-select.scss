@@ -1,5 +1,5 @@
 .transport-select {
-  padding: 10px 1px;
+  padding: 10px 6px 15px;
 }
 
 .transport-select__title {
@@ -27,12 +27,22 @@
 .transport-select__list {
   @include list;
   display: flex;
+  margin-left: -1px;
 }
 
 .transport-select__label {
   @include center-flex;
   width: 33px;
   height: 33px;
+  padding-right: 1px;
   background-color: #ffffff;
   border-radius: 50%;
+
+  &--plane {
+    padding-right: 3px;
+  }
+}
+
+.transport-select__item {
+  margin-right: -0.8px;
 }

@@ -13,6 +13,7 @@
 .filter-country__btn-label {
   padding-left: 27px;
   margin: 0;
+  padding-top: 1px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #192144;
   font-size: 16px;
@@ -21,7 +22,7 @@
   text-transform: uppercase;
   background-image: url("../img/filter.svg");
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left top 6px;
 }
 
 .filter-country__btn {
@@ -31,7 +32,7 @@
   height: 20px;
   background-image: url("../img/dots.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top 7px;
   border: none;
   background-color: transparent;
 
