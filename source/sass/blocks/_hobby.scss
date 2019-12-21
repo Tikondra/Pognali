@@ -56,3 +56,67 @@
   border-radius: 4px;
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet) {
+  .hobby {
+    display: flex;
+    padding: 33px 6px 10px;
+    border-bottom: none;
+  }
+
+  .hobby__title {
+    flex-basis: 25.9%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+
+  .hobby__list {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 2px;
+  }
+
+  .hobby__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0 5.1% 0 4.3%;
+    }
+  }
+
+  .hobby__check {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+  }
+
+  .hobby__input:checked ~ .hobby__label .hobby__check {
+    background-size: 12px;
+  }
+
+  .hobby__text {
+    padding-bottom: 1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hobby {
+    flex-direction: column;
+  }
+
+  .hobby__list {
+    flex-direction: column;
+  }
+
+  .hobby__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0;
+    }
+  }
+}

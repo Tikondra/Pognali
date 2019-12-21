@@ -46,3 +46,18 @@
 .transport-select__item {
   margin-right: -0.8px;
 }
+
+@media (min-width: $tablet) {
+  .transport-select {
+    display: flex;
+    padding: 21px 5px 5px;
+  }
+
+  .transport-select__title {
+    flex-basis: 20%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+}

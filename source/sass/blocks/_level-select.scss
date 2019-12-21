@@ -64,3 +64,27 @@
     margin-left: 133px;
   }
 }
+
+@media (min-width: $tablet) {
+  .level-select {
+    flex-wrap: nowrap;
+    padding: 9px 6px 5px;
+    margin-bottom: 63px;
+  }
+
+  .level-select__title {
+    flex-basis: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+
+  .level-select__input {
+    order: 1;
+  }
+
+  .level-select__range {
+    padding: 11px 0 27px;
+  }
+}

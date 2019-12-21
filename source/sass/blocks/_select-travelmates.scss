@@ -32,23 +32,24 @@
 
 @media (min-width: $tablet) {
   .select-travelmates {
-    padding: 36px 34px 2px;
-  }
-
-  .select-travelmates__title {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width: $tablet) {
-  .select-travelmates {
-    padding: 0;
+    padding: 36px 29px 38px;
     flex-basis: 21.59%;
   }
 
   .select-travelmates__title {
+    margin-bottom: 37px;
     font-size: 30px;
     line-height: 30px;
+    letter-spacing: 0;
+  }
+
+  .select-travelmates__btn {
+    width: 98%;
+    display: block;
+    margin: auto;
+    padding: 12px 25px 8px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 25px;
   }
 }
