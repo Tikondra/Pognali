@@ -29,14 +29,15 @@
 
 .level-select__input {
   width: 50%;
-  padding: 10px 10px 5px;
+  padding: 11px 10px 6px;
   color: #1d2e5b;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  line-height: 13.49px;
+  line-height: 16px;
   text-transform: uppercase;
   text-align: center;
+  border: 1px solid #cbced9;
 
   &--min {
     margin-right: -1px;
