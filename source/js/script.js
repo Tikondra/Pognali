@@ -157,7 +157,7 @@ function countrySelect() {
 }
 
 menu();
-countrySelect()
+
 
 if (document.querySelector('.filter-country__content')) {
   countryFilter();
@@ -169,4 +169,8 @@ if (document.querySelector('.business-rates__content')) {
 
 if (document.querySelector('.lvl')) {
   statusBar();
+};
+
+if (document.querySelector('.country-popup')) {
+  countrySelect()
 };

@@ -154,6 +154,15 @@
     width: 166px;
     height: 42px;
     background-image: url("../img/logo-tablet-white@1x.png");
+
+    &--blue {
+      background-image: url("../img/logo-tablet-blue@1x.png");
+      background-repeat: no-repeat;
+
+      .page-header__logo-pic {
+        display: none;
+      }
+    }
   }
 
   .page-header__info--open ~ .page-header__logo {
@@ -225,6 +234,15 @@
     height: 52px;
     margin-right: 40px;
     background-image: url("../img/logo-desktop-white@1x.png");
+
+    &--blue {
+      background-image: url("../img/logo-desktop-blue@1x.png");
+      background-repeat: no-repeat;
+
+      .page-header__logo-pic {
+        display: none;
+      }
+    }
   }
 
   .page-header__menu-open {
