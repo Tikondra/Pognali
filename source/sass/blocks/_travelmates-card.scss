@@ -347,7 +347,7 @@
 
 @media (min-width: $desktop) {
   .travelmates-card {
-    margin-right: 85px;
+    margin-right: 25px;
     flex-basis: 71.96%;
   }
 
@@ -356,9 +356,22 @@
   }
 
   .travelmates-card__item {
+    position: relative;
     padding: 0;
     margin: 0;
     margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 187px;
+      background-image: linear-gradient(180deg, transparent 0%, #000000 50%, transparent 100%);
+      opacity: 0.1;
+      right: 319px;
+      top: 50%;
+      margin-top: -93.5px;
+    }
   }
 
   .travelmates-card__img {
@@ -400,6 +413,14 @@
     order: 1;
     margin-left: 22px;
     margin-top: 12px;
+
+    &--demin {
+      margin-top: 13px;
+    }
+
+    &--rogov {
+      margin-top: 13px;
+    }
   }
 
   .travelmates-card__like-box {

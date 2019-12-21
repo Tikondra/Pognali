@@ -151,3 +151,10 @@
     background-position: left top -1px;
   }
 }
+
+@media (min-width: $desktop) {
+  .filter-country__content {
+    max-width: 1440px;
+    margin: auto;
+  }
+}

@@ -53,3 +53,9 @@
     border-radius: 25px;
   }
 }
+
+@media (min-width: $desktop) {
+  .select-travelmates {
+    padding: 46.5px 0 38px 41.5px;
+  }
+}
