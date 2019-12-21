@@ -3,6 +3,37 @@
   height: 60px;
   background-color: transparent;
   border-radius: 50%;
+
+  &--catalog {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.lvl__title {
+  position: relative;
+  margin: 0;
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    width: 205%;
+    height: 1px;
+    background-color: #edeff6;
+  }
+}
+
+.lvl__title-span {
+  position: relative;
+  z-index: 2;
+  padding: 0 8px;
+  background-color: #ffffff;
 }
 
 .lvl__clip1 {
@@ -12,6 +43,13 @@
   width: 60px;
   height: 60px;
   clip: rect(0, 60px, 60px, 30px);
+
+  &--catalog {
+    top: 20px;
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 45px, 45px, 22.5px);
+  }
 }
 
 .lvl__slice1 {
@@ -23,6 +61,13 @@
   border: 3px solid #ff8d30;
   transform: rotate(180deg);
   zoom: 1;
+
+  &--catalog {
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 22.5px, 45px, 0);
+    border: 2px solid #ff8d30;
+  }
 }
 
 .lvl__clip2 {
@@ -32,6 +77,13 @@
   width: 60px;
   height: 60px;
   clip: rect(0, 30px, 60px, 0);
+
+  &--catalog {
+    top: 20px;
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 22.5px, 45px, 0);
+  }
 }
 
 .lvl__slice2 {
@@ -43,15 +95,22 @@
   border: 3px solid #ff8d30;
   transform: rotate(180deg);
   zoom: 1;
+
+  &--catalog {
+    width: 45px;
+    height: 45px;
+    clip: rect(0, 45px, 45px, 22.5px);
+    border: 2px solid #ff8d30;
+  }
 }
 
 .lvl__status {
   @include center-flex;
   position: absolute;
-  top: 3px;
-  left: 3px;
-  right: 3px;
-  bottom: 3px;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
   padding-bottom: 8px;
   padding-right: 1px;
   color: #ffffff;
@@ -61,6 +120,13 @@
   border-radius: 50%;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
+
+  &--catalog {
+    top: 45px;
+    color: #1d2e5b;
+    line-height: 18px;
+    background: transparent;
+  }
 }
 
 .lvl__text {
@@ -74,4 +140,8 @@
   font-weight: 400;
   line-height: 14px;
   border-top: 1px solid rgba(203, 206, 217, 0.3);
+
+  &--catalog {
+    display: none;
+  }
 }

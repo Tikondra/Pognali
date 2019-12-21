@@ -39,6 +39,11 @@
 @media (min-width: $tablet) {
   .contacts {
     padding: 21px 20px 29px 50px;
+
+    &--header {
+      padding: 0;
+      margin-bottom: 114px;
+    }
   }
 
   .contacts__link {
@@ -75,6 +80,10 @@
     display: flex;
     padding: 0;
     margin-top: 1px;
+
+    &--header {
+      margin-bottom: 0;
+    }
   }
 
   .contacts__link-text {

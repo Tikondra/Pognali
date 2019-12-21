@@ -37,7 +37,7 @@
 
 .rates__list {
   @include list;
-  flex-basis: 88.36%;
+  flex-basis: 81.96%;
   counter-reset: rates;
   margin-bottom: 32px;
   color: #444444;
@@ -58,7 +58,7 @@
     position: relative;
     right: -29px;
     top: -2px;
-    width: 34px;
+    min-width: 34px;
     height: 34px;
     color: #ffffff;
     font-size: 16px;
@@ -78,6 +78,11 @@
     top: -1px;
     background-color: #ffd74b;
   }
+}
+
+.rates__item-content {
+  min-width: 100%;
+  margin-right: -19px;
 }
 
 .rates__text {
@@ -135,7 +140,7 @@
 
   .rates__title {
     flex-basis: 100%;
-    padding-right: 10px;
+    padding-left: 3px;
     margin-bottom: 73px;
     margin-top: 58px;
     font-size: 45px;
@@ -169,7 +174,7 @@
     padding: 0;
 
     &::after {
-      right: 0;
+      right: auto;
       left: -90px;
       margin-bottom: -2px;
       padding-top: 5px;
@@ -249,7 +254,7 @@
 
   .rates__title {
     margin-bottom: 133px;
-    padding-left: 11px;
+    padding-left: 2px;
     letter-spacing: -0.1px;
   }
 

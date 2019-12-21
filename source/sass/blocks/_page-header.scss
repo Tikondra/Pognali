@@ -135,7 +135,7 @@
 @media (min-width: $tablet) {
   .page-header {
     justify-content: flex-start;
-    padding: 18px 15px 0;
+    padding: 18px 15px 18px;
 
     &--index {
       background-color: #182044;
@@ -163,7 +163,7 @@
   .page-header__info {
     display: flex;
     justify-content: flex-start;
-    padding: 40px 40px 0 97px;
+    padding: 40px 40px 74px 97px;
     background-color: transparent;
 
     &--open {
@@ -183,7 +183,7 @@
 
   .page-header__navigation {
     display: none;
-    margin-top: 41px;
+    margin-top: 43px;
     margin-bottom: 129px;
   }
 
@@ -207,16 +207,17 @@
 
 @media (min-width: $desktop) {
   .page-header {
+    padding: 47px 15px 5px;
     background-color: #161c36;
 
     &--scroll {
       background-color: #ffffff;
-      padding-bottom: 20px;
+      padding: 20px 0;
     }
   }
 
   .page-header__content {
-    padding: 29px 0 0;
+    padding: 0;
   }
 
   .page-header__logo {
