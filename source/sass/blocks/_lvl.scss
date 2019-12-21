@@ -7,6 +7,7 @@
   &--catalog {
     width: 45px;
     height: 45px;
+    margin-right: 5px;
   }
 }
 
@@ -45,7 +46,8 @@
   clip: rect(0, 60px, 60px, 30px);
 
   &--catalog {
-    top: 20px;
+    top: 25px;
+    left: 5px;
     width: 45px;
     height: 45px;
     clip: rect(0, 45px, 45px, 22.5px);
@@ -79,7 +81,8 @@
   clip: rect(0, 30px, 60px, 0);
 
   &--catalog {
-    top: 20px;
+    top: 25px;
+    left: 5px;
     width: 45px;
     height: 45px;
     clip: rect(0, 22.5px, 45px, 0);
@@ -122,7 +125,8 @@
   background: rgba(0, 0, 0, 0.6);
 
   &--catalog {
-    top: 45px;
+    top: 50px;
+    left: 13px;
     color: #1d2e5b;
     line-height: 18px;
     background: transparent;
