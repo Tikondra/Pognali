@@ -1,11 +1,12 @@
 .count-travelmates__label {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 
   &--gray {
     margin-left: auto;
@@ -16,26 +17,32 @@
 .count-travelmates__input-box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  width: 99%;
+  margin: 0 auto 21px;
   border-radius: 4px;
   border: 1px solid #cbced9;
 }
 
 .count-travelmates__btn {
-  width: 43px;
-  height: 43px;
+  width: 41px;
+  height: 41px;
+  padding: 1px 0 0 4px;
   border: none;
   background-color: transparent;
   background-image: url("../img/qty-minus-mobile.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-origin: content-box;
+  opacity: 0.3;
 
   &--plus {
+    padding: 1px 5px 0 0;
     background-image: url("../img/qty-plus-mobile.svg");
   }
 }
 
 .count-travelmates__input {
+  padding-top: 7px;
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;

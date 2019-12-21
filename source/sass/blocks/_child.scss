@@ -1,9 +1,32 @@
 .child__label {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+}
+
+.child__check {
+  width: 26px;
+  height: 26px;
+  margin-right: 13px;
+  border-radius: 4px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
+}
+
+.child__input:checked ~ .child__label .child__check {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center top 7px;
+  background-size: 9px;
+}
+
+.child__text {
+  padding-top: 3px;
 }
 
 @media (min-width: $tablet) {

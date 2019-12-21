@@ -6,12 +6,36 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 50px;
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .country-step__input {
+  position: relative;
   flex-grow: 1;
-  padding: 11px;
+  padding: 12px 10px 10px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #1d2e5b;
   font-size: 14px;
@@ -20,11 +44,52 @@
   text-transform: uppercase;
   border-radius: 4px;
   border: 1px solid #cbced9;
+  letter-spacing: 1.3px;
+}
+
+.country-step__select {
+  position: relative;
+  z-index: 5;
+  padding-right: 14px;
+  margin-left: -45px;
+  width: 45px;
+  height: 36px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/dropdown-form.svg"),
+    linear-gradient(90deg, #ffffff7d 0%, #ffffff 40%);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box,
+    border-box;
+  background-size: 12px 7px,
+    cover;
+
+  &--3 {
+    height: 12px;
+    right: -67px;
+    top: 2px;
+  }
+}
+
+.country-step__popup {
+  margin-bottom: 22px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    right: 50px;
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/small-arrow.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .country-step__flag {
   @include center-flex;
-  width: 52px;
+  width: 53px;
   height: 42px;
   padding: 5px;
   border-radius: 4px;
@@ -43,9 +108,10 @@
 }
 
 .country-step__new-box {
+  position: relative;
   width: 100%;
   padding: 11px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   color: #1d2e5b;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -53,9 +119,25 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: left;
+  letter-spacing: 1.4px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   background-color: #edeff6;
+  background-image: url("../img/qty-plus-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
 }
 
 @media (min-width: $tablet) {

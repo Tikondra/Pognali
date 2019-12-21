@@ -4,12 +4,15 @@
 
 .country-popup__box {
   display: none;
+
+  &--open {
+    display: block;
+  }
 }
 
 .country-popup__title {
   padding: 11px;
   margin: 0;
-  margin-bottom: 25px;
   color: #1d2e5b;
   font-size: 14px;
   font-weight: 500;
@@ -21,9 +24,29 @@
   border: 1px solid #cbced9;
   background-color: #ffffff;
 
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 17px;
+    right: 49px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #cbced9;
+    border-radius: 50%;
+  }
+
   &--open {
     color: #ffffff;
     background-color: #1d2e5b;
+
+    &::before {
+      display: none;
+    }
+
+    .country-step__select--3 {
+      display: none;
+    }
   }
 
   &--open ~ .country-step__del-btn {
@@ -37,6 +60,7 @@
 }
 
 .country-popup__country-select {
+  padding: 55px 19px 15px;
   box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
   border-radius: 0 0 10px 10px;
   border: 1px solid #cbced9;
@@ -54,7 +78,6 @@
       display: block;
       min-height: 0;
       width: 100%;
-      padding-top: 25px;
     }
   }
 }

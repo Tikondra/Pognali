@@ -1,14 +1,39 @@
 .add-plan {
-  padding: 25px;
+  position: relative;
+  z-index: 20;
+  margin-top: -30px;
+  margin-bottom: 24px;
+  padding: 10px 25px;
   border-radius: 30px;
   background-color: #d4d9eb;
 }
 
+.add-plan__title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
 .add-plan__section-title {
+  margin-right: 28px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.add-plan__dot {
+  display: block;
+  margin: 0 8px;
+  width: 5px;
+  height: 5px;
+  background-color: #1d2e5b;
+  border-radius: 50%;
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
 }
 
 .add-plan__list {
@@ -16,8 +41,8 @@
 }
 
 .add-plan__step {
-  padding: 25px;
-  margin-bottom: 25px;
+  padding: 24px 20px 21px;
+  margin-bottom: 10px;
   border-radius: 10px;
   background-color: #ffffff;
 }

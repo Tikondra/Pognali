@@ -142,7 +142,22 @@ function statusBar () {
   }
 }
 
+function countrySelect() {
+  let box = document.querySelector('.country-popup');
+  let btnOpen = document.querySelector('.country-popup__title');
+  let popup = document.querySelector('.country-popup__box');
+
+
+  box.classList.remove('country-popup--no-js');
+
+  btnOpen.addEventListener('click', function() {
+    popup.classList.toggle('country-popup__box--open')
+    btnOpen.classList.toggle('country-popup__title--open')
+  })
+}
+
 menu();
+countrySelect()
 
 if (document.querySelector('.filter-country__content')) {
   countryFilter();
