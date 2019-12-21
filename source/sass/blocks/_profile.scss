@@ -1,116 +1,91 @@
-.profile__info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 25px;
+.profile__title-box {
+  width: 100%;
+  margin-bottom: 21px;
+  border-radius: 0 0 20px 20px;
+  background-color: #161c35;
 }
 
 .profile__title {
-
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 25px;
-  padding-bottom: 0;
-  padding-top: 85px;
+  padding: 94px 25px 0;
   width: 100%;
   color: #ffffff;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
-  border-radius: 0 0 20px 20px;
-  background-color: #161c35;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -3;
-    height: 195px;
-    left: 0;
-    right: 0;
-    top: 0;
-    border-radius: 0 0 20px 20px;
-    background-color: #161c35;
-  }
 
   &::after {
     content: "";
     width: 214px;
     height: 5px;
-    margin-top: 15px;
+    margin-top: 6px;
+    margin-bottom: -2px;
     border-radius: 2px;
     background-color: #ff8d30;
   }
 }
 
-.profile__lvl-box {
+.profile__content {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 
-.profile__lvl-number {
-  margin: 0;
-  color: #161c35;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 38px;
-}
-
-.profile__lvl-text {
-  margin: 0;
-  color: #444444;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.17px;
+.profile__lvl {
+  position: relative;
+  margin-left: 27px;
 }
 
 .profile__img {
   border-radius: 50%;
+  margin-right: 25px;
+  margin-top: 2px;
 }
 
 .profile__photo-change {
   width: 100%;
-  padding: 5px 25px;
-  margin: 20px 0;
+  padding: 7px 25px 3px;
+  margin: 19px auto 33px;
+  max-width: 84.1%;
   color: #161c35;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
   background-color: #dfe3f0;
 }
 
-.profile__form {
-  padding: 25px 0;
-}
-
 .profile__transport {
-  margin-top: 20px;
+  margin: 25px auto 33px;
 }
 
 @media (min-width: $tablet) {
   .profile__info {
     justify-content: space-between;
-    padding: 25px 75px;
+  }
+
+  .profile__title-box {
+    margin-bottom: 50px;
+    border-radius: 0 0 60px 60px;
   }
 
   .profile__title {
-    padding-top: 130px;
+    padding: 218px 74px 0;
     font-size: 60px;
     line-height: 70px;
-
-    &::before {
-      height: 274px;
-    }
 
     &::after {
       width: 355px;
       height: 8px;
+      margin: 59px 0 -4px 2px;
+      border-radius: 10px;
     }
   }
 
@@ -142,15 +117,14 @@
 }
 
 @media (min-width: $desktop) {
-  .profile__info {
-    @include container;
-  }
-
   .profile__title {
-    padding-top: 160px;
+    max-width: 1440px;
+    margin: auto;
+    padding: 218px 126px 0;
 
-    &::before {
-      height: 303px;
+    &::after {
+      width: 357px;
+      margin: 59px 0 -4px 0;
     }
   }
 }

@@ -1,18 +1,122 @@
+.food {
+  padding: 10px 6px 7px;
+  border-top: 1px solid #f3c72b;
+  border-bottom: 1px solid #f3c72b;
+}
+
 .food__title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
+  background-color: transparent;
+  background-image: url("../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right -1px top 6px;
+  border: none;
+
+  &--open {
+    background-image: url("../img/dropdown-up.svg");
+  }
 }
 
 .food__list {
   @include list;
+  display: none;
+}
+
+.food__input:checked ~ .food__label .food__btn {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+}
+
+.food__btn {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8.5px 1px -1px;
+  margin-left: -1px;
+  margin-right: 9px;
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .food__label {
+  display: flex;
+  align-items: flex-end;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+}
+
+@media (min-width: $tablet) {
+  .food {
+    display: flex;
+    padding: 2px 5px 7px;
+    border: none;
+  }
+
+  .food__title {
+    flex-basis: 25.9%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+
+  .food__list {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 2px;
+  }
+
+  .food__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0 5.2% 0 4.3%;
+    }
+  }
+
+  .food__btn {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+  }
+
+  .food__input:checked ~ .food__label .food__btn {
+    background-size: 12px;
+  }
+
+  .food__text {
+    padding-bottom: 1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .food {
+    flex-direction: column;
+  }
+
+  .food__list {
+    flex-direction: column;
+  }
+
+  .food__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0;
+    }
+  }
 }

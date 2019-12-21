@@ -1,11 +1,10 @@
 .location {
-  padding: 35px 25px;
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+  padding: 47px 25px 35px;
   border-radius: 0 0 30px 30px;
   background-color: #ffd74b;
-}
-
-.location__content {
-  @include container;
 }
 
 .location__address {
@@ -19,15 +18,23 @@
 }
 
 .location__btn {
+  margin-top: 15px;
+  padding: 19.8px 20px 18px;
   border-radius: 10px;
   border: 3px solid #192144;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;
 }
 
 .location__pin {
   @include center-flex;
+  padding: 4px 0 0 1px;
   width: 45px;
   height: 45px;
-  margin-right: 15px;
+  margin-right: 16px;
+  margin-bottom: 2px;
   background-color: #121936;
   border-radius: 50%;
 }
@@ -39,16 +46,28 @@
 .location__address-text {
   display: block;
   max-width: 145px;
-}
-
-.location__map-iframe {
-  width: 100%;
+  padding-top: 1px;
 }
 
 @media (min-width: $tablet) {
+  .location {
+    margin-top: -60px;
+    padding: 100px 0 85px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .location__content {
+    display: flex;
+    flex-direction: column;
+    width: 80.5%;
+    margin: auto;
+  }
+
   .location__pin {
     width: 68px;
     height: 68px;
+    margin-right: 25px;
+    padding: 4px 0 0 0;
   }
 
   .location__svg {
@@ -63,15 +82,49 @@
   }
 
   .location__btn {
+    margin-top: 34px;
+    padding: 27.5px 33px 23.5px;
+    border-radius: 20px;
     font-size: 24px;
     line-height: 24px;
+    background-position: right top 1px;
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
+  .location {
+    padding: 0;
+  }
+
   .location__content {
-    display: flex;
-    justify-content: space-around;
+    max-width: 1440px;
+    margin: auto;
+    padding: 114px 134px 54px 283px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+  }
+
+  .location__btn {
+    margin-top: -1px;
+    padding: 26.5px 64px 24.5px 33px;
+    background-position: right -31px top 1px;
+  }
+
+  .location__pin {
+    width: 90px;
+    height: 90px;
+    padding-top: 5px;
+    margin-right: 31px;
+  }
+
+  .location__svg {
+    width: 28px;
+    height: 43px;
+  }
+
+  .location__adress-text {
+    padding-top: 0;
   }
 }

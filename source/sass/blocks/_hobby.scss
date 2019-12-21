@@ -1,9 +1,28 @@
+.hobby {
+  padding: 10px 6px 7px;
+  border-top: 1px solid #f3c72b;
+  border-bottom: 1px solid #f3c72b;
+}
+
 .hobby__title {
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
+  background-color: transparent;
+  background-image: url("../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right -1px top 6px;
+  border: none;
+
+  &--open {
+    background-image: url("../img/dropdown-up.svg");
+  }
 }
 
 .hobby__list {
@@ -12,8 +31,92 @@
 }
 
 .hobby__label {
+  display: flex;
+  align-items: flex-end;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+}
+
+.hobby__input:checked ~ .hobby__label .hobby__check {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+}
+
+.hobby__check {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8.5px 1px -1px;
+  margin-left: -1px;
+  margin-right: 9px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .hobby {
+    display: flex;
+    padding: 33px 6px 10px;
+    border-bottom: none;
+  }
+
+  .hobby__title {
+    flex-basis: 25.9%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+
+  .hobby__list {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 2px;
+  }
+
+  .hobby__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0 5.1% 0 4.3%;
+    }
+  }
+
+  .hobby__check {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+  }
+
+  .hobby__input:checked ~ .hobby__label .hobby__check {
+    background-size: 12px;
+  }
+
+  .hobby__text {
+    padding-bottom: 1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hobby {
+    flex-direction: column;
+  }
+
+  .hobby__list {
+    flex-direction: column;
+  }
+
+  .hobby__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0;
+    }
+  }
 }

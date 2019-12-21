@@ -8,9 +8,28 @@
   color: #444444;
 }
 
+.copyright__link {
+  padding-top: 9px;
+}
+
 @media (min-width: $tablet) {
   .copyright {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .copyright__link {
+    padding-top: 10px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    padding-top: 15px;
+  }
+
+  .copyright__text {
+    padding-top: 3px;
   }
 }

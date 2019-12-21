@@ -1,13 +1,27 @@
-.transport__list {
+.transport {
   @include list;
   display: flex;
   justify-content: space-between;
-  max-width: 120px;
+  width: 50%;
   margin: auto;
+
+  &--demin {
+    padding-right: 4px;
+    width: 52%;
+  }
 }
 
 .transport__item {
   opacity: 0.15;
+  margin-right: 17px;
+
+  &--bus {
+    margin-right: 13px;
+  }
+
+  &--bike {
+    margin-right: 10px;
+  }
 
   &--active {
     opacity: 1;
@@ -16,4 +30,16 @@
 
 .transport__svg {
   fill: #1d2e5b;
+}
+
+@media (min-width: $tablet) {
+  .transport {
+    width: 46.6%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .transport {
+    width: 47%;
+  }
 }

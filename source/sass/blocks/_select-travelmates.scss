@@ -1,20 +1,24 @@
 .select-travelmates {
+  padding: 26px 20px 22px;
   border-radius: 20px;
   background-color: #ffd74b;
 }
 
 .select-travelmates__title {
   padding-right: 70px;
+  padding-left: 5px;
   margin-top: 0;
+  margin-bottom: 22px;
   color: #1d2e5b;
   font-size: 22px;
   font-weight: 700;
   line-height: 22.49px;
+  letter-spacing: 0.3px;
 }
 
 .select-travelmates__btn {
   width: 100%;
-  padding: 5px 25px;
+  padding: 7px 25px 3px 24px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #161c35;
   font-size: 17px;
@@ -24,4 +28,34 @@
   border: none;
   border-radius: 20px;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .select-travelmates {
+    padding: 36px 29px 38px;
+    flex-basis: 21.59%;
+  }
+
+  .select-travelmates__title {
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+
+  .select-travelmates__btn {
+    width: 98%;
+    display: block;
+    margin: auto;
+    padding: 12px 25px 8px 20px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .select-travelmates {
+    padding: 46.5px 0 38px 41.5px;
+  }
 }

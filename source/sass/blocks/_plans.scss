@@ -1,10 +1,11 @@
 .plans {
-  padding: 25px;
+  padding: 9px 25px 50px;
   border-radius: 30px 30px 0 0;
   background-color: #dfe3f0;
 }
 
 .plans__section-title {
+  margin-bottom: 29px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
@@ -16,13 +17,14 @@
 }
 
 .plans__item {
-  padding: 25px;
+  padding: 8px 23px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #ffffff;
 }
 
 .plans__title {
+  margin-bottom: 20px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
@@ -30,13 +32,20 @@
 }
 
 .plans__travelmates {
+  margin: 0;
+  margin-bottom: 6px;
+  padding-left: 1px;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .plans__date {
+  margin: 0;
+  padding-left: 1px;
+  letter-spacing: 1.6px;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -44,6 +53,9 @@
 }
 
 .plans__redact-btn {
+  display: block;
+  padding: 21px 0 13px 2px;
+  letter-spacing: 1.4px;
   opacity: 0.3;
   color: #000000;
   font-size: 14px;

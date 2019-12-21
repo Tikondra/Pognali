@@ -12,14 +12,16 @@
 }
 
 .countries__section-title {
+  margin-bottom: 19px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .countries__section-text {
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   color: #444444;
   font-weight: 300;
 }
@@ -29,7 +31,19 @@
 }
 
 .countries__item {
+  position: relative;
   margin-bottom: 10px;
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-image: linear-gradient(180deg, transparent 50%, #edeff6 100%);
+  }
 }
 
 .countries__img {
@@ -48,6 +62,10 @@
   padding: 24px 24px 22px;
   background-color: #ffffff;
   border-radius: 10px;
+
+  &--3 {
+    margin-top: -19px;
+  }
 
   &::before {
     content: "";
@@ -84,6 +102,10 @@
   font-weight: 500;
   line-height: 18px;
 
+  &--2 {
+    letter-spacing: -0.2px;
+  }
+
   &--count {
     order: 1;
     flex-basis: 10%;
@@ -98,78 +120,196 @@
 }
 
 .countries__btn {
-  margin-top: 27px;
+  margin-top: 26px;
+  margin-bottom: 1px;
+  padding: 23px 23px 21px;
   background-image: url("../img/triangle-arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right top -2px;
   background-origin: content-box;
 }
 
+.countries__img-box {
+  &--3 {
+    padding-top: 1px;
+  }
+}
+
 @media (min-width: $tablet) {
+  .countries {
+    padding: 36px 25px 0;
+    border-radius: 0 0 60px 60px;
+  }
+
   .countries__content {
-    padding: 50px 50px 80px;
+    padding: 0 23px 80px;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 15px top 7px;
   }
 
   .countries__section-title {
+    margin-bottom: 58px;
     font-size: 45px;
     line-height: 45px;
+    letter-spacing: -0.1px;
   }
 
   .countries__section-text {
-    max-width: 340px;
+    padding: 0 250px 0 2px;
     font-size: 28px;
     line-height: 33px;
   }
 
+  .countries__list {
+    position: relative;
+    padding: 44px 27px 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -7px;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
   .countries__item {
     display: flex;
-    margin-bottom: 10px;
+  }
+
+  .countries__img-box {
+    width: 30.1%;
+    order: 1;
+    padding-top: 0;
   }
 
   .countries__img {
-    order: 1;
+    display: block;
+    border-radius: 0 20px 20px 0;
   }
 
   .countries__description {
-    flex-grow: 2;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin-top: 0;
+    padding: 31px 24px 16px 30px;
+    border-radius: 20px 0 0 20px;
+
+    &::before {
+      top: 16px;
+      left: auto;
+      right: -36px;
+      width: 70px;
+      height: 47px;
+    }
   }
 
   .countries__title {
     margin: 0;
+    margin-bottom: 6px;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .countries__text {
     margin: 0;
+    font-size: 20px;
+    line-height: 17.68px;
+
+    &--2 {
+      letter-spacing: -0.3px;
+    }
+
+    &--count {
+      order: 2;
+      margin-top: auto;
+      padding: 5px 0 5px 28px;
+      background-size: 20px 20px;
+      background-position: 0 0;
+    }
+  }
+
+  .countries__btn {
+    width: 92%;
+    margin: auto;
+    padding: 30px 35px 27px 33px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    background-position: right top 1px;
   }
 }
 
 @media (min-width: $desktop) {
+  .countries {
+    padding: 0;
+  }
+
   .countries__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 161px 131px 139px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    background-position: right 60px top 88px;
   }
 
   .countries__section-description {
     flex-grow: 1;
     flex-basis: 500px;
-    padding: 0 70px;
+    padding: 5px 100px 0 171px;
+  }
+
+  .countries__section-title {
+    margin: 0;
+    margin-bottom: 58px;
+    padding-left: 1px;
   }
 
   .countries__section-text {
     margin-bottom: 70px;
+    padding: 0;
   }
 
   .countries__list {
     order: -1;
     flex-basis: 559px;
-    flex-grow: 1;
+    padding: 0;
+
+    &::before {
+      top: -72px;
+      left: -71px;
+    }
+  }
+
+  .countries__description {
+    padding: 24px 24px 16px 30px;
+    width: 66.7%;
+
+    &::before {
+      top: 23px;
+      right: -35px;
+    }
+  }
+
+  .countries__img-box {
+    width: 33.29%;
+  }
+
+  .countries__title {
+    margin-bottom: 6px;
   }
 
   .countries__btn {
     flex-basis: 274px;
-    margin-right: 274px;
-    margin-top: -70px;
+    margin-right: 171px;
+    margin-top: -81px;
+    padding: 30px 36px 27px 33px;
   }
 }

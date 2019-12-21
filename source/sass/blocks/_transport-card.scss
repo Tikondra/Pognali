@@ -1,12 +1,32 @@
 .transport-card__title {
+  position: relative;
+  margin: 0;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 18px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -18px;
+    width: 205%;
+    height: 1px;
+    background-color: #edeff6;
+  }
+}
+
+.transport-card__title-span {
+  position: relative;
+  z-index: 2;
+  padding: 0 8px;
+  background-color: #ffffff;
 }
 
 .transport-card__list {
   @include list;
+  padding: 14px 5px;
   display: flex;
 }
 
@@ -27,8 +47,24 @@
   }
 }
 
+.transport-card__btn-span {
+  margin-left: 15px;
+  padding-top: 2px;
+}
+
 @media (min-width: $tablet) {
+  .transport-card__title {
+    display: none;
+  }
+
+  .transport-card__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
   .transport-card__item {
+    padding-top: 4px;
     background-color: #ffffff;
   }
 
@@ -50,5 +86,21 @@
     &--run {
       width: 20px;
     }
+  }
+
+  .transport-card__btn-span {
+    margin-left: 25px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .transport-card__list {
+    flex-direction: row;
+    padding-top: 12px;
+  }
+
+  .transport-card__btn-span {
+    margin-left: 24px;
   }
 }

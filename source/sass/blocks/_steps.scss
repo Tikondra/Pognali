@@ -7,12 +7,13 @@
 
 .steps__list {
   @include list;
+  counter-reset: steps;
 }
 
 .steps__item {
   display: flex;
   justify-content: space-between;
-  padding: 22px 20px 32px 25px;
+  padding: 22px 21px 32px 24px;
   border-radius: 10px 10px 0 0;
   background-color: #ff8d30;
   margin-bottom: -10px;
@@ -20,8 +21,8 @@
   &::after {
     margin-left: 30px;
     color: #ffffff;
-    counter-increment: section;
-    content: counter(section);
+    counter-increment: steps;
+    content: counter(steps);
   }
 
   &--2 {
@@ -43,24 +44,43 @@
   .steps__list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 688px;
+    max-width: 100%;
     margin: auto;
   }
 
   .steps__item {
-    flex-basis: 344px;
+    flex-basis: 45%;
     flex-grow: 1;
-    padding: 31px 64px 30px 30px;
+    flex-direction: column;
+    padding: 31px 90px 11px 33px;
+    margin-right: -28px;
+    margin-bottom: 0;
+    min-height: 140px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px 20px 0 0;
 
+    &::after {
+      margin-left: 0;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+
+    &--2 {
+      margin-right: 0;
+      flex-basis: 41%;
+    }
+
     &--3 {
       border-radius: 0 0 20px 20px;
+      margin-right: -28px;
     }
 
     &--4 {
       border-radius: 0 0 20px 20px;
+      margin-right: 0;
+      flex-basis: 41%;
     }
   }
 }
@@ -70,12 +90,38 @@
     margin: auto;
   }
 
-  .steps__list {
-    max-width: 1320px;
-  }
-
   .steps__item {
+    flex-direction: row;
     flex-basis: 315px;
+    padding: 29px 73.5px 30px 34px;
     border-radius: 20px;
+    min-width: 355px;
+    flex-grow: 0;
+    min-height: auto;
+
+    &--2 {
+      min-width: 385px;
+      padding: 29px 73px 25px 30px;
+    }
+
+    &--3 {
+      min-width: 385px;
+      padding: 29px 72px 25px 31px;
+    }
+
+    &--4 {
+      min-width: 315px;
+      padding: 29px 34px 25px 30px;
+    }
+
+    &:not(:last-child) {
+      margin-right: -40px;
+    }
+
+    &::after {
+      margin-left: 15px;
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }

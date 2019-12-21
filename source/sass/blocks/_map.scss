@@ -1,0 +1,18 @@
+.map {
+  margin: -30px 0;
+  width: 100%;
+  min-height: 332px;
+}
+
+@media (min-width: $tablet) {
+  .map {
+    margin: -60px 0;
+    min-height: 581px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .map {
+    min-height: 516px;
+  }
+}

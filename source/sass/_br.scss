@@ -1,0 +1,19 @@
+.br-tablet {
+  display: none;
+}
+
+.br-desktop {
+  display: none;
+}
+
+@media (min-width: $tablet) and (max-width: 769px) {
+  .br-tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop) and (max-width: 1441px) {
+  .br-desktop {
+    display: inline;
+  }
+}

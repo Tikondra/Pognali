@@ -1,0 +1,15 @@
+.travelmates-flags__list {
+  @include list;
+  display: flex;
+  justify-content: center;
+}
+
+.travelmates-flags__item {
+  margin: 0 9px;
+}
+
+@media (min-width: $tablet) {
+  .travelmates-flags__item {
+    margin: 0 8.5px;
+  }
+}

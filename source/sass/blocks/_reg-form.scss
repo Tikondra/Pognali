@@ -1,51 +1,91 @@
 .reg-form {
-  padding: 25px;
+  position: relative;
+  z-index: 4;
+  padding: 78px 0 28px;
+  margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
 }
 
 .reg-form__content {
-  @include container;
+  padding: 0 25px;
 }
 
 .reg-form__title {
+  margin-bottom: 0;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+  text-align: center;
 }
 
 .reg-form__text {
+  padding: 0 35px 0 34px;
+  margin: 19px 0 18px;
   color: #ffffff;
   font-weight: 300;
+  text-align: center;
+
+  &--2 {
+    padding: 0 26px 0 25px;
+  }
 }
 
 .reg-form__link {
+  position: relative;
   color: #ffd74b;
-  text-decoration: underline;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 94px;
+    height: 1px;
+    top: 14px;
+    left: 0;
+    background-color: #ffd74b;
+    opacity: 0.7;
+  }
 }
 
 .reg-form__form {
   display: flex;
-  margin: 30px 0;
+  margin: 29px 0;
 }
 
 .reg-form__input {
   width: 100%;
-  padding: 21px;
+  padding: 21px 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   border: none;
   border-radius: 10px;
+
+  &::placeholder {
+    opacity: 0.3;
+    color: #444444;
+    font-family: "BloggerSans", "Tahoma", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+  }
 }
 
 .reg-form__btn {
+  @include center-flex;
+  padding-right: 2px;
   margin-left: -60px;
-  width: 60px;
+  min-width: 60px;
   background-color: #ffd74b;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
 }
 
 .reg-form__btn-text {
@@ -53,60 +93,118 @@
 }
 
 @media (min-width: $tablet) {
+  .reg-form {
+    margin-top: -60px;
+    padding: 91px 0 30px;
+    border-radius: 0 0 60px 60px;
+  }
+
   .reg-form__title {
+    padding-left: 3px;
     font-size: 45px;
     line-height: 45px;
     text-align: center;
   }
 
   .reg-form__text {
+    margin-top: 57px;
+    padding: 0 34px 0 34px;
     font-size: 28px;
     line-height: 33px;
     text-align: center;
   }
 
   .reg-form__form {
-    margin: 60px 0;
+    margin: 63px auto 59px;
+    width: 86%;
   }
 
   .reg-form__input {
-    padding: 27.5px;
+    padding: 29.5px 33px 25.5px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px 0 0 20px;
+
+    &::placeholder {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 
   .reg-form__btn {
     margin-left: 0;
-    width: 82px;
+    padding-top: 3px;
+    padding-right: 5px;
+    width: 15.3%;
     border-radius: 0 20px 20px 0;
+  }
+
+  .reg-form__link {
+    &::after {
+      width: 165px;
+      top: 26px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
-  .reg-form__text {
-    max-width: 615px;
+  .reg-form {
+    padding: 0;
+    margin-top: -100px;
+  }
+
+  .reg-form__content {
+    max-width: 1440px;
     margin: auto;
+    padding: 162px 134px 103px 132px;
+  }
+
+  .reg-form__title {
+    margin-bottom: 57px;
+  }
+
+  .reg-form__text {
+    max-width: 690px;
+    margin: auto;
+    margin-bottom: 43px;
+    padding: 0 32px 0 34px;
+
+    &--2 {
+      padding: 0;
+      margin-left: 278px;
+      text-align: left;
+    }
+  }
+
+  .reg-form__text-span {
+    letter-spacing: 0.7px;
+  }
+
+  .reg-form__form {
+    margin: 57px 0 68px 0;
+    width: 100%;
   }
 
   .reg-form__contacts {
     justify-content: space-between;
-    max-width: 968px;
+    max-width: 870px;
     margin: auto;
+    padding-right: 2px;
   }
 
   .reg-form__btn {
     display: flex;
     align-items: center;
     margin-left: 0;
-    padding: 0 25px;
-    width: auto;
+    padding: 1.7px 0 0 2.6px;
+    width: 38.9%;
     border-radius: 0 20px 20px 0;
+    background-position: right 36px top 29px;
   }
 
   .reg-form__btn-text {
     display: block;
-    padding-right: 30px;
+    padding-right: 37%;
     color: #1d2e5b;
     font-size: 24px;
     font-weight: 700;

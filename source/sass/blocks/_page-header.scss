@@ -1,6 +1,6 @@
 .page-header {
   position: fixed;
-  z-index: 10;
+  z-index: 15;
   width: 100%;
   background-color: #161c36;
 
@@ -14,7 +14,11 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 27px 25px;
+  padding: 19px 25px;
+
+  &--index {
+    padding: 27px 25px;
+  }
 }
 
 .page-header__logo {
@@ -64,7 +68,6 @@
   flex-direction: column;
   padding: 25px 25px 28px;
   padding-top: 117px;
-  min-height: 568px;
   background-color: #ffffff;
 
   &--close {
@@ -73,6 +76,7 @@
 
   &--open {
     display: flex;
+    min-height: 568px;
   }
 }
 
@@ -131,13 +135,34 @@
 @media (min-width: $tablet) {
   .page-header {
     justify-content: flex-start;
-    padding: 45px 40px 0;
+    padding: 18px 15px 18px;
+
+    &--index {
+      background-color: #182044;
+    }
+
+    &--scroll {
+      background-color: #ffffff;
+    }
+  }
+
+  .page-header__content {
+    padding: 27px 25px;
   }
 
   .page-header__logo {
     width: 166px;
     height: 42px;
     background-image: url("../img/logo-tablet-white@1x.png");
+
+    &--blue {
+      background-image: url("../img/logo-tablet-blue@1x.png");
+      background-repeat: no-repeat;
+
+      .page-header__logo-pic {
+        display: none;
+      }
+    }
   }
 
   .page-header__info--open ~ .page-header__logo {
@@ -147,7 +172,7 @@
   .page-header__info {
     display: flex;
     justify-content: flex-start;
-    padding: 41px 40px 79px 97px;
+    padding: 40px 40px 74px 97px;
     background-color: transparent;
 
     &--open {
@@ -162,12 +187,12 @@
   }
 
   .page-header__menu-open {
-    left: 24%;
+    left: -48.1%;
   }
 
   .page-header__navigation {
     display: none;
-    margin-top: 41px;
+    margin-top: 43px;
     margin-bottom: 129px;
   }
 
@@ -184,20 +209,24 @@
   .page-header__btn-author {
     order: -1;
     align-self: flex-end;
-    padding: 10px 29px;
+    padding: 12px 30px 8px 28px;
     font-size: 20px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-header {
-    position: fixed;
-    width: 100%;
-    z-index: 5;
+    padding: 47px 15px 5px;
+    background-color: #161c36;
 
     &--scroll {
       background-color: #ffffff;
+      padding: 20px 0;
     }
+  }
+
+  .page-header__content {
+    padding: 0;
   }
 
   .page-header__logo {
@@ -205,6 +234,15 @@
     height: 52px;
     margin-right: 40px;
     background-image: url("../img/logo-desktop-white@1x.png");
+
+    &--blue {
+      background-image: url("../img/logo-desktop-blue@1x.png");
+      background-repeat: no-repeat;
+
+      .page-header__logo-pic {
+        display: none;
+      }
+    }
   }
 
   .page-header__menu-open {
@@ -229,6 +267,8 @@
   .page-header__btn-author {
     order: 2;
     margin: 0;
+    padding: 12px 25px 8px;
+    min-width: 189px;
   }
 
   .page-header__contacts {

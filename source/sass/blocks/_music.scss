@@ -1,18 +1,123 @@
+.music {
+  padding: 10px 6px 8px;
+}
+
 .music__title {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: left;
+  background-color: transparent;
+  background-image: url("../img/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right -1px top 6px;
+  border: none;
+
+  &--open {
+    background-image: url("../img/dropdown-up.svg");
+  }
 }
 
 .music__list {
   @include list;
 }
 
+.music__item {
+  margin-bottom: 11px;
+}
+
+.music__input:checked ~ .music__label .music__btn {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9px;
+}
+
+.music__btn {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 0 8.5px 1px -1px;
+  margin-left: -1px;
+  margin-right: 9px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
 .music__label {
+  display: flex;
+  align-items: flex-end;
   color: #444444;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
+}
+
+@media (min-width: $tablet) {
+  .music {
+    display: flex;
+    padding: 10px 5px 5px;
+  }
+
+  .music__title {
+    flex-basis: 26%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    background-image: none;
+  }
+
+  .music__list {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 2px;
+  }
+
+  .music__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0 5.1% 0 4.3%;
+    }
+  }
+
+  .music__btn {
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+  }
+
+  .music__input:checked ~ .music__label .music__btn {
+    background-size: 12px;
+  }
+
+  .music__text {
+    padding-bottom: 1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .music {
+    flex-direction: column;
+  }
+
+  .music__list {
+    flex-direction: column;
+  }
+
+  .music__item {
+    min-width: 148px;
+
+    &--2 {
+      margin: 0;
+    }
+  }
 }

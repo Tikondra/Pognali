@@ -3,14 +3,71 @@
 }
 
 .fun__country {
+  position: relative;
+  padding-left: 11px;
+  margin: 2px -20px 16px 0;
   color: #1d2e5b;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -13px;
+    width: 15px;
+    height: 2px;
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    border-radius: 50%;
+  }
+}
+
+.fun__flag {
+  margin-left: auto;
+}
+
+.fun__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 10px;
+    left: -9px;
+    right: 0;
+    bottom: -36px;
+    border-left: 2px solid;
+  }
+
+  &--2 {
+    margin: 25px 0 21px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .fun__text {
-  padding: 15px;
+  position: relative;
+  z-index: 1;
+  padding: 9px 13px;
   width: 100%;
   min-height: 220px;
   color: #444444;

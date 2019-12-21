@@ -7,14 +7,34 @@
   @include center-flex;
   width: 45px;
   height: 45px;
+  padding-top: 2px;
   background-color: #ffd74b;
   border-radius: 50%;
+
+  &--vk {
+    padding-top: 3px;
+  }
+
+  &--inst {
+    padding-left: 2px;
+    padding-top: 1px;
+  }
 }
 
 @media (min-width: $tablet) {
   .social__link {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
+    padding-top: 0;
+
+    &--vk {
+      padding-top: 2px;
+      padding-right: 2px;
+    }
+
+    &--inst {
+      padding-left: 0;
+    }
   }
 
   .social__svg {

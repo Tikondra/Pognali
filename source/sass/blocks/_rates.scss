@@ -1,24 +1,45 @@
 .rates {
-  padding: 37px 26px 37px 50px;
+  position: relative;
+  z-index: 5;
+  padding: 37px 26px 38px 49px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
 }
 
+.rates__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 99px;
+    height: 99px;
+    background-image: url("../img/rates@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .rates__title {
-  padding: 13.5px 0;
-  padding-right: 100px;
+  order: -1;
+  flex-basis: 40%;
+  margin-bottom: 43px;
+  margin-top: 15px;
+  padding-left: 1px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  background-image: url("../img/rates@1x.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+  letter-spacing: 0.4px;
 }
 
 .rates__list {
   @include list;
+  flex-basis: 81.96%;
+  counter-reset: rates;
+  margin-bottom: 32px;
   color: #444444;
   font-weight: 300;
 }
@@ -27,6 +48,41 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: -1px;
+  padding: 5px 0 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &::after {
+    @include center-flex;
+    position: relative;
+    right: -29px;
+    top: -2px;
+    min-width: 34px;
+    height: 34px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    background-color: #ffa530;
+    border-radius: 50%;
+    counter-increment: rates;
+    content: counter(rates);
+  }
+
+  &--2::after {
+    background-color: #ffbd30;
+  }
+
+  &--3::after {
+    top: -1px;
+    background-color: #ffd74b;
+  }
+}
+
+.rates__item-content {
+  min-width: 100%;
+  margin-right: -19px;
 }
 
 .rates__text {
@@ -56,6 +112,8 @@
 }
 
 .rates__business-btn {
+  flex-basis: 100%;
+  padding-left: 1px;
   color: #192144;
   font-weight: 700;
   line-height: 16px;
@@ -63,15 +121,78 @@
 }
 
 @media (min-width: $tablet) {
+  .rates {
+    padding: 16px 40px 46px 40px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .rates__content {
+    background-position: right bottom;
+
+    &::before {
+      position: relative;
+      z-index: 2;
+      right: 45px;
+      bottom: 2px;
+      order: 1;
+    }
+  }
+
   .rates__title {
+    flex-basis: 100%;
+    padding-left: 3px;
+    margin-bottom: 73px;
+    margin-top: 58px;
     font-size: 45px;
     line-height: 45px;
+    text-align: center;
+    letter-spacing: 0;
+  }
+
+  .rates__list {
+    position: relative;
+    flex-basis: 86.9%;
+    margin-bottom: 21px;
+    margin-left: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -42px;
+      right: 0;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .rates__item {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding: 0;
+
+    &::after {
+      right: auto;
+      left: -90px;
+      margin-bottom: -2px;
+      padding-top: 5px;
+      min-width: 67px;
+      height: 67px;
+      font-size: 28px;
+      line-height: 28px;
+    }
   }
 
   .rates__item-content {
     display: flex;
     justify-content: space-between;
+    order: 2;
+    margin: 0 34px 0 -67px;
+    padding-top: 3px;
     width: 100%;
+    min-width: 94.3%;
   }
 
   .rates__text {
@@ -92,19 +213,100 @@
   }
 
   .rates__business-btn {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 67px;
+      height: 67px;
+      margin-right: 21px;
+      background-color: #e2e5f2;
+      background-image: url("../img/business.svg");
+      background-repeat: no-repeat;
+      background-position: left 24px top 20px;
+      border-radius: 50%;
+    }
   }
 }
 
 @media (min-width: $desktop) {
+  .rates {
+    padding: 0;
+  }
+
   .rates__content {
+    align-items: flex-start;
     max-width: 1440px;
     margin: auto;
-    padding: 75px;
+    padding: 49px 46px 33px;
+
+    &::before {
+      right: 88px;
+      bottom: 233px;
+      width: 198px;
+      height: 198px;
+    }
+  }
+
+  .rates__title {
+    margin-bottom: 133px;
+    padding-left: 2px;
+    letter-spacing: -0.1px;
+  }
+
+  .rates__list {
+    flex-basis: 87%;
+    margin-bottom: 36px;
+
+    &::before {
+      top: -51px;
+      right: 200px;
+      width: 444px;
+      height: 300px;
+    }
+  }
+
+  .rates__item {
+    align-items: flex-start;
+    margin-right: 359px;
+    margin-bottom: -1px;
+
+    &::after {
+      position: absolute;
+      margin-bottom: -1px;
+      top: -2px;
+      padding-top: 3px;
+    }
+
+    &--2::after {
+      top: -1px;
+    }
+
+    &--3::after {
+      top: 0;
+    }
+  }
+
+  .rates__item-content {
+    margin: 0;
+    padding-top: 17px;
+    padding-bottom: 15px;
   }
 
   .rates__item-number {
     order: -1;
+  }
+
+  .rates__business-btn {
+    margin-left: 85px;
+
+    &::before {
+      background-position: left 24px top 21px;
+    }
   }
 }
