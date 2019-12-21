@@ -64,6 +64,7 @@
   flex-basis: 62%;
   padding-right: 40px;
   margin: 0;
+  min-height: 40px;
   color: #1d2e5b;
   font-size: 20px;
   font-weight: 700;
@@ -220,6 +221,7 @@
     align-items: center;
     flex-basis: 75%;
     margin-left: 17px;
+    min-height: auto;
     padding-right: 0;
     max-width: none;
     font-size: 30px;
@@ -245,6 +247,7 @@
     flex-basis: 100%;
     margin: 18px 58px 45px 13px;
     padding: 0 90px 0 7px;
+    min-height: 48px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -407,6 +410,7 @@
     flex-basis: 100%;
     margin: -67px 0 33px 21px;
     padding: 0 305px 0 7px;
+    min-height: auto;
   }
 
   .travelmates-card__btn-invite {
