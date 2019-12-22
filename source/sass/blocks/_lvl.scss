@@ -317,4 +317,19 @@
       margin-top: 8px;
     }
   }
+
+  .lvl__status {
+    &--profile {
+      color: #ffffff;
+    }
+  }
+
+  .lvl__text {
+    &--profile {
+      top: 38px;
+      left: 22px;
+      padding: 2px 9px 0;
+      color: #ffffff;
+    }
+  }
 }

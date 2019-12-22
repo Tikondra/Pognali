@@ -8,10 +8,10 @@
   </head>
   <body>
     <header class="page-header page-header--no-js">
-      <div class="wrapper page-header__content page-header__content">
+      <div class="wrapper page-header__content">
         <button class="page-header__menu-open" type="button" aria-label="меню"></button>
 
-        <div class="page-header__info page-header__info--close">
+        <div class="page-header__info page-header__info--form page-header__info--close">
 
           <nav class="page-header__navigation navigation">
             <ul class="navigation__list">
@@ -90,7 +90,7 @@
           </div>
         </div>
 
-        <a class="page-header__logo" aria-label="Погнали" href="index.html">
+        <a class="page-header__logo page-header__logo--form" aria-label="Погнали" href="index.html">
           <picture class="page-header__logo-pic">
             <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x"/>
             <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x"/>
@@ -120,9 +120,13 @@
                 <div class="lvl__status lvl__status--profile">80</div>
               </div>
 
-              <img class="profile__img" src="img/photo-account-mobile@1x.jpg" width="100" height="100" alt="Фото 'Имя профиля'">
+              <picture class="profile__img-box">
+                <source media="(min-width: 1440px)" srcset="img/demin-tablet@1x.jpg"/>
+                <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg"/>
+                <img class="profile__img" src="img/photo-account-mobile@1x.jpg" alt="Петя Демин" width="100" height="100" alt="Аватарка" />
+              </picture>
 
-              <button class="profile__photo-change" type="button">Сменить фото</button>
+              <button class="profile__photo-change" type="button"><span class="profile__photo-hide">Сменить</span> фото</button>
 
               <div class="profile__hashtags hashtags">
                 <h3 class="hashtags__title">Тэги</h3>
@@ -179,13 +183,13 @@
 
               <ol class="plans__list">
                 <li class="plans__item">
-                  <h3 class="plans__title"><span class="plans__number">1.</span> Франция, Италия</h3>
+                  <h3 class="plans__title"><span class="plans__number">1.</span> <span class="plans__title-text">Франция, Италия</span></h3>
                   <p class="plans__travelmates">3 попутчика</p>
                   <p class="plans__date">26 мар &mdash; 29 мар</p>
                   <a class="plans__redact-btn" href="#">Изменить</a>
                 </li>
                 <li class="plans__item">
-                  <h3 class="plans__title"><span class="plans__number">2.</span> Тайланд, Индонезия</h3>
+                  <h3 class="plans__title"><span class="plans__number">2.</span> <span class="plans__title-text">Таиланд, Индонезия</span></h3>
                   <p class="plans__travelmates">1 попутчик</p>
                   <p class="plans__date plans__date--2">1 июл &mdash; 15 июл</p>
                   <a class="plans__redact-btn" href="#">Изменить</a>
@@ -204,51 +208,69 @@
               </div>
               <ol class="add-plan__list">
                   <li class="add-plan__step step step--1">
-                    <h3 class="step__title step__title--step1">
-                      <span class="step__title-num">Шаг 1.</span>
-                      Даты пребывания
-                    </h3>
+                    <div class="step__description-box">
+                      <h3 class="step__title step__title--step1">
+                        <span class="step__title-num">Шаг 1.</span>
+                        Даты пребывания
+                      </h3>
 
-                    <p class="step__description step__description--step1">
-                      Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.
-                    </p>
-
-                    <div class="step__count-travelmates count-travelmates">
-                        <label class="count-travelmates__label" for="count-travelmates">
-                          Ищу попутчиков:
-                          <span class="count-travelmates__label count-travelmates__label--gray">чел.</span>
-                        </label>
-                        <div class="count-travelmates__input-box">
-                          <button class="count-travelmates__btn count-travelmates__btn--minus" type="button"></button>
-
-                          <input class="count-travelmates__input" type="number" name="count-travelmates" id="count-travelmates" value="2">
-
-                          <button class="count-travelmates__btn count-travelmates__btn--plus" type="button"></button>
-                        </div>
+                      <p class="step__description step__description--step1">
+                        Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.
+                      </p>
                     </div>
 
-                    <div class="step__duration duration">
-                        <label class="duration__label" for="duration">
-                          Длительность:
-                          <span class="duration__label duration__label--gray">дн.</span>
-                        </label>
-
-                        <div class="duration__input-box">
-                          <button class="duration__btn duration__btn--minus" type="button"></button>
-
-                          <input class="duration__input" type="number" name="duration" id="duration" min="0" value="2">
-
-                          <button class="duration__btn duration__btn--plus" type="button"></button>
-                        </div>
+                    <div class="step__paginate-box">
+                      <ul class="step__paginate-list">
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link step__paginate-link--active" href="#">Даты</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Маршрут</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Развлечения</a>
+                        </li>
+                      </ul>
                     </div>
 
-                    <div class="step__child child">
-                      <input class="child__input visually-hidden" type="checkbox" name="child" value="child" id="child" checked>
+                    <div class="step__input-box">
+                      <div class="step__count-travelmates count-travelmates">
+                          <label class="count-travelmates__label" for="count-travelmates">
+                            Ищу попутчиков:
+                            <span class="count-travelmates__label count-travelmates__label--gray">чел.</span>
+                          </label>
+                          <div class="count-travelmates__input-box">
+                            <button class="count-travelmates__btn count-travelmates__btn--minus" type="button"></button>
 
-                      <label class="child__label" for="child">
-                        <span class="child__check"></span>
-                        <span class="child__text">Можно с детьми</span>
-                      </label>
+                            <input class="count-travelmates__input" type="number" name="count-travelmates" id="count-travelmates" value="2">
+
+                            <button class="count-travelmates__btn count-travelmates__btn--plus" type="button"></button>
+                          </div>
+                      </div>
+
+                      <div class="step__duration duration">
+                          <label class="duration__label" for="duration">
+                            Длительность:
+                            <span class="duration__label duration__label--gray">дн.</span>
+                          </label>
+
+                          <div class="duration__input-box">
+                            <button class="duration__btn duration__btn--minus" type="button"></button>
+
+                            <input class="duration__input" type="number" name="duration" id="duration" min="0" value="2">
+
+                            <button class="duration__btn duration__btn--plus" type="button"></button>
+                          </div>
+                      </div>
+
+                      <div class="step__child child">
+                        <input class="child__input visually-hidden" type="checkbox" name="child" value="child" id="child" checked>
+
+                        <label class="child__label" for="child">
+                          <span class="child__check"></span>
+                          <span class="child__text">Можно с детьми</span>
+                        </label>
+                      </div>
                     </div>
 
                     <div class="step__calendar calendar">

@@ -3,7 +3,6 @@
   flex-direction: column;
   padding: 19px 22px;
   max-width: 84.1%;
-  margin: auto;
   text-align: center;
   flex-basis: 100%;
   border-radius: 10px;
@@ -52,5 +51,15 @@
     margin: 0 0 2px;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hashtags {
+    max-width: 50.7%;
+  }
+
+  .hashtags__title {
+    margin: 0 auto -24px -14px;
   }
 }

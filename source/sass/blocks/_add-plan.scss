@@ -79,11 +79,35 @@
 }
 
 @media (min-width: $desktop) {
+  .add-plan {
+    padding: 0;
+    margin-top: -60px;
+    border-radius: 60px;
+  }
+
   .add-plan__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+
+  .add-plan__title-box {
+    margin-bottom: 38px;
+  }
+
+  .add-plan__section-title {
+    margin: 49px auto 11px 70px;
+  }
+
+  .add-plan__dot {
+    display: none;
   }
 
   .add-plan__list {
     max-width: none;
+  }
+
+  .add-plan__step {
+    border-radius: 60px;
   }
 }
