@@ -67,8 +67,13 @@
 }
 
 @media (min-width: $tablet) {
+  .profile__content {
+    align-items: flex-start;
+  }
+
   .profile__info {
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 
   .profile__title-box {
@@ -97,6 +102,8 @@
   .profile__transport {
     order: 1;
     margin: 0;
+    margin-top: 14px;
+    margin-left: -0.3%;
   }
 
   .profile__img {
@@ -110,12 +117,15 @@
 
   .profile__photo-change {
     order: 2;
-    padding: 21px 25px;
+    padding: 22px 25px 20px;
+    margin: 52px auto 51px;
+    max-width: 80.5%;
     color: #1d2e5b;
     font-size: 20px;
     font-weight: 500;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
+    border-radius: 10px;
   }
 
   .profile__hashtags {

@@ -11,7 +11,9 @@
 }
 
 .country-popup__title {
-  padding: 11px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 11px 10px;
   margin: 0;
   color: #1d2e5b;
   font-size: 14px;
@@ -78,6 +80,32 @@
       display: block;
       min-height: 0;
       width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .country-popup {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  .country-popup__title {
+    width: 100%;
+    padding: 26px 24.5px 22px;
+    max-width: 369px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.9px;
+
+    &::before {
+      top: 26px;
+      right: 137px;
+      width: 15px;
+      height: 15px;
+      background-color: #ffffff;
     }
   }
 }

@@ -51,8 +51,8 @@
     top: 10px;
     left: -9px;
     right: 0;
-    bottom: -36px;
-    border-left: 2px solid;
+    bottom: -37px;
+    border-left: 2px solid #1d2e5b;
   }
 
   &--2 {
@@ -77,8 +77,64 @@
   line-height: 22px;
   border-radius: 4px;
   border: 1px solid #cbced9;
+  resize: none;
 
   &::placeholder {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .fun__item {
+    padding: 0 12.5px;
+
+    &::before {
+      top: 26px;
+      left: 0;
+      right: 26px;
+      bottom: -68px;
+      border: none;
+      border-right: 3px solid #1d2e5b;
+    }
+
+    &--2 {
+      margin: 41px 0 46px;
+    }
+  }
+
+  .fun__country {
+    min-width: 400px;
+    margin: 11px 0 37px 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      top: 8px;
+      left: 132.7%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .fun__text {
+    width: 90.3%;
+    min-height: 142px;
+    padding: 17px 30px 17px 17px;
+    margin-left: 12px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .fun__flag {
+    display: block;
+    margin: 2px 43px 0 auto;
+    width: 70px;
+    height: 47px;
   }
 }

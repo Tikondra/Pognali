@@ -181,13 +181,13 @@
                 <li class="plans__item">
                   <h3 class="plans__title"><span class="plans__number">1.</span> Франция, Италия</h3>
                   <p class="plans__travelmates">3 попутчика</p>
-                  <p class="plans__date">26 мар - 29 мар</p>
+                  <p class="plans__date">26 мар &mdash; 29 мар</p>
                   <a class="plans__redact-btn" href="#">Изменить</a>
                 </li>
                 <li class="plans__item">
                   <h3 class="plans__title"><span class="plans__number">2.</span> Тайланд, Индонезия</h3>
                   <p class="plans__travelmates">1 попутчик</p>
-                  <p class="plans__date">1 июл - 15 июл</p>
+                  <p class="plans__date plans__date--2">1 июл &mdash; 15 июл</p>
                   <a class="plans__redact-btn" href="#">Изменить</a>
                 </li>
               </ol>
@@ -246,7 +246,7 @@
                       <input class="child__input visually-hidden" type="checkbox" name="child" value="child" id="child" checked>
 
                       <label class="child__label" for="child">
-                        <div class="child__check"></div>
+                        <span class="child__check"></span>
                         <span class="child__text">Можно с детьми</span>
                       </label>
                     </div>
@@ -468,8 +468,8 @@
                       <span class="step__title-num">Шаг 2.</span>
                       Маршрут
                     </h3>
-                    <p class="step__description">
-                      Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                    <p class="step__description step__description--2">
+                      Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
                     </p>
                     <div class="step__country-step country-step">
 
@@ -502,10 +502,10 @@
 
                       <div class="country-step__popup country-popup country-popup--no-js">
                         <h4 class="country-popup__title">
-                          Выберите страну
+                          <span>Выберите страну</span>
                           <button class="country-step__select country-step__select--3" type="button"></button>
                         </h4>
-                        <button class="country-step__del-btn" type="button" aria-label="удалить">
+                        <button class="country-step__del-btn country-step__del-btn--3" type="button" aria-label="удалить">
                           <svg class="country-step__del-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
                             <path d="M5.2 4.5L8.9.8c.1-.2.1-.5 0-.7s-.5-.1-.7 0L4.5 3.8.8.1C.6 0 .3 0 .1.1S0 .6.1.8l3.7 3.7L.1 8.2c-.1.2-.1.5 0 .7.1.1.3.1.4.1s.2 0 .3-.1l3.7-3.7 3.7 3.7c.1.1.2.1.3.1s.2 0 .3-.1c.2-.2.2-.5.1-.7L5.2 4.5z"/>
                           </svg>
@@ -624,8 +624,8 @@
                       <button class="country-step__new-box" type="button">Добавить страну</button>
                     </div>
                     <div class="step__button-box">
-                      <button class="step__paginate step__paginate--forward" type="button">Следующий шаг</button>
-                      <button class="step__paginate step__paginate--back" type="button">На шаг назад</button>
+                      <button class="step__paginate step__paginate--2 step__paginate--forward" type="button">Следующий шаг</button>
+                      <button class="step__paginate step__paginate--2 step__paginate--back" type="button">На шаг назад</button>
                     </div>
                   </li>
 
@@ -634,7 +634,7 @@
                       <span class="step__title-num">Шаг 3.</span>
                       Развлечения
                     </h3>
-                    <p class="step__description">
+                    <p class="step__description step__description--3">
                       Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
                     </p>
                     <ul class="step__fun fun">
@@ -650,8 +650,8 @@
                       </li>
                     </ul>
                     <div class="step__button-box">
-                      <button class="step__paginate" type="submit">Отправить</button>
-                      <button class="step__paginate step__paginate--back btn" type="button">На шаг назад</button>
+                      <button class="step__paginate step__paginate--2" type="submit">Отправить</button>
+                      <button class="step__paginate step__paginate--2 step__paginate--back btn" type="button">На шаг назад</button>
                     </div>
                   </li>
               </ol>

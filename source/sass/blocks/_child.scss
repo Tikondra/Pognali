@@ -30,6 +30,11 @@
 }
 
 @media (min-width: $tablet) {
+  .child {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
   .child__label {
     color: #1d2e5b;
     font-size: 20px;
@@ -37,5 +42,16 @@
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+
+  .child__check {
+    margin-right: 22px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .child__input:checked ~ .child__label .child__check {
+    background-position: left 12px top 11px;
+    background-size: 12px;
   }
 }

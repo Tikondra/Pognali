@@ -54,14 +54,33 @@
 
 @media (min-width: $tablet) {
   .count-travelmates__label {
+    padding-left: 1px;
+    margin-bottom: 12px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
 
   .count-travelmates__input {
+    padding-top: 3px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  .count-travelmates__btn {
+    width: 63px;
+    height: 68px;
+    padding: 0;
+    background-size: 20px 3px;
+
+    &--plus {
+      width: 59px;
+      background-size: 20px 20px;
+    }
+  }
+
+  .count-travelmates__input-box {
+    margin: 0 auto 15px;
   }
 }
