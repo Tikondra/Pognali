@@ -46,10 +46,21 @@
 }
 
 .level-select__range {
+  position: relative;
   display: flex;
   padding: 24px 0 9px;
   background-color: #1d2e5b;
   background-clip: content-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 67px;
+    height: 3px;
+    background-color: #d2b54e;
+    border-radius: 2px;
+  }
 }
 
 .level-select__btn {
@@ -68,13 +79,15 @@
 
 @media (min-width: $tablet) {
   .level-select {
+    position: relative;
     flex-wrap: nowrap;
-    padding: 9px 6px 5px;
+    padding: 0 6px 5px;
     margin-bottom: 63px;
   }
 
   .level-select__title {
-    flex-basis: 40%;
+    padding-top: 10px;
+    flex-basis: 20.5%;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -82,11 +95,33 @@
   }
 
   .level-select__input {
+    align-self: flex-start;
     order: 1;
+    padding: 13px 10px 9px;
+    width: 12.1%;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
   }
 
   .level-select__range {
-    padding: 11px 0 27px;
+    flex-basis: 45%;
+    padding: 20px 0 28px;
+    margin-right: auto;
+
+    &::before {
+      width: 68px;
+    }
+  }
+
+  .level-select__btn {
+    margin: -5px 0 -5px 68px;
+    width: 13px;
+    height: 13px;
+
+    &--max {
+      margin-left: 187px;
+    }
   }
 }
 
