@@ -106,9 +106,12 @@
 @media (min-width: $desktop) {
   .hobby {
     flex-direction: column;
+    padding: 30px 5px 11px;
+    border: none;
   }
 
   .hobby__list {
+    display: none;
     flex-direction: column;
   }
 

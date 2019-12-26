@@ -98,3 +98,14 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .transport-select {
+    padding: 4px 5px;
+    flex-direction: column;
+  }
+
+  .transport-select__title {
+    margin-bottom: 23px;
+  }
+}

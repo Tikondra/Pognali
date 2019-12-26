@@ -56,6 +56,16 @@
 
 @media (min-width: $desktop) {
   .select-travelmates {
-    padding: 46.5px 0 38px 41.5px;
+    max-width: 285px;
+    padding: 46.5px 41px 47px 41.5px;
+  }
+
+  .select-travelmates__title {
+    margin-bottom: 0;
+  }
+
+  .select-travelmates__btn {
+    width: 97%;
+    margin-left: 6px;
   }
 }

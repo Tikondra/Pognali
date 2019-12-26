@@ -107,17 +107,16 @@
 @media (min-width: $desktop) {
   .music {
     flex-direction: column;
+    padding: 0 5px 10px;
   }
 
   .music__list {
     flex-direction: column;
+    padding: 6px 0 0 2px;
   }
 
   .music__item {
     min-width: 148px;
-
-    &--2 {
-      margin: 0;
-    }
+    margin: 0 0 15px;
   }
 }

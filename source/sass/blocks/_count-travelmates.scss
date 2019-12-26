@@ -1,6 +1,11 @@
+.count-travelmates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .count-travelmates__label {
   display: flex;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 500;
@@ -55,7 +60,7 @@
 @media (min-width: $tablet) {
   .count-travelmates__label {
     padding-left: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -82,5 +87,32 @@
 
   .count-travelmates__input-box {
     margin: 0 auto 15px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .count-travelmates {
+    flex-wrap: nowrap;
+    margin-bottom: 14px;
+  }
+
+  .count-travelmates__label {
+    flex-basis: 39.7%;
+    padding-top: 27px;
+
+    &--gray {
+      order: 1;
+      flex-basis: 21.5%;
+      opacity: 1;
+    }
+  }
+
+  .count-travelmates__input-box {
+    flex-basis: 32.6%;
+    margin: 0;
+  }
+
+  .count-travelmates__input {
+    width: 33%;
   }
 }

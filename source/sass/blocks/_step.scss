@@ -186,6 +186,7 @@
 
 @media (min-width: $desktop) {
   .step {
+    padding: 48px 20px 104px;
     border-radius: 60px;
 
     &--1 {
@@ -264,8 +265,20 @@
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 140px;
-    border-bottom: 1px solid #d6d9e6;
+    margin: 0 139px;
+    padding: 30px 0 32px;
     border-top: 1px solid #d6d9e6;
+  }
+
+  .step__count-travelmates {
+    margin: 0;
+  }
+
+  .step__duration {
+    margin: 0;
+  }
+
+  .step__paginate {
+    margin: 56px 0 1px 140px;
   }
 }

@@ -1,6 +1,11 @@
+.duration {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .duration__label {
   display: flex;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 500;
@@ -53,6 +58,10 @@
 }
 
 @media (min-width: $tablet) {
+  .duration {
+    width: 100%;
+  }
+
   .duration__label {
     padding-left: 2px;
     font-size: 20px;
@@ -61,7 +70,7 @@
   }
 
   .duration__input-box {
-    margin: 20px auto 21px;
+    margin: 16px auto 21px;
   }
 
   .duration__input {
@@ -80,5 +89,34 @@
       width: 59px;
       background-size: 20px 20px;
     }
+  }
+}
+
+@media (min-width: $desktop) {
+  .duration {
+    flex-wrap: nowrap;
+    width: 55.5%;
+  }
+
+  .duration__label {
+    flex-basis: 39.7%;
+    padding-top: 26px;
+    padding-left: 1px;
+
+    &--gray {
+      order: 1;
+      flex-basis: 21.5%;
+      padding-left: 4px;
+      opacity: 1;
+    }
+  }
+
+  .duration__input-box {
+    flex-basis: 32.6%;
+    margin: 0;
+  }
+
+  .duration__input {
+    width: 33%;
   }
 }

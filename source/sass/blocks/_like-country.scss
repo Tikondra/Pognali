@@ -56,7 +56,7 @@
 
   .like-country__list {
     display: flex;
-    padding: 16px 0 0;
+    padding: 17px 0 0;
   }
 
   .like-country__item {
@@ -67,14 +67,18 @@
     margin-bottom: 5px;
   }
 
-  .like-country__img {
-    display: block;
+  .like-country__img-box {
     width: 35px;
     height: 24px;
   }
 
+  .like-country__img {
+    display: block;
+  }
+
   .like-country__country {
     margin-left: 11px;
+    padding-top: 0;
   }
 }
 

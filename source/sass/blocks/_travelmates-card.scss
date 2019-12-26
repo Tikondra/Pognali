@@ -197,7 +197,7 @@
 
 @media (min-width: $tablet) {
   .travelmates-card__item {
-    padding: 33px 20px 11px 35px;
+    padding: 33px 20px 10px 35px;
     margin: 40px 0;
   }
 
@@ -293,6 +293,7 @@
   .travelmates-card__like-btn {
     min-width: 50px;
     height: 50px;
+    padding-top: 3px;
   }
 
   .travelmates-card__like-svg {
@@ -451,10 +452,14 @@
   }
 
   .travelmates-card__pagination {
-    padding: 26px 26px 24px 28px;
+    padding: 25px 26px 25px 28px;
   }
 
   .travelmates-card__btn-pagination {
     width: 5%;
+  }
+
+  .travelmates-card__pagination-item {
+    padding-top: 3px;
   }
 }
