@@ -1,0 +1,22 @@
+.list-litter {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .list-litter {
+    @include list;
+    display: flex;
+    flex-wrap: wrap;
+    color: $dark-blue-grey;
+  }
+
+  .list-litter__title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  .list-litter__content {
+    @include list;
+  }
+}

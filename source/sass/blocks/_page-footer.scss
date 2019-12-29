@@ -37,17 +37,18 @@
 @media (min-width: $desktop) {
   .page-footer {
     padding: 0;
+    z-index: 20;
   }
 
   .page-footer__content {
     max-width: 1440px;
     margin: auto;
-    padding: 12px 60px 25px 60px;
+    padding: 12px 59px 25px 61px;
     display: flex;
     justify-content: space-between;
 
-    &--catalog {
-      padding: 12px 59px 25px 61px;
+    &--index {
+      padding: 12px 60px 25px 60px;
     }
   }
 

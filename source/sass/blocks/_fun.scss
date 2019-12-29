@@ -138,3 +138,42 @@
     height: 47px;
   }
 }
+
+@media (min-width: $desktop) {
+  .fun {
+    width: 100%;
+    margin: 0 143px 0 139px;
+    padding: 69px 69px 0 0;
+    border-top: 1px solid #d6d9e6;
+  }
+
+  .fun__item {
+    padding: 0;
+
+    &::before {
+      right: 152px;
+    }
+  }
+
+  .fun__country {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      left: 191.9%;
+    }
+  }
+
+  .fun__flag {
+    margin: 5px 43px 0 auto;
+  }
+
+  .fun__text {
+    width: 78.6%;
+    padding: 24px 15px 17px 24.5px;
+    margin-left: 1px;
+  }
+}

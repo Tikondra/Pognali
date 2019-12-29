@@ -319,7 +319,12 @@
                             </td>
                             <td class="calendar__content">
                               <input class="calendar__input" type="checkbox" name="day" value="1" id="mar1">
-                              <label class="calendar__label" for="mar1">1</label>
+                              <label class="calendar__label" for="mar1">
+                                1
+                                <span class="calendar__label--month">
+                                  мар
+                                </span>
+                              </label>
                             </td>
                           </tr>
 
@@ -429,17 +434,25 @@
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="25" id="mar25">
                               <label class="calendar__label" for="mar25">25</label>
                             </td>
-                            <td class="calendar__content calendar__content--active calendar__content--focus calendar__content--available">
+                            <td class="calendar__content calendar__content--active calendar__content--focus calendar__content--available calendar__content--start">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="26" id="mar26">
-                              <label class="calendar__label" for="mar26">26</label>
+                              <label class="calendar__label" for="mar26">
+                                26
+                                <span class="calendar__label-text calendar__label-text--start">Заезд</span>
+                                <span class="calendar__label-text calendar__label-text--end">Выезд</span>
+                              </label>
                             </td>
                             <td class="calendar__content calendar__content--active calendar__content--available">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="27" id="mar27">
                               <label class="calendar__label" for="mar27">27</label>
                             </td>
-                            <td class="calendar__content calendar__content--active calendar__content--available">
+                            <td class="calendar__content calendar__content--active calendar__content--available calendar__content--end">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="28" id="mar28">
-                              <label class="calendar__label" for="mar28">28</label>
+                              <label class="calendar__label" for="mar28">
+                                28
+                                <span class="calendar__label-text calendar__label-text--start">Заезд</span>
+                                <span class="calendar__label-text calendar__label-text--end">Выезд</span>
+                              </label>
                             </td>
                             <td class="calendar__content calendar__content--available">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="29" id="mar29">
@@ -458,7 +471,12 @@
                             </td>
                             <td class="calendar__content calendar__content--available">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="apr1" id="apr1">
-                              <label class="calendar__label" for="apr1">1</label>
+                              <label class="calendar__label" for="apr1">
+                                1
+                                <span class="calendar__label--month">
+                                  апр
+                                </span>
+                              </label>
                             </td>
                             <td class="calendar__content calendar__content--available">
                               <input class="calendar__input visually-hidden" type="checkbox" name="day" value="apr2" id="apr2">
@@ -485,13 +503,30 @@
                   </li>
 
                   <li class="add-plan__step step step--2">
-                    <h3 class="step__title">
-                      <span class="step__title-num">Шаг 2.</span>
-                      Маршрут
-                    </h3>
-                    <p class="step__description step__description--2">
-                      Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
-                    </p>
+                    <div class="step__description-box">
+                      <h3 class="step__title">
+                        <span class="step__title-num">Шаг 2.</span>
+                        Маршрут
+                      </h3>
+                      <p class="step__description step__description--2">
+                        Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.
+                      </p>
+                    </div>
+
+                    <div class="step__paginate-box">
+                      <ul class="step__paginate-list">
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Даты</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link step__paginate-link--active" href="#">Маршрут</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Развлечения</a>
+                        </li>
+                      </ul>
+                    </div>
+
                     <div class="step__country-step country-step">
 
                       <ul class="country-step__list">
@@ -644,6 +679,7 @@
                       </div>
                       <button class="country-step__new-box" type="button">Добавить страну</button>
                     </div>
+
                     <div class="step__button-box">
                       <button class="step__paginate step__paginate--2 step__paginate--forward" type="button">Следующий шаг</button>
                       <button class="step__paginate step__paginate--2 step__paginate--back" type="button">На шаг назад</button>
@@ -651,13 +687,29 @@
                   </li>
 
                   <li class="add-plan__step step step--3">
-                    <h3 class="step__title">
-                      <span class="step__title-num">Шаг 3.</span>
-                      Развлечения
-                    </h3>
-                    <p class="step__description step__description--3">
-                      Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
-                    </p>
+                    <div class="step__description-box">
+                      <h3 class="step__title">
+                        <span class="step__title-num">Шаг 3.</span>
+                        Развлечения
+                      </h3>
+                      <p class="step__description step__description--3">
+                        Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                      </p>
+                    </div>
+
+                    <div class="step__paginate-box">
+                      <ul class="step__paginate-list">
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Даты</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link" href="#">Маршрут</a>
+                        </li>
+                        <li class="step__paginate-item">
+                          <a class="step__paginate-link step__paginate-link--active" href="#">Развлечения</a>
+                        </li>
+                      </ul>
+                    </div>
                     <ul class="step__fun fun">
                       <li class="fun__item">
                         <h4 class="fun__country">Босния и герцоговина</h4>
@@ -670,7 +722,7 @@
                         <textarea class="fun__text" placeholder="План действий" name="fun">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                       </li>
                     </ul>
-                    <div class="step__button-box">
+                    <div class="step__button-box step__button-box--3">
                       <button class="step__paginate step__paginate--2" type="submit">Отправить</button>
                       <button class="step__paginate step__paginate--2 step__paginate--back btn" type="button">На шаг назад</button>
                     </div>

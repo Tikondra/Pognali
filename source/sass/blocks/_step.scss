@@ -186,13 +186,18 @@
 
 @media (min-width: $desktop) {
   .step {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     padding: 48px 20px 104px;
     border-radius: 60px;
 
-    &--1 {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
+    &--2 {
+      margin-bottom: 45px;
+    }
+
+    &--3 {
+      padding: 48px 20px 104px;
     }
   }
 
@@ -212,6 +217,15 @@
   .step__description {
     border: none;
     padding: 0 25px 29px 0;
+
+    &--2 {
+      padding: 0 190px 33px 0;
+      margin: 34px 26px 21px 23px;
+    }
+
+    &--3 {
+      padding: 0 80px 29px 0;
+    }
   }
 
   .step__paginate-box {
@@ -280,5 +294,27 @@
 
   .step__paginate {
     margin: 56px 0 1px 140px;
+
+    &--2 {
+      margin: 0;
+      max-width: 28.5%;
+    }
+
+    &--back {
+      max-width: 18.3%;
+      padding: 30px 0 27px 34px;
+    }
+  }
+
+  .step__button-box {
+    width: 100%;
+    max-width: 1000px;
+    padding: 8px 0 0 0;
+    margin: auto;
+    margin-bottom: 1px;
+
+    &--3 {
+      padding: 10px 0 0 0;
+    }
   }
 }

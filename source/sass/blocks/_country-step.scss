@@ -94,7 +94,7 @@
   @include center-flex;
   width: 53px;
   height: 42px;
-  padding: 5px;
+  padding: 8px;
   border-radius: 4px;
   border: 1px solid #cbced9;
 }
@@ -191,7 +191,7 @@
 
   .country-step__select {
     padding-right: 14px;
-    margin-left: -76px;
+    left: -31px;
     width: 45px;
     height: 36px;
     background-size: 17px 9px, cover;
@@ -206,13 +206,14 @@
 
   .country-step__input {
     padding: 25px 21px 21px 25px;
+    width: 100%;
     max-width: 369px;
     font-size: 20px;
     letter-spacing: 1.9px;
   }
 
   .country-step__flag {
-    margin-left: 47px;
+    margin: 0 0 0 16px;
     width: 70px;
     height: 47px;
     padding: 0;
@@ -250,6 +251,51 @@
       width: 15px;
       height: 15px;
       background-color: #edeff6;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .country-step {
+    width: 78.1%;
+    margin: auto;
+    padding: 62px 0 0 0;
+    border-top: 1px solid #d6d9e6;
+
+    &::before {
+      top: -1px;
+      left: 774px;
+      height: 560px;
+    }
+  }
+
+  .country-step__item {
+    &::before {
+      right: 21.8%;
+    }
+  }
+
+  .country-step__input {
+    max-width: 730px;
+  }
+
+  .country-step__select {
+    left: -56px;
+
+    &--3 {
+      left: -2px;
+    }
+  }
+
+  .country-step__flag {
+    margin: 0 42px 0 0;
+  }
+
+  .country-step__new-box {
+    max-width: 730px;
+
+    &::before {
+      right: -52px;
     }
   }
 }

@@ -109,3 +109,13 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .country-popup__title {
+    max-width: 730px;
+
+    &::before {
+      right: 218px;
+    }
+  }
+}
