@@ -39,17 +39,12 @@
   border-radius: 50%;
 }
 
-.travelmates-card__svg {
+.transport-card__svg {
   opacity: 0.15;
 
   &--active {
     opacity: 1;
   }
-}
-
-.transport-card__btn-span {
-  margin-left: 15px;
-  padding-top: 2px;
 }
 
 @media (min-width: $tablet) {
@@ -68,29 +63,28 @@
     background-color: #ffffff;
   }
 
-  .travelmates-card__svg {
+  .transport-card__svg {
     height: 21px;
+    fill: $dark-slate-blue;
 
     &--plane {
       width: 19px;
+      margin: 1px 3px 0 0;
     }
 
     &--bus {
       width: 17px;
+      margin: 1px 0 0 0;
     }
 
     &--bike {
       width: 24px;
+      margin: -1px 0 0 2px;
     }
 
     &--run {
       width: 20px;
     }
-  }
-
-  .transport-card__btn-span {
-    margin-left: 25px;
-    padding-top: 5px;
   }
 }
 
@@ -98,9 +92,5 @@
   .transport-card__list {
     flex-direction: row;
     padding-top: 12px;
-  }
-
-  .transport-card__btn-span {
-    margin-left: 24px;
   }
 }

@@ -156,6 +156,7 @@
   .filter-country__content {
     max-width: 1440px;
     margin: auto;
+    padding: 16px 60px 49px 60px;
   }
 
   .filter-country__country-litter {
@@ -164,5 +165,25 @@
 
   .filter-country__country-select {
     display: none;
+  }
+
+  .filter-country__btn {
+    margin-right: 65px;
+  }
+
+  .filter-country__btn-label {
+    display: block;
+    order: -1;
+    padding-left: 50px;
+    margin-right: 39px;
+    margin-left: 13px;
+    font-size: 20px;
+    line-height: 24px;
+    background-position: left 7px top 3px;
+    background-size: 23px 15px;
+  }
+
+  .filter-country__close-btn {
+    margin-top: 52px;
   }
 }

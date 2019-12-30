@@ -195,6 +195,11 @@
   display: none;
 }
 
+.travelmates-card__btn-span {
+  margin-left: 15px;
+  padding-top: 2px;
+}
+
 @media (min-width: $tablet) {
   .travelmates-card__item {
     padding: 33px 20px 10px 35px;
@@ -319,7 +324,7 @@
   }
 
   .travelmates-card__pagination {
-    padding: 26px 19px 24px 28px;
+    padding: 25px 19px 25px 28px;
   }
 
   .travelmates-card__btn-pagination {
@@ -346,6 +351,11 @@
       border-radius: 50%;
       background-color: #ffd74b;
     }
+  }
+
+  .travelmates-card__btn-span {
+    margin-left: 25px;
+    padding-top: 5px;
   }
 }
 
@@ -461,5 +471,9 @@
 
   .travelmates-card__pagination-item {
     padding-top: 3px;
+  }
+
+  .travelmates-card__btn-span {
+    margin-left: 24px;
   }
 }
