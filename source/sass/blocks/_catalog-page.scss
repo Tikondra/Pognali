@@ -23,6 +23,7 @@
     content: "";
     position: relative;
     top: 2px;
+    z-index: 6;
     width: 173px;
     height: 5px;
     margin-top: 4px;
@@ -33,6 +34,7 @@
 
 .catalog-page__content {
   padding: 24px 25px 46px;
+  margin-top: 52px;
 }
 
 .catalog-page__select-travelmates {
@@ -42,6 +44,7 @@
 @media (min-width: $tablet) {
   .catalog-page__content {
     padding: 46px 40px 62px;
+    margin-top: 136px;
   }
 
   .catalog-page__title-box {

@@ -4,6 +4,10 @@
 
 .country-popup__box {
   display: none;
+  position: absolute;
+  top: 43px;
+  z-index: 10;
+  width: 100%;
 
   &--open {
     display: block;
@@ -13,7 +17,7 @@
 .country-popup__title {
   display: flex;
   justify-content: space-between;
-  padding: 12px 11px 10px;
+  padding: 13px 12px 11px;
   margin: 0;
   color: #1d2e5b;
   font-size: 14px;
@@ -22,8 +26,8 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
 
-  border-radius: 4px;
-  border: 1px solid #cbced9;
+  border-radius: 4px 4px 0 0;
+  border: none;
   background-color: #ffffff;
 
   &::before {
@@ -41,6 +45,9 @@
   &--open {
     color: #ffffff;
     background-color: #1d2e5b;
+    background-image: url("../img/small-cross.svg");
+    background-repeat: no-repeat;
+    background-position: right 17px center;
 
     &::before {
       display: none;
@@ -54,19 +61,6 @@
   &--open ~ .country-step__del-btn {
     display: none;
   }
-}
-
-.country-popup__country-litter {
-  width: 220px;
-  padding: 0;
-}
-
-.country-popup__country-select {
-  padding: 55px 19px 15px;
-  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
-  border-radius: 0 0 10px 10px;
-  border: 1px solid #cbced9;
-  background-color: #ffffff;
 }
 
 @media (max-width: $no-js) {
@@ -94,11 +88,13 @@
 
   .country-popup__title {
     width: 100%;
-    padding: 26px 24.5px 22px;
+    padding: 27px 25px 23px;
     max-width: 369px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 1.9px;
+    background-size: 18px;
+    background-position: right 26px top 26px;
 
     &::before {
       top: 26px;
@@ -107,6 +103,37 @@
       height: 15px;
       background-color: #ffffff;
     }
+
+    &--open {
+      &::before {
+        display: block;
+      }
+    }
+
+    &--open ~ .country-step__del-btn {
+      display: block;
+    }
+  }
+
+  .country-popup__box {
+    top: 70px;
+    display: none;
+    width: 106.5%;
+    background-color: #ffffff;
+    box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
+
+    &--open {
+      display: flex;
+      border-radius: 10px;
+    }
+  }
+
+  .country-popup__country-litter {
+    margin: 34px 0 36px 27px;
+  }
+
+  .country-popup__country-select {
+    margin-left: auto;
   }
 }
 
@@ -117,5 +144,13 @@
     &::before {
       right: 218px;
     }
+  }
+
+  .country-popup__box {
+    width: 73%;
+  }
+
+  .country-popup__country-litter {
+    margin: 34px 0 19px 27px;
   }
 }

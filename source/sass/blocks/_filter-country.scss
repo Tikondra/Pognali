@@ -1,4 +1,7 @@
 .filter-country {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
   border-radius: 0 0 20px 20px;
   background-color: #e2e5f2;
 }
@@ -32,7 +35,7 @@
   height: 20px;
   background-image: url("../img/dots.svg");
   background-repeat: no-repeat;
-  background-position: center top 7px;
+  background-position: center top 2px;
   border: none;
   background-color: transparent;
 
@@ -134,7 +137,11 @@
   .filter-country__country-litter {
     margin: 0;
     margin-top: 67px;
-    margin-left: -19px;
+    margin-left: -20px;
+  }
+
+  .filter-country__country-select {
+    margin: 0 0 0 59px;
   }
 
   .filter-country__close-btn {
@@ -153,6 +160,10 @@
 }
 
 @media (min-width: $desktop) {
+  .filter-country {
+    position: static;
+  }
+
   .filter-country__content {
     max-width: 1440px;
     margin: auto;
