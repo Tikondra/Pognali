@@ -3,11 +3,14 @@
   flex-direction: column;
   padding: 19px 22px;
   max-width: 84.1%;
-  margin: auto;
   text-align: center;
   flex-basis: 100%;
   border-radius: 10px;
   border: 1px solid #cbced9;
+
+  &:focus-within {
+    border-color: #161c35;
+  }
 }
 
 .hashtags__title {
@@ -23,6 +26,7 @@
 
 .hashtags__tags {
   margin-top: 6px;
+  padding: 2px;
   min-width: 220px;
   font-family: inherit;
   color: #444444;
@@ -35,6 +39,11 @@
 }
 
 @media (min-width: $tablet) {
+  .hashtags {
+    max-width: 80.5%;
+    padding: 32px 37px 12px;
+  }
+
   .hashtags__title {
     order: 2;
     margin: 0 auto -24px;
@@ -44,8 +53,22 @@
   }
 
   .hashtags__tags {
-    margin: 0 0 6px;
+    margin: 0 0 2px;
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hashtags {
+    max-width: 50.7%;
+
+    &:hover {
+      border-color: #aeb4cb;
+    }
+  }
+
+  .hashtags__title {
+    margin: 0 auto -24px -14px;
   }
 }

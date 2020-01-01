@@ -208,6 +208,11 @@
       margin-right: -1px;
       margin-top: 7px;
     }
+
+    &--profile {
+      width: 94px;
+      height: 94px;
+    }
   }
 
   .lvl__title {
@@ -222,6 +227,12 @@
       height: 60px;
       clip: rect(0, 60px, 60px, 30px);
     }
+
+    &--profile {
+      width: 94px;
+      height: 94px;
+      clip: rect(0, 94px, 94px, 47px);
+    }
   }
 
   .lvl__slice1 {
@@ -230,6 +241,12 @@
       height: 60px;
       clip: rect(0, 30px, 60px, 0);
       border: 3px solid #ff8d30;
+    }
+
+    &--profile {
+      width: 94px;
+      height: 94px;
+      clip: rect(0, 47px, 94px, 0);
     }
   }
 
@@ -241,6 +258,12 @@
       height: 60px;
       clip: rect(0, 30px, 60px, 0);
     }
+
+    &--profile {
+      width: 94px;
+      height: 94px;
+      clip: rect(0, 47px, 94px, 0);
+    }
   }
 
   .lvl__slice2 {
@@ -249,6 +272,12 @@
       height: 60px;
       clip: rect(0, 60px, 60px, 30px);
       border: 3px solid #ff8d30;
+    }
+
+    &--profile {
+      width: 94px;
+      height: 94px;
+      clip: rect(0, 94px, 94px, 47px);
     }
   }
 
@@ -266,6 +295,11 @@
       color: #444444;
       border-top: 1px solid #cbced9;
     }
+
+    &--profile {
+      top: 37px;
+      left: 23px;
+    }
   }
 }
 
@@ -281,6 +315,21 @@
 
     &--rogov {
       margin-top: 8px;
+    }
+  }
+
+  .lvl__status {
+    &--profile {
+      color: #ffffff;
+    }
+  }
+
+  .lvl__text {
+    &--profile {
+      top: 38px;
+      left: 22px;
+      padding: 2px 9px 0;
+      color: #ffffff;
     }
   }
 }

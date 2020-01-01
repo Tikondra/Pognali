@@ -49,26 +49,67 @@
 
 @media (min-width: $tablet) {
   .add-plan {
-    padding: 25px 75px;
+    padding: 16px 75px;
+    margin-bottom: 7px;
+  }
+
+  .add-plan__step {
+    margin-bottom: 40px;
+  }
+
+  .add-plan__title-box {
+    margin-bottom: 19px;
   }
 
   .add-plan__section-title {
+    margin-right: auto;
     font-size: 36px;
     line-height: 50px;
+    letter-spacing: -0.1px;
+  }
+
+  .add-plan__dot {
+    margin: 0 0 0 29px;
   }
 
   .add-plan__list {
     margin: auto;
-    max-width: 660px;
+    max-width: 618px;
   }
 }
 
 @media (min-width: $desktop) {
+  .add-plan {
+    padding: 0 0 88px 0;
+    margin-top: -60px;
+    border-radius: 60px 60px 0 0;
+    margin-bottom: -60px;
+  }
+
   .add-plan__content {
-    @include container;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 60px;
+  }
+
+  .add-plan__title-box {
+    margin-bottom: 38px;
+  }
+
+  .add-plan__section-title {
+    margin: 49px auto 11px 70px;
+  }
+
+  .add-plan__dot {
+    display: none;
   }
 
   .add-plan__list {
     max-width: none;
+  }
+
+  .add-plan__step {
+    margin-bottom: 44px;
+    border-radius: 60px;
   }
 }

@@ -9,7 +9,6 @@
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
-  flex-basis: 100%;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
@@ -29,14 +28,15 @@
 
 .level-select__input {
   width: 50%;
-  padding: 10px 10px 5px;
+  padding: 11px 10px 6px;
   color: #1d2e5b;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  line-height: 13.49px;
+  line-height: 16px;
   text-transform: uppercase;
   text-align: center;
+  border: 1px solid #cbced9;
 
   &--min {
     margin-right: -1px;
@@ -45,10 +45,21 @@
 }
 
 .level-select__range {
+  position: relative;
   display: flex;
   padding: 24px 0 9px;
   background-color: #1d2e5b;
   background-clip: content-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 67px;
+    height: 3px;
+    background-color: #d2b54e;
+    border-radius: 2px;
+  }
 }
 
 .level-select__btn {
@@ -67,13 +78,15 @@
 
 @media (min-width: $tablet) {
   .level-select {
+    position: relative;
     flex-wrap: nowrap;
-    padding: 9px 6px 5px;
+    padding: 0 6px 5px;
     margin-bottom: 63px;
   }
 
   .level-select__title {
-    flex-basis: 40%;
+    padding-top: 10px;
+    width: 20.5%;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -81,16 +94,66 @@
   }
 
   .level-select__input {
+    align-self: flex-start;
     order: 1;
+    padding: 13px 10px 9px;
+    width: 12.1%;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
   }
 
   .level-select__range {
-    padding: 11px 0 27px;
+    padding: 20px 0 28px;
+    margin-right: auto;
+
+    &::before {
+      width: 68px;
+    }
+  }
+
+  .level-select__btn {
+    margin: -5px 0 -5px 68px;
+    width: 13px;
+    height: 13px;
+
+    &--max {
+      margin-left: 187px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .level-select {
     flex-wrap: wrap;
+    padding: 16px 5px 5px;
+    margin-bottom: 37px;
+  }
+
+  .level-select__range {
+    order: 1;
+    padding: 37px 0 0;
+
+    &::before {
+      top: 36px;
+      width: 59px;
+    }
+  }
+
+  .level-select__title {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+
+  .level-select__input {
+    width: 50%;
+  }
+
+  .level-select__btn {
+    margin: -6px 0 -4px 59px;
+
+    &--max {
+      margin-left: 106px;
+    }
   }
 }

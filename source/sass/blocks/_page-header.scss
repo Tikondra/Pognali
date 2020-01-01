@@ -1,6 +1,6 @@
 .page-header {
   position: fixed;
-  z-index: 15;
+  z-index: 150;
   width: 100%;
   background-color: #161c36;
 
@@ -96,6 +96,11 @@
   text-align: center;
   border-radius: 25px;
   background-color: #ffd74b;
+
+  &:active span {
+    background-color: #ffbd30;
+    opacity: 0.3;
+  }
 }
 
 .page-header__social {
@@ -141,6 +146,10 @@
       background-color: #182044;
     }
 
+    &--catalog {
+      padding: 17px 15px 18px;
+    }
+
     &--scroll {
       background-color: #ffffff;
     }
@@ -175,6 +184,10 @@
     padding: 40px 40px 74px 97px;
     background-color: transparent;
 
+    &--catalog {
+      padding: 39px 40px 74px 97px;
+    }
+
     &--open {
       background-color: #ffffff;
 
@@ -187,7 +200,8 @@
   }
 
   .page-header__menu-open {
-    left: -48.1%;
+    position: absolute;
+    left: 48.4%;
   }
 
   .page-header__navigation {
@@ -219,6 +233,10 @@
     padding: 47px 15px 5px;
     background-color: #161c36;
 
+    &--form {
+      padding: 46px 15px 5px;
+    }
+
     &--scroll {
       background-color: #ffffff;
       padding: 20px 0;
@@ -232,7 +250,7 @@
   .page-header__logo {
     width: 200px;
     height: 52px;
-    margin-right: 40px;
+    margin-right: 41px;
     background-image: url("../img/logo-desktop-white@1x.png");
 
     &--blue {
@@ -242,6 +260,10 @@
       .page-header__logo-pic {
         display: none;
       }
+    }
+
+    &--form {
+      margin-top: 1px;
     }
   }
 
@@ -262,6 +284,11 @@
     align-items: center;
     padding: 0;
     min-height: auto;
+
+    &--form {
+      padding-bottom: 1px;
+      margin-right: -1px;
+    }
   }
 
   .page-header__btn-author {
@@ -269,6 +296,10 @@
     margin: 0;
     padding: 12px 25px 8px;
     min-width: 189px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
   }
 
   .page-header__contacts {

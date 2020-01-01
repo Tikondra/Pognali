@@ -1,0 +1,264 @@
+.list-litter {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .list-litter {
+    @include list;
+    padding: 26px 0 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+    color: $dark-blue-grey;
+  }
+
+  .list-litter__item {
+    margin-bottom: 8px;
+  }
+
+  .list-litter__title {
+    padding: 0 0 0 1px;
+    margin-bottom: 47px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 24px;
+
+    &--v {
+      padding: 0 0 0 2px;
+    }
+
+    &--g {
+      padding: 1px 0 0 5px;
+      margin-bottom: 46px;
+    }
+
+    &--d {
+      padding: 0 0 0 4px;
+      margin-top: 58px;
+      margin-bottom: 49px;
+    }
+
+    &--e {
+      padding: 0;
+      margin: 62px 0 49px -2px;
+    }
+
+    &--z {
+      padding: 0;
+      margin: 61px 0 46px 2px;
+    }
+
+    &--i {
+      padding: 0;
+      margin: 63px 0 44px -1px;
+    }
+
+    &--k {
+      padding: 0;
+      margin: 61px 0 49px -2px;
+    }
+
+    &--l {
+      padding: 0;
+      margin: 60px 0 50px -1.5px;
+    }
+
+    &--m {
+      padding: 0;
+      margin: 56px 0 54px -2px;
+    }
+
+    &--n {
+      padding: 0;
+      margin: 55.5px 0 50px 1px;
+    }
+
+    &--o {
+      padding: 0;
+      margin: 53.5px 0 55px -1px;
+    }
+
+    &--p {
+      padding: 0;
+      margin: 58px 0 48px -3px;
+    }
+
+    &--r {
+      padding: 0;
+      margin: 56px 0 50px -6px;
+    }
+
+    &--s {
+      padding: 0;
+      margin: 94px 0 50px 0;
+    }
+
+    &--t {
+      padding: 0;
+      margin: 94px 0 50px 1.2px;
+    }
+
+    &--u {
+      padding: 0;
+      margin: 93.5px 0 49px 1px;
+    }
+
+    &--f {
+      padding: 0;
+      margin: 93px 0 51px 0;
+    }
+
+    &--h {
+      padding: 0;
+      margin: 93px 0 52px -2px;
+    }
+
+    &--ch {
+      padding: 0;
+      margin: 54.5px 0 55px -1px;
+    }
+
+    &--sh {
+      padding: 0;
+      margin: 53px 0 57px 1px;
+    }
+
+    &--a {
+      padding: 0;
+      margin: 54px 0 58px 1px;
+    }
+
+    &--y {
+      padding: 0;
+      margin: 54px 0 56px -3px;
+    }
+
+    &--ya {
+      padding: 0;
+      margin: 54px 0 56px -7px;
+    }
+  }
+
+  .list-litter__content {
+    @include list;
+    min-width: 250px;
+
+    &--b {
+      padding-left: 4px;
+    }
+
+    &--v {
+      padding-left: 7px;
+    }
+
+    &--g {
+      padding-left: 8px;
+    }
+
+    &--e {
+      padding: 0;
+      margin: 0 0 0 1px;
+    }
+
+    &--z {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--i {
+      padding: 0;
+      margin: 0 0 0 2px;
+    }
+
+    &--k {
+      padding: 0;
+      margin: 0 0 0 0.5px;
+    }
+
+    &--l {
+      padding: 0;
+      margin: 0 0 0 -0.5px;
+    }
+
+    &--m {
+      padding: 0;
+      margin: 0;
+    }
+
+    &--n {
+      padding: 0;
+      margin: 0 0 0 4px;
+    }
+
+    &--o {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--p {
+      padding: 0;
+      margin: 0 0 0 1px;
+    }
+
+    &--r {
+      padding: 0;
+      margin: 0 0 0 -2px;
+    }
+
+    &--s {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--t {
+      padding: 0;
+      margin: 0 0 0 1px;
+    }
+
+    &--u {
+      padding: 0;
+      margin: 0 0 0 2px;
+    }
+
+    &--f {
+      padding: 0;
+      margin: 0 0 0 1px;
+    }
+
+    &--h {
+      padding: 0;
+      margin: 0 0 0 2px;
+    }
+
+    &--ch {
+      padding: 0;
+      margin: 0 0 0 1px;
+    }
+
+    &--sh {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--a {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--y {
+      padding: 0;
+      margin: 0 0 0 3px;
+    }
+
+    &--ya {
+      padding: 0;
+      margin: 0 0 0 -2px;
+    }
+  }
+
+  .list-litter__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+    text-decoration: none;
+  }
+}

@@ -24,6 +24,8 @@
 }
 
 .intro__contacts {
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
   margin: 244px 0 1px 1px;

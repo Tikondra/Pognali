@@ -12,7 +12,7 @@
   color: #1d2e5b;
   font-size: 22px;
   font-weight: 700;
-  line-height: 22.49px;
+  line-height: 22px;
   letter-spacing: 0.3px;
 }
 
@@ -33,7 +33,6 @@
 @media (min-width: $tablet) {
   .select-travelmates {
     padding: 36px 29px 38px;
-    flex-basis: 21.59%;
   }
 
   .select-travelmates__title {
@@ -56,6 +55,16 @@
 
 @media (min-width: $desktop) {
   .select-travelmates {
-    padding: 46.5px 0 38px 41.5px;
+    max-width: 285px;
+    padding: 46.5px 41px 47px 41.5px;
+  }
+
+  .select-travelmates__title {
+    margin-bottom: 0;
+  }
+
+  .select-travelmates__btn {
+    width: 97%;
+    margin-left: 6px;
   }
 }

@@ -130,6 +130,8 @@
 }
 
 .countries__img-box {
+  display: block;
+
   &--3 {
     padding-top: 1px;
   }
@@ -256,13 +258,12 @@
     padding: 161px 131px 139px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     background-position: right 60px top 88px;
   }
 
   .countries__section-description {
     flex-grow: 1;
-    flex-basis: 500px;
+    width: 50%;
     padding: 5px 100px 0 171px;
   }
 
@@ -279,7 +280,7 @@
 
   .countries__list {
     order: -1;
-    flex-basis: 559px;
+    width: 47.45%;
     padding: 0;
 
     &::before {
@@ -291,6 +292,7 @@
   .countries__description {
     padding: 24px 24px 16px 30px;
     width: 66.7%;
+    min-height: 140px;
 
     &::before {
       top: 23px;

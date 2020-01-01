@@ -105,11 +105,12 @@
 
 @media (min-width: $desktop) {
   .food {
-    flex-direction: column;
+    display: block;
   }
 
   .food__list {
     flex-direction: column;
+    display: none;
   }
 
   .food__item {

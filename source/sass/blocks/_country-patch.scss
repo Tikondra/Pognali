@@ -1,6 +1,6 @@
 .country-patch {
   @include list;
-  padding: 31px 25px 16px;
+  padding: 30px 25px 14px;
 }
 
 .country-patch__link {
@@ -25,6 +25,7 @@
   .country-patch {
     display: flex;
     padding: 0;
+    width: 65%;
   }
 
   .country-patch__item {
@@ -38,5 +39,12 @@
   .country-patch__link {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .country-patch {
+    padding: 1px 0 0 0;
+    width: 50%;
   }
 }

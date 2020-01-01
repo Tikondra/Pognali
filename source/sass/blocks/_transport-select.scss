@@ -47,10 +47,19 @@
   margin-right: -0.8px;
 }
 
+.transport-select__btn {
+  fill: $dark-slate-blue;
+  opacity: 0.15;
+}
+
+.transport-select__input:checked ~ .transport-select__label .transport-select__btn {
+  opacity: 1;
+}
+
 @media (min-width: $tablet) {
   .transport-select {
     display: flex;
-    padding: 21px 5px 5px;
+    padding: 21px 5px 4px;
   }
 
   .transport-select__title {
@@ -59,5 +68,53 @@
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+  }
+
+  .transport-select__label {
+    width: 43px;
+    height: 43px;
+
+    &--plane {
+      padding-right: 4px;
+    }
+  }
+
+  .transport-select__list {
+    margin: -9px 0 0 -2px;
+  }
+
+  .transport-select__item {
+    margin-right: 0;
+  }
+
+  .transport-select__btn {
+    height: 21px;
+
+    &--plane {
+      width: 19px;
+    }
+
+    &--bus {
+      width: 17px;
+    }
+
+    &--bike {
+      width: 24px;
+    }
+
+    &--run {
+      width: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .transport-select {
+    padding: 4px 5px;
+    display: block;
+  }
+
+  .transport-select__title {
+    margin-bottom: 23px;
   }
 }

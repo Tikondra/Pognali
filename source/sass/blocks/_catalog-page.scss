@@ -23,6 +23,7 @@
     content: "";
     position: relative;
     top: 2px;
+    z-index: 6;
     width: 173px;
     height: 5px;
     margin-top: 4px;
@@ -33,6 +34,7 @@
 
 .catalog-page__content {
   padding: 24px 25px 46px;
+  margin-top: 52px;
 }
 
 .catalog-page__select-travelmates {
@@ -42,12 +44,14 @@
 @media (min-width: $tablet) {
   .catalog-page__content {
     padding: 46px 40px 62px;
+    margin-top: 136px;
   }
 
   .catalog-page__title-box {
     position: relative;
     z-index: 10;
     margin-bottom: 42px;
+    padding: 93px 25px 0;
     border-radius: 0 0 60px 60px;
   }
 
@@ -109,7 +113,7 @@
   .catalog-page__content {
     max-width: 1440px;
     margin: auto;
-    padding: 111px 60px 77px;
+    padding: 77px 60px 77px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

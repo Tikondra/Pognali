@@ -10,19 +10,30 @@
 }
 
 .child__check {
+  @include center-flex;
   width: 26px;
   height: 26px;
   margin-right: 13px;
   border-radius: 4px;
   border: 1px solid #cbced9;
   background-color: #ffffff;
+
+  &:active {
+    background-color: #e2e5f1;
+    border-color: #e2e5f1;
+
+    .child__svg {
+      opacity: 0.3;
+    }
+  }
 }
 
-.child__input:checked ~ .child__label .child__check {
-  background-image: url("../img/tick.svg");
-  background-repeat: no-repeat;
-  background-position: center top 7px;
-  background-size: 9px;
+.child__svg {
+  display: none;
+}
+
+.child__input:checked ~ .child__label .child__svg {
+  display: block;
 }
 
 .child__text {
@@ -30,6 +41,12 @@
 }
 
 @media (min-width: $tablet) {
+  .child {
+    width: 100%;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #d6d9e6;
+  }
+
   .child__label {
     color: #1d2e5b;
     font-size: 20px;
@@ -37,5 +54,43 @@
     line-height: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
+  }
+
+  .child__check {
+    margin-right: 22px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .child__svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .child {
+    width: 24.5%;
+    margin: 17px 0 0 auto;
+    border: none;
+  }
+
+  .child__label {
+    color: #1d2e5b;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .child__check {
+    margin-right: 22px;
+    width: 36px;
+    height: 36px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
   }
 }

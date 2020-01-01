@@ -39,25 +39,28 @@
   @include list;
   flex-basis: 81.96%;
   counter-reset: rates;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   color: #444444;
   font-weight: 300;
 }
 
 .rates__item {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: -1px;
-  padding: 5px 0 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  flex-direction: column;
+  padding: 11px 0 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
 
   &::after {
     @include center-flex;
-    position: relative;
-    right: -29px;
-    top: -2px;
+    position: absolute;
+    right: -44px;
+    top: 3px;
     min-width: 34px;
     height: 34px;
     color: #ffffff;
@@ -75,14 +78,9 @@
   }
 
   &--3::after {
-    top: -1px;
+    top: 4px;
     background-color: #ffd74b;
   }
-}
-
-.rates__item-content {
-  min-width: 100%;
-  margin-right: -19px;
 }
 
 .rates__text {
@@ -132,7 +130,7 @@
     &::before {
       position: relative;
       z-index: 2;
-      right: 45px;
+      right: 46px;
       bottom: 2px;
       order: 1;
     }
@@ -152,13 +150,13 @@
   .rates__list {
     position: relative;
     flex-basis: 86.9%;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     margin-left: auto;
 
     &::before {
       content: "";
       position: absolute;
-      top: -42px;
+      top: -43px;
       right: 0;
       width: 198px;
       height: 285px;
@@ -168,20 +166,32 @@
   }
 
   .rates__item {
-    position: relative;
     z-index: 2;
-    align-items: center;
-    padding: 0;
+    flex-direction: row;
+    padding: 17px 0 15px;
+    margin: 0 34px 0 0;
 
     &::after {
       right: auto;
+      top: -2px;
       left: -90px;
-      margin-bottom: -2px;
       padding-top: 5px;
       min-width: 67px;
       height: 67px;
       font-size: 28px;
       line-height: 28px;
+    }
+
+    &--2 {
+      &::after {
+        top: -1px;
+      }
+    }
+
+    &--3 {
+      &::after {
+        top: 0;
+      }
     }
   }
 
@@ -190,9 +200,17 @@
     justify-content: space-between;
     order: 2;
     margin: 0 34px 0 -67px;
-    padding-top: 3px;
+    padding-top: 17px;
     width: 100%;
     min-width: 94.3%;
+
+    &--2 {
+      padding-top: 16px;
+    }
+
+    &--3 {
+      padding-top: 15px;
+    }
   }
 
   .rates__text {
@@ -201,6 +219,7 @@
   }
 
   .rates__price {
+    margin-left: auto;
     font-size: 28px;
     line-height: 33px;
   }
@@ -261,7 +280,7 @@
 
   .rates__list {
     flex-basis: 87%;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 
     &::before {
       top: -51px;
@@ -274,7 +293,6 @@
   .rates__item {
     align-items: flex-start;
     margin-right: 359px;
-    margin-bottom: -1px;
 
     &::after {
       position: absolute;
