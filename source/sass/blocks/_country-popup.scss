@@ -6,6 +6,7 @@
   display: none;
   position: absolute;
   top: 43px;
+  left: 0;
   z-index: 10;
   width: 100%;
 
@@ -16,7 +17,7 @@
 
 .country-popup__title {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 13px 12px 11px;
   margin: 0;
   color: #1d2e5b;

@@ -25,6 +25,7 @@
   .country-patch {
     display: flex;
     padding: 0;
+    width: 65%;
   }
 
   .country-patch__item {
@@ -44,6 +45,6 @@
 @media (min-width: $desktop) {
   .country-patch {
     padding: 1px 0 0 0;
-    width: 65%;
+    width: 50%;
   }
 }

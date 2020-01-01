@@ -49,7 +49,7 @@
   }
 
   .steps__item {
-    flex-basis: 45%;
+    width: 45%;
     flex-grow: 1;
     flex-direction: column;
     padding: 31px 90px 11px 33px;
@@ -69,7 +69,7 @@
 
     &--2 {
       margin-right: 0;
-      flex-basis: 41%;
+      width: 41%;
     }
 
     &--3 {
@@ -80,7 +80,7 @@
     &--4 {
       border-radius: 0 0 20px 20px;
       margin-right: 0;
-      flex-basis: 41%;
+      width: 41%;
     }
   }
 }
@@ -92,7 +92,7 @@
 
   .steps__item {
     flex-direction: row;
-    flex-basis: 315px;
+    width: 315px;
     padding: 29px 73.5px 30px 34px;
     border-radius: 20px;
     min-width: 355px;

@@ -106,7 +106,7 @@
 
 @media (min-width: $desktop) {
   .music {
-    flex-direction: column;
+    display: block;
     padding: 0 5px 10px;
   }
 
