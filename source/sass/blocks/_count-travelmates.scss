@@ -44,6 +44,14 @@
     padding: 1px 5px 0 0;
     background-image: url("../img/qty-plus-mobile.svg");
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .count-travelmates__input {
@@ -55,6 +63,7 @@
   text-transform: uppercase;
   text-align: center;
   border: none;
+  appearance: textfield;
 }
 
 @media (min-width: $tablet) {
@@ -92,6 +101,7 @@
 
 @media (min-width: $desktop) {
   .count-travelmates {
+    width: 55.5%;
     flex-wrap: nowrap;
     margin-bottom: 14px;
   }
@@ -110,6 +120,22 @@
   .count-travelmates__input-box {
     flex-basis: 32.6%;
     margin: 0;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:hover .count-travelmates__btn {
+      opacity: 0;
+    }
+
+    &:focus-within {
+      border-color: #161c35;
+    }
+
+    &:focus-within .count-travelmates__btn {
+      opacity: 0;
+    }
   }
 
   .count-travelmates__input {

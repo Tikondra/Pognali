@@ -47,6 +47,15 @@
   margin-right: -0.8px;
 }
 
+.transport-select__btn {
+  fill: $dark-slate-blue;
+  opacity: 0.15;
+}
+
+.transport-select__input:checked ~ .transport-select__label .transport-select__btn {
+  opacity: 1;
+}
+
 @media (min-width: $tablet) {
   .transport-select {
     display: flex;

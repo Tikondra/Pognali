@@ -13,6 +13,25 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  overflow: hidden;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation__span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: $tablet) {
@@ -46,20 +65,28 @@
       }
 
       &::before {
+        width: 45px;
+        margin: 0 45px 0 14px;
         background-color: #161c35;
       }
     }
   }
 
   .navigation__item {
-    margin-right: 4.4%;
+    margin-right: 2.4%;
   }
 
   .navigation__link {
     padding-top: 8px;
+    padding-right: 15px;
     color: #ffffff;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: -0.1px;
+
+    &:hover .navigation__span {
+      color: #ffd74b;
+      transform: translateY(-100%);
+    }
   }
 }

@@ -109,6 +109,18 @@
 
     &--email {
       background-color: #ffbd30;
+
+      &:hover {
+        background-color: #ff8d30;
+      }
+    }
+
+    &:hover {
+      background-color: #f26926;
+    }
+
+    &:active svg {
+      opacity: 0.3;
     }
   }
 

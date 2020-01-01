@@ -96,6 +96,11 @@
   text-align: center;
   border-radius: 25px;
   background-color: #ffd74b;
+
+  &:active span {
+    background-color: #ffbd30;
+    opacity: 0.3;
+  }
 }
 
 .page-header__social {
@@ -141,6 +146,10 @@
       background-color: #182044;
     }
 
+    &--catalog {
+      padding: 17px 15px 18px;
+    }
+
     &--scroll {
       background-color: #ffffff;
     }
@@ -174,6 +183,10 @@
     justify-content: flex-start;
     padding: 40px 40px 74px 97px;
     background-color: transparent;
+
+    &--catalog {
+      padding: 39px 40px 74px 97px;
+    }
 
     &--open {
       background-color: #ffffff;
@@ -218,6 +231,10 @@
   .page-header {
     padding: 47px 15px 5px;
     background-color: #161c36;
+
+    &--form {
+      padding: 46px 15px 5px;
+    }
 
     &--scroll {
       background-color: #ffffff;
@@ -278,6 +295,10 @@
     margin: 0;
     padding: 12px 25px 8px;
     min-width: 189px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
   }
 
   .page-header__contacts {

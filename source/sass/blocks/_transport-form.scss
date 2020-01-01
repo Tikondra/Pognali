@@ -46,6 +46,10 @@
 
   background-color: #ffffff;
   border-radius: 50%;
+
+  &:active .transport-form__label {
+    opacity: 0.3;
+  }
 }
 
 .transport-form__label {
@@ -103,5 +107,9 @@
 
   .transport-form__item {
     margin: 0;
+
+    &:hover {
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+    }
   }
 }

@@ -7,27 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
-    <header class="page-header page-header--no-js">
+    <header class="page-header page-header--catalog page-header--no-js">
       <div class="wrapper page-header__content">
         <button class="page-header__menu-open" type="button" aria-label="меню"></button>
 
-        <div class="page-header__info page-header__info--close">
+        <div class="page-header__info page-header__info--catalog page-header__info--close">
 
           <nav class="page-header__navigation navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="index.html">О сервисе</a>
+                <a class="navigation__link" href="index.html">
+                  <span class="navigation__span" data-hover="О&nbsp;сервисе">
+                    О сервисе
+                  </span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="form.html">Направления</a>
+                <a class="navigation__link" href="form.html">
+                  <span class="navigation__span" data-hover="Направления">
+                    Направления
+                  </span>
+                </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link">Попутчики</a>
+                <a class="navigation__link" href="catalog.html">
+                  <span class="navigation__span" data-hover="Попутчики">
+                    Попутчики
+                  </span>
+                </a>
               </li>
             </ul>
           </nav>
 
-          <a class="page-header__btn-author btn">Авторизация</a>
+          <a class="page-header__btn-author btn">
+            <span>
+              Авторизация
+            </span>
+          </a>
 
           <div class="page-header__contacts contacts  contacts--header">
             <a class="contacts__link contacts__link--tel" href="tel:88005558628">
@@ -656,7 +672,7 @@
             <button class="transport-select__title transport-select__title--open" type="button" aria-label="Развернуть-свернуть">Транспорт</button>
             <ul class="transport-select__list">
               <li class="transport-select__item">
-                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select1">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select1" checked>
                   <label class="transport-select__label transport-select__label--plane" for="transport-select1">
                     <svg class="transport-select__btn transport-select__btn--plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14" height="16">
                       <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
@@ -664,7 +680,7 @@
                   </label>
               </li>
               <li class="transport-select__item">
-                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bus" id="transport-select2">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bus" id="transport-select2" checked>
                   <label class="transport-select__label" for="transport-select2">
                     <svg class="transport-select__btn transport-select__btn--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13" height="16">
                       <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
@@ -680,7 +696,7 @@
                   </label>
               </li>
               <li class="transport-select__item">
-                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="walk" id="transport-select4">
+                <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="walk" id="transport-select4" checked>
                   <label class="transport-select__label" for="transport-select4">
                     <svg class="transport-select__btn transport-select__btn--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
                       <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/>

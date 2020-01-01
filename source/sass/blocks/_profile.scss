@@ -66,6 +66,10 @@
   border: none;
   border-radius: 20px;
   background-color: #dfe3f0;
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .profile__transport {
@@ -161,7 +165,7 @@
   .profile__title {
     max-width: 1440px;
     margin: auto;
-    padding: 218px 126px 0;
+    padding: 217px 126px 0;
 
     &::after {
       width: 357px;
@@ -197,6 +201,10 @@
     margin: 0 155px 26px 1095px;
     padding: 16px 25px 13px;
     border-radius: 0 0 10px 10px;
+
+    &:hover {
+      background-color: #d1d7e9;
+    }
   }
 
   .profile__photo-hide {

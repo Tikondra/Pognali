@@ -9,7 +9,6 @@
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
-  flex-basis: 100%;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
@@ -87,7 +86,7 @@
 
   .level-select__title {
     padding-top: 10px;
-    flex-basis: 20.5%;
+    width: 20.5%;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -143,12 +142,12 @@
   }
 
   .level-select__title {
-    flex-basis: 100%;
+    width: 100%;
     margin-bottom: 13px;
   }
 
   .level-select__input {
-    flex-basis: 50%;
+    width: 50%;
   }
 
   .level-select__btn {
