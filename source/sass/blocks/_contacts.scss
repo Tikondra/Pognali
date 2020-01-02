@@ -12,7 +12,6 @@
 
 .contacts__link-text {
   margin: 0;
-  margin-top: 2px;
 
   &--reg {
     color: #ffd74b;
@@ -21,6 +20,7 @@
 
 .contacts__svg-box {
   @include center-flex;
+  padding-top: 1px;
   width: 45px;
   height: 45px;
   margin-right: 16px;
@@ -38,7 +38,7 @@
 
 @media (min-width: $tablet) {
   .contacts {
-    padding: 21px 20px 29px 50px;
+    padding: 22px 20px 28px 50px;
 
     &--header {
       padding: 0;

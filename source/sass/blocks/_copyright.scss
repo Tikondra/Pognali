@@ -5,11 +5,12 @@
 }
 
 .copyright__text {
+  padding-top: 2px;
   color: #444444;
 }
 
 .copyright__link {
-  padding-top: 8px;
+  padding-top: 11px;
 }
 
 @media (min-width: $tablet) {
@@ -19,20 +20,21 @@
   }
 
   .copyright__text {
-    padding-bottom: 5px;
+    padding-bottom: 14px;
   }
 
   .copyright__link {
     margin-left: 25px;
+    padding-top: 1px;
   }
 }
 
 @media (min-width: $desktop) {
   .copyright__link {
-    padding-top: 15px;
+    padding-top: 6px;
   }
 
   .copyright__text {
-    padding-top: 3px;
+    padding-top: 7px;
   }
 }

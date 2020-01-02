@@ -214,4 +214,10 @@
   .reg-form__input {
     padding: 26.5px 33px 28.5px;
   }
+
+  .reg-form__link {
+    &::after {
+      top: 31px;
+    }
+  }
 }

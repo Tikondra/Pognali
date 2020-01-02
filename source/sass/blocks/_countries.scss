@@ -63,10 +63,6 @@
   background-color: #ffffff;
   border-radius: 10px;
 
-  &--3 {
-    margin-top: -18px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -74,11 +70,25 @@
     left: 25px;
     width: 35px;
     height: 24px;
-    background-image: url("../img/flag.jpg");
+    background-image: url("../img/flag-thailand.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+  }
+
+  &--fr {
+    &::before {
+      background-image: url("../img/flag-france.svg");
+    }
+  }
+
+  &--3 {
+    margin-top: -18px;
+
+    &::before {
+      background-image: url("../img/flag-czech.svg");
+    }
   }
 }
 
@@ -209,10 +219,10 @@
     border-radius: 20px 0 0 20px;
 
     &::before {
-      top: 16px;
+      top: 16.5px;
       left: auto;
-      right: -36px;
-      width: 70px;
+      right: -37px;
+      width: 71px;
       height: 47px;
     }
   }
