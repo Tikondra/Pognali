@@ -1,5 +1,5 @@
 .select-travelmates {
-  padding: 26px 20px 22px;
+  padding: 25px 20px 22px;
   border-radius: 20px;
   background-color: #ffd74b;
 }
@@ -32,11 +32,11 @@
 
 @media (min-width: $tablet) {
   .select-travelmates {
-    padding: 36px 29px 38px;
+    padding: 34px 29px 38px;
   }
 
   .select-travelmates__title {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
     font-size: 30px;
     line-height: 30px;
     letter-spacing: 0;
@@ -46,7 +46,7 @@
     width: 98%;
     display: block;
     margin: auto;
-    padding: 12px 25px 8px 20px;
+    padding: 10px 25px 10px 20px;
     font-size: 20px;
     line-height: 30px;
     border-radius: 25px;
@@ -56,7 +56,7 @@
 @media (min-width: $desktop) {
   .select-travelmates {
     max-width: 285px;
-    padding: 46.5px 41px 47px 41.5px;
+    padding: 45px 41px 47px 41.5px;
   }
 
   .select-travelmates__title {

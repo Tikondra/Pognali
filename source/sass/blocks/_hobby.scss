@@ -25,6 +25,10 @@
   }
 }
 
+.hobby__title-span {
+  display: none;
+}
+
 .hobby__list {
   @include list;
   display: none;
@@ -60,7 +64,7 @@
 @media (min-width: $tablet) {
   .hobby {
     display: flex;
-    padding: 33px 6px 10px;
+    padding: 31px 6px 10px;
     border-bottom: none;
   }
 
@@ -70,6 +74,10 @@
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+  }
+
+  .hobby__title-span {
+    display: inline;
   }
 
   .hobby__list {
@@ -89,7 +97,7 @@
   .hobby__check {
     width: 24px;
     height: 24px;
-    margin-right: 11px;
+    margin: 2px 11.5px 1px -1px;
   }
 
   .hobby__input:checked ~ .hobby__label .hobby__check {
@@ -97,7 +105,7 @@
   }
 
   .hobby__text {
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -113,6 +121,10 @@
   .hobby__list {
     display: none;
     flex-direction: column;
+  }
+
+  .hobby__title-span {
+    display: none;
   }
 
   .hobby__item {

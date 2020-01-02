@@ -1,0 +1,41 @@
+.logo {
+  height: 19px;
+
+  &[href] {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.logo__img {
+  width: 100px;
+  height: 19px;
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    height: 42px;
+  }
+
+  .logo__img {
+    width: 166px;
+    height: 42px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    height: 52px;
+    margin-right: 40px;
+  }
+
+  .logo__img {
+    width: 200px;
+    height: 52px;
+  }
+}

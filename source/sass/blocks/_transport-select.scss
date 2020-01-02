@@ -24,6 +24,10 @@
   }
 }
 
+.transport-select__title-span {
+  display: none;
+}
+
 .transport-select__list {
   @include list;
   display: flex;
@@ -70,6 +74,10 @@
     background-image: none;
   }
 
+  .transport-select__title-span {
+    display: inline;
+  }
+
   .transport-select__label {
     width: 43px;
     height: 43px;
@@ -80,7 +88,7 @@
   }
 
   .transport-select__list {
-    margin: -9px 0 0 -2px;
+    margin: -7px 0 0 -2px;
   }
 
   .transport-select__item {
@@ -116,5 +124,9 @@
 
   .transport-select__title {
     margin-bottom: 23px;
+  }
+
+  .transport-select__title-span {
+    display: none;
   }
 }

@@ -16,7 +16,6 @@
 .filter-country__btn-label {
   padding-left: 27px;
   margin: 0;
-  padding-top: 1px;
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #192144;
   font-size: 16px;
@@ -85,16 +84,17 @@
   }
 
   .filter-country__content {
-    padding: 16px 75px 49px 73px;
+    padding: 15px 75px 49px 73px;
     align-items: flex-start;
   }
 
   .filter-country__btn {
     flex-basis: 200px;
     margin-right: 0;
+    padding: 0;
     width: auto;
     height: auto;
-    background-position: right top 7px;
+    background-position: right top 9px;
     background-size: 27px 5px;
 
     .filter-country__btn-text {

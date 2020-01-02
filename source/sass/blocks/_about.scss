@@ -21,14 +21,19 @@
 .about__content {
   position: relative;
   z-index: 1;
-  padding: 41px 49px 65px;
+  padding: 39px 49px 66px;
   background-image: url("../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 18px 28px;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/about-mobile@2x.png");
+    background-size: 292px auto;
+  }
 }
 
 .about__title {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
@@ -51,7 +56,7 @@
 
 @media (min-width: $tablet) {
   .about {
-    padding: 222px 8px 23px 49px;
+    padding: 220px 8px 22px 49px;
     background-color: #182044;
     border-radius: 0 0 60px 60px;
 
@@ -69,8 +74,13 @@
 
   .about__content {
     background-image: url("../img/about-tablet@1x.png");
-    background-position: right top 84px;
+    background-position: right top 86px;
     padding-left: 26px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/about-tablet@2x.png");
+      background-size: 376px auto;
+    }
   }
 
   .about__title {
@@ -82,13 +92,13 @@
 
   .about__text {
     padding-right: 335px;
-    margin: 40px 0 31px;
+    margin: 41px 0 32px;
     font-size: 28px;
     line-height: 33px;
 
     &--bold {
       margin: 0;
-      margin-bottom: 51px;
+      margin-bottom: 53px;
       font-size: 21px;
       line-height: 25px;
     }
@@ -96,7 +106,7 @@
 
   .about__btn {
     display: block;
-    padding: 29.5px 36px 27px 33px;
+    padding: 27.5px 36px 29px 33px;
     max-width: 274px;
     color: #1d2e5b;
     font-size: 24px;
@@ -107,7 +117,7 @@
     background-color: #ffd74b;
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
-    background-position: right top 1px;
+    background-position: right top 3px;
     background-origin: content-box;
   }
 }
@@ -125,9 +135,14 @@
   .about__content {
     max-width: 1440px;
     margin: auto;
-    padding: 95px 129px 163px;
+    padding: 91px 129px 163px;
     background-image: url("../img/about-desktop@1x.png");
     background-position: right 60px top 85px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/about-desktop@2x.png");
+      background-size: 630px auto;
+    }
 
     &::before {
       content: "";
@@ -147,19 +162,19 @@
   }
 
   .about__text {
-    margin: 58px 0 38px;
+    margin: 59px 0 39px;
     padding-left: 2px;
     max-width: 950px;
 
     &--bold {
       max-width: 755px;
       margin: 0;
-      margin-bottom: 84px;
+      margin-bottom: 86px;
     }
   }
 
   .about__btn {
     margin-left: 2px;
-    padding: 30px 36px 27px 33px;
+    padding: 28px 36px 29px 33px;
   }
 }

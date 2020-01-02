@@ -9,13 +9,18 @@ function initMap() {
     disableDefaultUI: true
   });
 
-  var imgpin = 'img/map-marker.svg'
+  var imgpin = {
+    url: 'img/map-marker.svg',
+    scaledSize: new google.maps.Size(50, 50),
+  }
+
   var marker = new google.maps.Marker({
 
     position: {lat: 59.935900, lng: 30.321000},
 
     map: map,
     title: 'Погнали',
+    optimized: false,
     icon: imgpin
   });
 }

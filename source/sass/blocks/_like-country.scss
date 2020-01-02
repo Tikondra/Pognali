@@ -9,7 +9,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 10px;
     left: -18px;
     width: 117%;
     height: 1px;
@@ -52,6 +52,11 @@
 @media (min-width: $tablet) {
   .like-country__title {
     margin-left: 40px;
+
+    &::after {
+      left: -80px;
+      width: 151%;
+    }
   }
 
   .like-country__list {

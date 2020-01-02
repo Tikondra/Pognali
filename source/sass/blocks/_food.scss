@@ -25,6 +25,10 @@
   }
 }
 
+.food__title-span {
+  display: none;
+}
+
 .food__list {
   @include list;
   display: none;
@@ -72,6 +76,10 @@
     background-image: none;
   }
 
+  .food__title-span {
+    display: inline;
+  }
+
   .food__list {
     display: flex;
     flex-basis: 100%;
@@ -89,7 +97,7 @@
   .food__btn {
     width: 24px;
     height: 24px;
-    margin-right: 11px;
+    margin: 2px 11.5px 1px -1px;
   }
 
   .food__input:checked ~ .food__label .food__btn {
@@ -97,7 +105,7 @@
   }
 
   .food__text {
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -110,6 +118,10 @@
 
   .food__list {
     flex-direction: column;
+    display: none;
+  }
+
+  .food__title-span {
     display: none;
   }
 
