@@ -1,7 +1,7 @@
 .reg-form {
   position: relative;
   z-index: 4;
-  padding: 78px 0 28px;
+  padding: 76px 0 29px;
   margin-top: -30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
@@ -22,7 +22,7 @@
 
 .reg-form__text {
   padding: 0 35px 0 34px;
-  margin: 19px 0 18px;
+  margin: 20px 0 18px;
   color: #ffffff;
   font-weight: 300;
   text-align: center;
@@ -51,7 +51,7 @@
 
 .reg-form__form {
   display: flex;
-  margin: 29px 0;
+  margin: 30px 0 28px;
 }
 
 .reg-form__input {
@@ -95,7 +95,7 @@
 @media (min-width: $tablet) {
   .reg-form {
     margin-top: -60px;
-    padding: 91px 0 30px;
+    padding: 88px 0 32px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -115,7 +115,7 @@
   }
 
   .reg-form__form {
-    margin: 63px auto 59px;
+    margin: 66px auto 55px;
     width: 86%;
   }
 
@@ -156,11 +156,11 @@
   .reg-form__content {
     max-width: 1440px;
     margin: auto;
-    padding: 162px 134px 103px 132px;
+    padding: 158px 134px 105px 132px;
   }
 
   .reg-form__title {
-    margin-bottom: 57px;
+    margin-bottom: 58px;
   }
 
   .reg-form__text {
@@ -181,7 +181,7 @@
   }
 
   .reg-form__form {
-    margin: 57px 0 68px 0;
+    margin: 60px 0 66px 0;
     width: 100%;
   }
 
@@ -196,10 +196,10 @@
     display: flex;
     align-items: center;
     margin-left: 0;
-    padding: 1.7px 0 0 2.6px;
+    padding: 0 0 0 2.6px;
     width: 38.9%;
     border-radius: 0 20px 20px 0;
-    background-position: right 36px top 29px;
+    background-position: right 36px top 31px;
   }
 
   .reg-form__btn-text {
@@ -209,5 +209,9 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
+  }
+
+  .reg-form__input {
+    padding: 26.5px 33px 28.5px;
   }
 }

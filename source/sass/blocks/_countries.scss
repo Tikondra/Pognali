@@ -1,7 +1,7 @@
 .countries {
   position: relative;
   z-index: 2;
-  padding: 52px 25px 29px;
+  padding: 50px 25px 29px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
 }
@@ -12,7 +12,7 @@
 }
 
 .countries__section-title {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   color: $orange;
   font-size: 24px;
   font-weight: 700;
@@ -21,7 +21,7 @@
 }
 
 .countries__section-text {
-  margin-bottom: 60px;
+  margin-bottom: 61px;
   color: #444444;
   font-weight: 300;
 }
@@ -58,13 +58,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  margin-top: -18px;
+  margin-top: -17px;
   padding: 24px 24px 22px;
   background-color: #ffffff;
   border-radius: 10px;
 
   &--3 {
-    margin-top: -19px;
+    margin-top: -18px;
   }
 
   &::before {
@@ -122,10 +122,10 @@
 .countries__btn {
   margin-top: 26px;
   margin-bottom: 1px;
-  padding: 23px 23px 21px;
+  padding: 22px 23px;
   background-image: url("../img/triangle-arrow-right.svg");
   background-repeat: no-repeat;
-  background-position: right top -2px;
+  background-position: right top -1px;
   background-origin: content-box;
 }
 
@@ -139,7 +139,7 @@
 
 @media (min-width: $tablet) {
   .countries {
-    padding: 36px 25px 0;
+    padding: 32px 25px 0;
     border-radius: 0 0 60px 60px;
   }
 
@@ -147,11 +147,16 @@
     padding: 0 23px 80px;
     background-image: url("../img/flags-back@1x.png");
     background-repeat: no-repeat;
-    background-position: right 15px top 7px;
+    background-position: right 15px top 11px;
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/flags-back@2x.png");
+      background-size: 289px auto;
+    }
   }
 
   .countries__section-title {
-    margin-bottom: 58px;
+    margin-bottom: 59px;
     font-size: 45px;
     line-height: 45px;
     letter-spacing: -0.1px;
@@ -159,6 +164,7 @@
 
   .countries__section-text {
     padding: 0 250px 0 2px;
+    margin-bottom: 63px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -199,7 +205,7 @@
     flex-wrap: nowrap;
     width: 70%;
     margin-top: 0;
-    padding: 31px 24px 16px 30px;
+    padding: 29px 24px 19px 30px;
     border-radius: 20px 0 0 20px;
 
     &::before {
@@ -239,11 +245,11 @@
   .countries__btn {
     width: 92%;
     margin: auto;
-    padding: 30px 35px 27px 33px;
+    padding: 28px 35px 29px 33px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
-    background-position: right top 1px;
+    background-position: right top 3px;
   }
 }
 
@@ -264,7 +270,7 @@
   .countries__section-description {
     flex-grow: 1;
     width: 50%;
-    padding: 5px 100px 0 171px;
+    padding: 2px 100px 0 171px;
   }
 
   .countries__section-title {
@@ -290,7 +296,7 @@
   }
 
   .countries__description {
-    padding: 24px 24px 16px 30px;
+    padding: 22px 24px 20px 30px;
     width: 66.7%;
     min-height: 140px;
 
@@ -312,6 +318,6 @@
     flex-basis: 274px;
     margin-right: 171px;
     margin-top: -81px;
-    padding: 30px 36px 27px 33px;
+    background-position: right 1px top 3px;
   }
 }
