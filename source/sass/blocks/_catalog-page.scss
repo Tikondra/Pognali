@@ -1,5 +1,5 @@
 .catalog-page__title-box {
-  padding: 94px 25px 0;
+  padding: 91px 25px 0;
   border-radius: 0 0 20px 20px;
   background-color: #161c35;
 }
@@ -26,7 +26,7 @@
     z-index: 6;
     width: 173px;
     height: 5px;
-    margin-top: 4px;
+    margin-top: 7px;
     border-radius: 2px;
     background-color: #ff8d30;
   }
@@ -59,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 124px 50px 0 49px;
+    padding: 120px 50px 0 49px;
   }
 
   .catalog-page__link-home {
@@ -74,7 +74,7 @@
     text-decoration: none;
     background-image: url("../img/return.svg");
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top 3px right;
   }
 
   .catalog-page__title {
@@ -86,7 +86,7 @@
       height: 8px;
       top: 4px;
       left: 3px;
-      margin-top: 55px;
+      margin-top: 59px;
     }
   }
 

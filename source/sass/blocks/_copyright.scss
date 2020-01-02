@@ -9,7 +9,7 @@
 }
 
 .copyright__link {
-  padding-top: 9px;
+  padding-top: 8px;
 }
 
 @media (min-width: $tablet) {
@@ -18,8 +18,11 @@
     line-height: 24px;
   }
 
+  .copyright__text {
+    padding-bottom: 5px;
+  }
+
   .copyright__link {
-    padding-top: 10px;
     margin-left: 25px;
   }
 }

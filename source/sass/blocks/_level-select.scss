@@ -7,7 +7,7 @@
 .level-select__title {
   width: 100%;
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   padding: 0;
   color: #1d2e5b;
   font-size: 16px;
@@ -24,6 +24,10 @@
   &--open {
     background-image: url("../img/dropdown-up.svg");
   }
+}
+
+.level-select__title-span {
+  display: none;
 }
 
 .level-select__input {
@@ -80,12 +84,13 @@
   .level-select {
     position: relative;
     flex-wrap: nowrap;
-    padding: 0 6px 5px;
-    margin-bottom: 63px;
+    padding: 2px 6px 31px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid #f3c72b;
   }
 
   .level-select__title {
-    padding-top: 10px;
+    padding-top: 7px;
     width: 20.5%;
     font-size: 20px;
     font-weight: 500;
@@ -93,10 +98,14 @@
     background-image: none;
   }
 
+  .level-select__title-span {
+    display: inline;
+  }
+
   .level-select__input {
     align-self: flex-start;
     order: 1;
-    padding: 13px 10px 9px;
+    padding: 10px;
     width: 12.1%;
     font-size: 20px;
     line-height: 18px;
@@ -128,11 +137,12 @@
     flex-wrap: wrap;
     padding: 16px 5px 5px;
     margin-bottom: 37px;
+    border-bottom: none;
   }
 
   .level-select__range {
     order: 1;
-    padding: 37px 0 0;
+    padding: 36px 0 0;
 
     &::before {
       top: 36px;
@@ -142,7 +152,11 @@
 
   .level-select__title {
     width: 100%;
-    margin-bottom: 13px;
+    margin-bottom: 16px;
+  }
+
+  .level-select__title-span {
+    display: none;
   }
 
   .level-select__input {
@@ -150,7 +164,7 @@
   }
 
   .level-select__btn {
-    margin: -6px 0 -4px 59px;
+    margin: -5px 0 -5px 59px;
 
     &--max {
       margin-left: 106px;

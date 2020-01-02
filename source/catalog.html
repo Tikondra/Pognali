@@ -592,7 +592,7 @@
           <h2 class="select-travelmates__title">Подберите идеального попутчика</h2>
 
           <div class="select-travelmates__hobby hobby">
-            <button class="hobby__title" type="button" aria-label="Развернуть-свернуть">Хобби</button>
+            <button class="hobby__title" type="button" aria-label="Развернуть-свернуть">Хобби<span class="hobby__title-span">:</span></button>
 
             <ul class="hobby__list">
               <li class="hobby__item">
@@ -620,7 +620,7 @@
           </div>
 
           <div class="select-travelmates__music music">
-            <button class="music__title music__title--open" type="button" aria-label="Развернуть-свернуть">Музыка</button>
+            <button class="music__title music__title--open" type="button" aria-label="Развернуть-свернуть">Музыка<span class="music__title-span">:</span></button>
 
             <ul class="music__list">
               <li class="music__item">
@@ -648,7 +648,7 @@
           </div>
 
           <div class="select-travelmates__food food">
-            <button class="food__title" type="button" aria-label="Развернуть-свернуть">Еда</button>
+            <button class="food__title" type="button" aria-label="Развернуть-свернуть">Еда<span class="food__title-span">:</span></button>
             <ul class="food__list">
               <li class="food__item">
                 <input class="food__input visually-hidden" type="checkbox" name="food" value="food1" id="food1">
@@ -675,7 +675,7 @@
           </div>
 
           <div class="select-travelmates__transport-select transport-select">
-            <button class="transport-select__title transport-select__title--open" type="button" aria-label="Развернуть-свернуть">Транспорт</button>
+            <button class="transport-select__title transport-select__title--open" type="button" aria-label="Развернуть-свернуть">Транспорт<span class="transport-select__title-span">:</span></button>
             <ul class="transport-select__list">
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select1" checked>
@@ -714,7 +714,7 @@
           </div>
 
           <div class="select-travelmates__level-select level-select">
-            <button class="level-select__title level-select__title--open" type="button" aria-label="Развернуть-свернуть">Левел</button>
+            <button class="level-select__title level-select__title--open" type="button" aria-label="Развернуть-свернуть">Левел<span class="level-select__title-span">:</span></button>
             <input class="level-select__input level-select__input--min" type="text" name="min-level" value="30">
             <input class="level-select__input level-select__input--max" type="text" name="max-level" value="100">
             <div class="level-select__range">
@@ -732,9 +732,12 @@
           <ul class="travelmates-card__list">
             <li class="travelmates-card__item">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg"/>
-                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg"/>
-                <img  class="travelmates-card__img" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова" width="70" height="70"/>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                <img class="travelmates-card__img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" width="70" height="70" alt="Таня Фирсова">
               </picture>
               <div class="travelmates-card__content">
                 <h3 class="travelmates-card__name">Таня Фирсова</h3>
@@ -834,9 +837,12 @@
 
             <li class="travelmates-card__item">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg"/>
-                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg"/>
-                <img class="travelmates-card__img" src="img/demin-mobile@1x.jpg" alt="Петя Демин" width="70" height="70"/>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                <img class="travelmates-card__img" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" width="70" height="70" alt="Петя Демин">
               </picture>
               <div class="travelmates-card__content">
                 <h3 class="travelmates-card__name">Петя Демин</h3>
@@ -927,9 +933,12 @@
 
             <li class="travelmates-card__item">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg"/>
-                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg"/>
-                <img class="travelmates-card__img" src="img/smolov-mobile@1x.jpg" alt="Марк Смолов" width="70" height="70"/>
+                <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                <img class="travelmates-card__img" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" width="70" height="70" alt="Марк Смолов">
               </picture>
               <div class="travelmates-card__content">
                 <h3 class="travelmates-card__name">Марк Смолов</h3>
