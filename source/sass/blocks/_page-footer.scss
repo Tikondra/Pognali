@@ -11,6 +11,10 @@
   margin: 37px 0 0;
   padding-bottom: 37px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+  &--catalog {
+    margin-top: 31px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -51,6 +55,10 @@
 
     &--index {
       padding: 12px 60px 7px;
+    }
+
+    &--catalog {
+      padding: 12px 59px 7px 61px;
     }
   }
 

@@ -123,6 +123,16 @@
     padding: 6px 0 0 2px;
   }
 
+  .music__title {
+    background-image: url("../img/dropdown.svg");
+    background-position: right 1px top 12px;
+    background-size: 10px 5px;
+
+    &--open {
+      background-image: url("../img/dropdown-up.svg");
+    }
+  }
+
   .music__title-span {
     display: none;
   }

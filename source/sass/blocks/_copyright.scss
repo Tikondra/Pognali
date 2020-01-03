@@ -11,12 +11,20 @@
 
 .copyright__link {
   padding-top: 11px;
+
+  &--catalog {
+    padding-top: 12px;
+  }
 }
 
 @media (min-width: $tablet) {
   .copyright {
     font-size: 20px;
     line-height: 24px;
+
+    &--catalog {
+      padding-bottom: 2px;
+    }
   }
 
   .copyright__text {

@@ -93,5 +93,32 @@
   .transport-card__list {
     flex-direction: row;
     padding-top: 12px;
+
+    &--demin {
+      padding-top: 14px;
+    }
+
+    &--smolov {
+      padding-top: 11px;
+    }
+  }
+
+  .transport-card__svg {
+    &--plane {
+      margin: -1px 6px 0 0;
+    }
+
+    &--bus {
+      margin: -1px 1px 0 0;
+    }
+
+    &--bike {
+      width: 24px;
+      margin: -1px 0 0 2px;
+    }
+
+    &--run {
+      margin: -1px 0 0 0;
+    }
   }
 }
