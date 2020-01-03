@@ -67,11 +67,11 @@
 
 @media (min-width: $tablet) {
   .plans {
-    padding: 20px 75px 97px;
+    padding: 17px 75px 97px;
   }
 
   .plans__section-title {
-    margin-bottom: 41px;
+    margin-bottom: 44px;
     font-size: 36px;
     line-height: 50px;
     letter-spacing: -0.3px;
@@ -83,7 +83,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 32px 0;
+    padding: 2px 32px 1px;
 
     &::before {
       content: "";
@@ -144,7 +144,7 @@
 
 @media (min-width: $desktop) {
   .plans {
-    padding: 19px 60px 108px 124px;
+    padding: 16px 60px 108px 124px;
     border-radius: 60px 60px 0 0;
   }
 
@@ -171,7 +171,7 @@
 
   .plans__item {
     justify-content: flex-start;
-    padding: 25px 39px 22px;
+    padding: 23px 39px 24px;
     margin-bottom: 15px;
 
     &::before {

@@ -4,8 +4,10 @@
 
 .fun__country {
   position: relative;
+  max-width: 84%;
+  width: 100%;
   padding-left: 11px;
-  margin: 2px -20px 16px 0;
+  margin: 2px -20px 17px 0;
   color: #1d2e5b;
   font-size: 18px;
   font-weight: 500;
@@ -14,7 +16,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 8px;
+    top: 9px;
     left: -13px;
     width: 15px;
     height: 2px;
@@ -24,13 +26,23 @@
   &::after {
     content: "";
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: -3px;
     width: 6px;
     height: 6px;
     background-color: #1d2e5b;
     border-radius: 50%;
   }
+}
+
+.fun__country-blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 49px;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #ffffff7d 0%, #ffffff 50%);
 }
 
 .fun__flag {
@@ -48,7 +60,7 @@
     content: "";
     position: absolute;
     z-index: 0;
-    top: 10px;
+    top: 11px;
     left: -9px;
     right: 0;
     bottom: -37px;
@@ -56,7 +68,7 @@
   }
 
   &--2 {
-    margin: 25px 0 21px;
+    margin: 24px 0 21px;
 
     &::before {
       display: none;
@@ -67,7 +79,7 @@
 .fun__text {
   position: relative;
   z-index: 1;
-  padding: 9px 13px;
+  padding: 8px 13px;
   width: 100%;
   min-height: 220px;
   color: #444444;
@@ -92,19 +104,19 @@
       top: 26px;
       left: 0;
       right: 26px;
-      bottom: -68px;
+      bottom: -65px;
       border: none;
       border-right: 3px solid #1d2e5b;
     }
 
     &--2 {
-      margin: 41px 0 46px;
+      margin: 39px 0 46px;
     }
   }
 
   .fun__country {
-    min-width: 400px;
-    margin: 11px 0 37px 0;
+    max-width: 75%;
+    margin: 11px 0 39px;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
@@ -115,8 +127,9 @@
     }
 
     &::after {
-      top: 8px;
-      left: 132.7%;
+      top: 10px;
+      left: auto;
+      right: -131px;
       width: 15px;
       height: 15px;
     }
@@ -125,7 +138,7 @@
   .fun__text {
     width: 90.3%;
     min-height: 142px;
-    padding: 17px 30px 17px 17px;
+    padding: 15px 30px 17px 17px;
     margin-left: 12px;
     font-size: 20px;
     line-height: 24px;
@@ -133,9 +146,13 @@
 
   .fun__flag {
     display: block;
-    margin: 2px 43px 0 auto;
-    width: 70px;
-    height: 47px;
+    margin: 4px 43px 0 auto;
+    width: 71px;
+    height: 48px;
+
+    &--czech {
+      margin: 4px 42px 0 auto;
+    }
   }
 }
 
@@ -150,6 +167,10 @@
   .fun__item {
     padding: 0;
 
+    &--2 {
+      margin: 41px 0 46px;
+    }
+
     &::before {
       right: 152px;
     }
@@ -157,13 +178,14 @@
 
   .fun__country {
     padding: 0;
+    margin: 9px 0 39px;
 
     &::before {
       display: none;
     }
 
     &::after {
-      left: 191.9%;
+      right: -86px;
     }
   }
 
@@ -173,7 +195,7 @@
 
   .fun__text {
     width: 78.6%;
-    padding: 24px 15px 17px 24.5px;
+    padding: 22px 15px 17px 24.5px;
     margin-left: 1px;
   }
 }

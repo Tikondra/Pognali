@@ -15,6 +15,10 @@
   &--catalog {
     margin-top: 31px;
   }
+
+  &--form {
+    margin-top: 31px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -37,6 +41,10 @@
 
   .page-footer__copyright {
     margin-left: auto;
+
+    &--form {
+      padding-bottom: 1px;
+    }
   }
 }
 
@@ -49,7 +57,7 @@
   .page-footer__content {
     max-width: 1440px;
     margin: auto;
-    padding: 12px 59px 25px 61px;
+    padding: 12px 59px 7px 61px;
     display: flex;
     justify-content: space-between;
 

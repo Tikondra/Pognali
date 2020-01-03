@@ -2,7 +2,7 @@
   position: relative;
   z-index: 20;
   margin-top: -30px;
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   padding: 8px 25px;
   border-radius: 30px;
   background-color: #d4d9eb;
@@ -49,8 +49,8 @@
 
 @media (min-width: $tablet) {
   .add-plan {
-    padding: 16px 75px;
-    margin-bottom: 7px;
+    padding: 13px 75px;
+    margin-bottom: 10px;
   }
 
   .add-plan__step {
@@ -58,7 +58,7 @@
   }
 
   .add-plan__title-box {
-    margin-bottom: 19px;
+    margin-bottom: 22px;
   }
 
   .add-plan__section-title {
@@ -97,7 +97,7 @@
   }
 
   .add-plan__section-title {
-    margin: 49px auto 11px 70px;
+    margin: 46px auto 14px 70px;
   }
 
   .add-plan__dot {
