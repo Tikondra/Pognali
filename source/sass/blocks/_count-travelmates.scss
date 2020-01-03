@@ -131,16 +131,8 @@
       border-color: #959bb2;
     }
 
-    &:hover .count-travelmates__btn {
-      opacity: 0;
-    }
-
     &:focus-within {
       border-color: #161c35;
-    }
-
-    &:focus-within .count-travelmates__btn {
-      opacity: 0;
     }
   }
 

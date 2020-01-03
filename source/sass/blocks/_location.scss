@@ -34,7 +34,7 @@
   width: 45px;
   height: 45px;
   margin-right: 16px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   background-color: #121936;
   border-radius: 50%;
 }
@@ -99,7 +99,7 @@
   .location__content {
     max-width: 1440px;
     margin: auto;
-    padding: 114px 134px 54px 283px;
+    padding: 114px 134px 55px 283px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -108,8 +108,8 @@
 
   .location__btn {
     margin-top: -1px;
-    padding: 26.5px 64px 24.5px 33px;
-    background-position: right -31px top 1px;
+    padding: 25px 64px 26px 33px;
+    background-position: right -31px top 3px;
   }
 
   .location__pin {
@@ -126,5 +126,6 @@
 
   .location__address-text {
     padding-top: 0;
+    margin: 22px 0 26px;
   }
 }

@@ -10,7 +10,7 @@
 }
 
 .copyright__link {
-  padding-top: 11px;
+  padding-top: 12px;
 
   &--catalog {
     padding-top: 12px;
@@ -43,10 +43,10 @@
 
 @media (min-width: $desktop) {
   .copyright__link {
-    padding-top: 6px;
+    padding-top: 4px;
   }
 
   .copyright__text {
-    padding-top: 7px;
+    padding-top: 6px;
   }
 }
