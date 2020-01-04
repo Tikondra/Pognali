@@ -5,7 +5,6 @@
 .music__title {
   width: 100%;
   margin: 0;
-  margin-bottom: 13px;
   padding: 0;
   color: #1d2e5b;
   font-size: 16px;
@@ -20,6 +19,7 @@
   border: none;
 
   &--open {
+    margin-bottom: 13px;
     background-image: url("../img/dropdown-up.svg");
   }
 }
@@ -75,15 +75,20 @@
 @media (min-width: $tablet) {
   .music {
     display: flex;
-    padding: 0 5px 2px;
+    padding: 0 5px 5px;
   }
 
   .music__title {
+    padding-bottom: 5px;
     flex-basis: 26%;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+
+    &--open {
+      margin-bottom: 0;
+    }
   }
 
   .music__title-span {
@@ -93,7 +98,7 @@
   .music__list {
     display: flex;
     flex-basis: 100%;
-    padding-top: 2px;
+    padding-top: 7px;
   }
 
   .music__item {
@@ -146,6 +151,7 @@
     background-size: 10px 5px;
 
     &--open {
+      margin-bottom: 8px;
       background-image: url("../img/dropdown-up.svg");
     }
   }

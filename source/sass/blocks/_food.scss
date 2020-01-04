@@ -88,6 +88,10 @@
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+
+    &--open {
+      margin-bottom: 0;
+    }
   }
 
   .food__title-span {
@@ -150,6 +154,7 @@
     background-size: 10px 5px;
 
     &--open {
+      margin-bottom: 13px;
       background-image: url("../img/dropdown-up.svg");
     }
   }
