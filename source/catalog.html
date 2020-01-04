@@ -604,7 +604,7 @@
           <div class="select-travelmates__hobby hobby">
             <button class="hobby__title" type="button" aria-label="Развернуть-свернуть">Хобби<span class="hobby__title-span">:</span></button>
 
-            <ul class="hobby__list">
+            <ul class="hobby__list hobby__list--no-js">
               <li class="hobby__item">
                 <input class="hobby__input visually-hidden" type="checkbox" name="hobby" value="hobby1" id="hobby1">
                   <label class="hobby__label" for="hobby1">
@@ -630,9 +630,9 @@
           </div>
 
           <div class="select-travelmates__music music">
-            <button class="music__title music__title--open" type="button" aria-label="Развернуть-свернуть">Музыка<span class="music__title-span">:</span></button>
+            <button class="music__title" type="button" aria-label="Развернуть-свернуть">Музыка<span class="music__title-span">:</span></button>
 
-            <ul class="music__list">
+            <ul class="music__list music__list--no-js">
               <li class="music__item">
                 <input class="music__input visually-hidden" type="checkbox" name="music" value="rock" id="music1" checked>
                   <label class="music__label" for="music1">
@@ -659,7 +659,7 @@
 
           <div class="select-travelmates__food food">
             <button class="food__title" type="button" aria-label="Развернуть-свернуть">Еда<span class="food__title-span">:</span></button>
-            <ul class="food__list">
+            <ul class="food__list food__list--no-js">
               <li class="food__item">
                 <input class="food__input visually-hidden" type="checkbox" name="food" value="food1" id="food1">
                   <label class="food__label" for="food1">
@@ -685,8 +685,8 @@
           </div>
 
           <div class="select-travelmates__transport-select transport-select">
-            <button class="transport-select__title transport-select__title--open" type="button" aria-label="Развернуть-свернуть">Транспорт<span class="transport-select__title-span">:</span></button>
-            <ul class="transport-select__list">
+            <button class="transport-select__title" type="button" aria-label="Развернуть-свернуть">Транспорт<span class="transport-select__title-span">:</span></button>
+            <ul class="transport-select__list transport-select__list--no-js">
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select1" checked>
                   <label class="transport-select__label transport-select__label--plane" for="transport-select1">
@@ -697,7 +697,7 @@
               </li>
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bus" id="transport-select2" checked>
-                  <label class="transport-select__label" for="transport-select2">
+                  <label class="transport-select__label transport-select__label--bus" for="transport-select2">
                     <svg class="transport-select__btn transport-select__btn--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13" height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
@@ -723,12 +723,14 @@
           </div>
 
           <div class="select-travelmates__level-select level-select">
-            <button class="level-select__title level-select__title--open" type="button" aria-label="Развернуть-свернуть">Левел<span class="level-select__title-span">:</span></button>
-            <input class="level-select__input level-select__input--min" type="text" name="min-level" value="30">
-            <input class="level-select__input level-select__input--max" type="text" name="max-level" value="100">
-            <div class="level-select__range">
-              <button class="level-select__btn level-select__btn--min" type="button"></button>
-              <button class="level-select__btn level-select__btn--max" type="button"></button>
+            <button class="level-select__title" type="button" aria-label="Развернуть-свернуть">Левел<span class="level-select__title-span">:</span></button>
+            <div class="level-select__list level-select__list--no-js">
+              <input class="level-select__input level-select__input--min" type="text" name="min-level" value="30">
+              <input class="level-select__input level-select__input--max" type="text" name="max-level" value="100">
+              <div class="level-select__range">
+                <button class="level-select__btn level-select__btn--min" type="button"></button>
+                <button class="level-select__btn level-select__btn--max" type="button"></button>
+              </div>
             </div>
           </div>
 

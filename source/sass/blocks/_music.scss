@@ -30,6 +30,15 @@
 
 .music__list {
   @include list;
+  display: none;
+
+  &--no-js {
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
 }
 
 .music__item {
@@ -66,7 +75,7 @@
 @media (min-width: $tablet) {
   .music {
     display: flex;
-    padding: 10px 5px 5px;
+    padding: 0 5px 2px;
   }
 
   .music__title {
@@ -115,12 +124,20 @@
 @media (min-width: $desktop) {
   .music {
     display: block;
-    padding: 0 5px 10px;
+    padding: 0 5px 12px;
   }
 
   .music__list {
-    flex-direction: column;
+    display: none;
     padding: 6px 0 0 2px;
+
+    &--no-js {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+    }
   }
 
   .music__title {

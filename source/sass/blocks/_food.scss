@@ -21,6 +21,7 @@
   border: none;
 
   &--open {
+    margin-bottom: 13px;
     background-image: url("../img/dropdown-up.svg");
   }
 }
@@ -32,6 +33,18 @@
 .food__list {
   @include list;
   display: none;
+
+  &--no-js {
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.food__item {
+  margin-bottom: 11px;
 }
 
 .food__input:checked ~ .food__label .food__btn {
@@ -64,12 +77,13 @@
 @media (min-width: $tablet) {
   .food {
     display: flex;
-    padding: 2px 5px 7px;
+    padding: 0 5px 7px;
     border: none;
   }
 
   .food__title {
     flex-basis: 25.9%;
+    padding-bottom: 6px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -83,7 +97,7 @@
   .food__list {
     display: flex;
     flex-basis: 100%;
-    padding-top: 2px;
+    padding-top: 7px;
   }
 
   .food__item {
@@ -114,11 +128,20 @@
 @media (min-width: $desktop) {
   .food {
     display: block;
+    padding: 0 5px 0;
   }
 
   .food__list {
-    flex-direction: column;
     display: none;
+    padding: 6px 0 0 2px;
+
+    &--no-js {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+    }
   }
 
   .food__title {
@@ -137,9 +160,6 @@
 
   .food__item {
     min-width: 148px;
-
-    &--2 {
-      margin: 0;
-    }
+    margin: 0 0 13px;
   }
 }
