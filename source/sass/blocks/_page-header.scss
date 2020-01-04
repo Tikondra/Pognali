@@ -60,7 +60,7 @@
   }
 
   &--close {
-    width: 19px;
+    width: 22px;
     height: 19px;
     background-image: url("../img/menu-close.svg");
   }
@@ -72,8 +72,7 @@
   left: 0;
   right: 0;
   flex-direction: column;
-  padding: 25px 25px 28px;
-  padding-top: 117px;
+  padding: 115px 25px 28px;
   background-color: #ffffff;
 
   &--close {
@@ -87,12 +86,12 @@
 }
 
 .page-header__navigation {
-  margin-bottom: 50px;
+  margin-bottom: 51px;
 }
 
 .page-header__btn-author {
   display: block;
-  padding: 10px 38.5px;
+  padding: 10px 40px;
   margin-bottom: 51px;
   color: #161c35;
   font-size: 17px;
@@ -185,8 +184,7 @@
 
   .page-header__navigation {
     display: none;
-    margin-top: 43px;
-    margin-bottom: 129px;
+    margin: 38px 0 133px;
   }
 
   .page-header__contacts {
