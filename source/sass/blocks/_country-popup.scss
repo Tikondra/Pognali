@@ -16,27 +16,24 @@
 }
 
 .country-popup__title {
-  display: flex;
-  justify-content: flex-start;
-  padding: 13px 12px 11px;
-  margin: 0;
+  position: relative;
+  padding: 11px;
   color: #1d2e5b;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 1.4px;
-
-  border-radius: 4px 4px 0 0;
-  border: none;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
   background-color: #ffffff;
 
   &::before {
     content: "";
     position: absolute;
     z-index: 6;
-    top: 17px;
-    right: 49px;
+    top: 16px;
+    right: 48px;
     width: 8px;
     height: 8px;
     border: 1px solid #cbced9;
@@ -89,17 +86,16 @@
 
   .country-popup__title {
     width: 100%;
-    padding: 27px 25px 23px;
+    margin: 0;
+    padding: 24px 25px;
     max-width: 369px;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 1.9px;
-    background-size: 18px;
-    background-position: right 26px top 26px;
 
     &::before {
-      top: 26px;
-      right: 137px;
+      top: 25px;
+      right: -35px;
       width: 15px;
       height: 15px;
       background-color: #ffffff;
@@ -143,7 +139,7 @@
     max-width: 730px;
 
     &::before {
-      right: 218px;
+      right: -53px;
     }
   }
 

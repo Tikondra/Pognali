@@ -18,14 +18,18 @@
 }
 
 .location__btn {
-  margin-top: 15px;
-  padding: 19.8px 20px 18px;
-  border-radius: 10px;
+  margin-top: 16px;
+  padding: 19px 20px;
   border: 3px solid #192144;
-  background-image: url("../img/triangle-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-origin: content-box;
+
+  &:hover {
+    background-color: #192144;
+
+    span {
+      color: #ffffff;
+      background-image: url("../img/triangle-arrow-right-w.svg");
+    }
+  }
 }
 
 .location__pin {
@@ -34,7 +38,7 @@
   width: 45px;
   height: 45px;
   margin-right: 16px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   background-color: #121936;
   border-radius: 50%;
 }
@@ -46,7 +50,6 @@
 .location__address-text {
   display: block;
   max-width: 145px;
-  padding-top: 1px;
 }
 
 @media (min-width: $tablet) {
@@ -84,11 +87,11 @@
 
   .location__btn {
     margin-top: 35px;
-    padding: 25.5px 33px;
-    border-radius: 20px;
-    font-size: 24px;
-    line-height: 24px;
-    background-position: right top 3px;
+    padding: 24px 33px 25px;
+
+    span {
+      background-position: right top 4px;
+    }
   }
 }
 
@@ -100,17 +103,17 @@
   .location__content {
     max-width: 1440px;
     margin: auto;
-    padding: 114px 134px 54px 283px;
+    padding: 114px 134px 55px 283px;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
   }
 
   .location__btn {
-    margin-top: -1px;
-    padding: 26.5px 64px 24.5px 33px;
-    background-position: right -31px top 1px;
+    margin-left: auto;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 324px;
   }
 
   .location__pin {
@@ -127,5 +130,6 @@
 
   .location__address-text {
     padding-top: 0;
+    margin: 22px 0 26px;
   }
 }

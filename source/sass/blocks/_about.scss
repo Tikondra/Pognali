@@ -79,7 +79,7 @@
 
     @media (min-resolution: $retina) {
       background-image: url("../img/about-tablet@2x.png");
-      background-size: 376px auto;
+      background-size: 374px auto;
     }
   }
 
@@ -106,19 +106,7 @@
 
   .about__btn {
     display: block;
-    padding: 27.5px 36px 29px 33px;
     max-width: 274px;
-    color: #1d2e5b;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    text-decoration: none;
-    border-radius: 20px;
-    background-color: #ffd74b;
-    background-image: url("../img/triangle-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: right top 3px;
-    background-origin: content-box;
   }
 }
 
@@ -175,6 +163,5 @@
 
   .about__btn {
     margin-left: 2px;
-    padding: 28px 36px 29px 33px;
   }
 }

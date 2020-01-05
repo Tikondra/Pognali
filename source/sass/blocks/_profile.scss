@@ -97,14 +97,14 @@
   }
 
   .profile__title {
-    padding: 218px 74px 0;
+    padding: 215px 74px 0;
     font-size: 60px;
     line-height: 70px;
 
     &::after {
       width: 355px;
       height: 8px;
-      margin: 59px 0 -4px 2px;
+      margin: 62px 0 -4px 2px;
       border-radius: 10px;
     }
   }
@@ -137,7 +137,7 @@
 
   .profile__photo-change {
     order: 2;
-    padding: 22px 25px 20px;
+    padding: 20px 25px 22px;
     margin: 52px auto 51px;
     max-width: 80.5%;
     color: #1d2e5b;
@@ -165,11 +165,11 @@
   .profile__title {
     max-width: 1440px;
     margin: auto;
-    padding: 217px 126px 0;
+    padding: 215px 126px 0;
 
     &::after {
       width: 357px;
-      margin: 59px 0 -4px 0;
+      margin: 62px 0 -4px;
     }
   }
 
@@ -199,7 +199,7 @@
     order: 0;
     max-width: 56.5%;
     margin: 0 155px 26px 1095px;
-    padding: 16px 25px 13px;
+    padding: 14px 25px 15px;
     border-radius: 0 0 10px 10px;
 
     &:hover {

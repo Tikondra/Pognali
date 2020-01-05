@@ -5,34 +5,48 @@
 }
 
 .copyright__text {
+  padding-top: 2px;
   color: #444444;
 }
 
 .copyright__link {
-  padding-top: 8px;
+  padding-top: 12px;
+
+  &--catalog {
+    padding-top: 12px;
+  }
+
+  &--form {
+    padding-top: 12px;
+  }
 }
 
 @media (min-width: $tablet) {
   .copyright {
     font-size: 20px;
     line-height: 24px;
+
+    &--catalog {
+      padding-bottom: 2px;
+    }
   }
 
   .copyright__text {
-    padding-bottom: 5px;
+    padding-bottom: 14px;
   }
 
   .copyright__link {
     margin-left: 25px;
+    padding-top: 1px;
   }
 }
 
 @media (min-width: $desktop) {
   .copyright__link {
-    padding-top: 15px;
+    padding-top: 4px;
   }
 
   .copyright__text {
-    padding-top: 3px;
+    padding-top: 6px;
   }
 }

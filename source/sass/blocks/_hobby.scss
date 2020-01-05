@@ -21,6 +21,7 @@
   border: none;
 
   &--open {
+    margin-bottom: 13px;
     background-image: url("../img/dropdown-up.svg");
   }
 }
@@ -32,6 +33,18 @@
 .hobby__list {
   @include list;
   display: none;
+
+  &--no-js {
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.hobby__item {
+  margin-bottom: 11px;
 }
 
 .hobby__label {
@@ -64,16 +77,21 @@
 @media (min-width: $tablet) {
   .hobby {
     display: flex;
-    padding: 31px 6px 10px;
+    padding: 31px 6px 5px;
     border-bottom: none;
   }
 
   .hobby__title {
     flex-basis: 25.9%;
+    padding-bottom: 10px;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+
+    &--open {
+      margin-bottom: 0;
+    }
   }
 
   .hobby__title-span {
@@ -114,13 +132,32 @@
 @media (min-width: $desktop) {
   .hobby {
     display: block;
-    padding: 30px 5px 11px;
+    padding: 30px 5px 1px;
     border: none;
   }
 
   .hobby__list {
     display: none;
-    flex-direction: column;
+    padding: 6px 0 0 2px;
+
+    &--no-js {
+      display: block;
+    }
+
+    &--open {
+      display: block;
+    }
+  }
+
+  .hobby__title {
+    background-image: url("../img/dropdown.svg");
+    background-position: right 1px top 12px;
+    background-size: 10px 5px;
+
+    &--open {
+      margin-bottom: 13px;
+      background-image: url("../img/dropdown-up.svg");
+    }
   }
 
   .hobby__title-span {
@@ -129,9 +166,6 @@
 
   .hobby__item {
     min-width: 148px;
-
-    &--2 {
-      margin: 0;
-    }
+    margin: 0 0 13px;
   }
 }

@@ -5,7 +5,7 @@
 
 .duration__label {
   display: flex;
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 500;
@@ -44,10 +44,18 @@
     padding: 1px 5px 0 0;
     background-image: url("../img/qty-plus-mobile.svg");
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .duration__input {
-  padding-top: 7px;
+  padding-top: 3px;
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;
@@ -68,13 +76,19 @@
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+
+    &--gray {
+      margin-right: 3px;
+    }
   }
 
   .duration__input-box {
-    margin: 16px auto 21px;
+    margin: 17px auto 21px;
   }
 
   .duration__input {
+    padding-top: 0;
+    padding-right: 3px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -101,13 +115,13 @@
 
   .duration__label {
     flex-basis: 39.7%;
-    padding-top: 26px;
+    padding-top: 25px;
     padding-left: 1px;
 
     &--gray {
       order: 1;
       flex-basis: 21.5%;
-      padding-left: 4px;
+      padding-left: 7px;
       opacity: 1;
     }
   }
@@ -115,6 +129,14 @@
   .duration__input-box {
     flex-basis: 32.6%;
     margin: 0;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:focus-within {
+      border-color: #161c35;
+    }
   }
 
   .duration__input {

@@ -262,11 +262,11 @@
     align-items: flex-start;
     max-width: 1440px;
     margin: auto;
-    padding: 49px 46px 33px;
+    padding: 49px 46px 32px;
 
     &::before {
       right: 88px;
-      bottom: 233px;
+      bottom: 234px;
       width: 198px;
       height: 198px;
     }
@@ -280,7 +280,7 @@
 
   .rates__list {
     flex-basis: 87%;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 
     &::before {
       top: -51px;
@@ -325,7 +325,7 @@
     margin-top: -2px;
 
     &::before {
-      background-position: left 24px top 23px;
+      background-position: left 24px top 22px;
     }
   }
 }

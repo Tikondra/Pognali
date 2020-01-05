@@ -23,7 +23,7 @@ function initMap() {
     optimized: false,
     icon: imgpin
   });
-}
+};
 
 function menu () {
 
@@ -145,7 +145,7 @@ function statusBar () {
       rotate(elem.querySelector(".lvl__slice1"), firstHalfAngle);
       rotate(elem.querySelector(".lvl__slice2"), secondHalfAngle);
   }
-}
+};
 
 function countrySelect() {
   let box = document.querySelector('.country-popup');
@@ -159,7 +159,52 @@ function countrySelect() {
     popup.classList.toggle('country-popup__box--open')
     btnOpen.classList.toggle('country-popup__title--open')
   })
-}
+};
+
+function trevelmatesSelect() {
+  let form = document.querySelector('.select-travelmates');
+  let hobbyBtn = form.querySelector('.hobby__title');
+  let hobby = form.querySelector('.hobby__list');
+  let musicBtn = form.querySelector('.music__title');
+  let music = form.querySelector('.music__list');
+  let foodBtn = form.querySelector('.food__title');
+  let food = form.querySelector('.food__list');
+  let transportBtn = form.querySelector('.transport-select__title');
+  let transport = form.querySelector('.transport-select__list');
+  let lvlBtn = form.querySelector('.level-select__title');
+  let lvl = form.querySelector('.level-select__list');
+
+  hobby.classList.remove('hobby__list--no-js');
+  hobbyBtn.addEventListener('click', function() {
+    hobby.classList.toggle('hobby__list--open');
+    hobbyBtn.classList.toggle('hobby__title--open');
+  });
+
+  music.classList.remove('music__list--no-js');
+  musicBtn.addEventListener('click', function() {
+    music.classList.toggle('music__list--open');
+    musicBtn.classList.toggle('music__title--open');
+  });
+
+  food.classList.remove('food__list--no-js');
+  foodBtn.addEventListener('click', function() {
+    food.classList.toggle('food__list--open');
+    foodBtn.classList.toggle('food__title--open');
+  });
+
+  transport.classList.remove('transport-select__list--no-js');
+  transportBtn.addEventListener('click', function() {
+    transport.classList.toggle('transport-select__list--open');
+    transportBtn.classList.toggle('transport-select__title--open');
+  });
+
+  lvl.classList.remove('level-select__list--no-js');
+  lvlBtn.addEventListener('click', function() {
+    lvl.classList.toggle('level-select__list--open');
+    lvlBtn.classList.toggle('level-select__title--open');
+  });
+
+};
 
 menu();
 
@@ -177,5 +222,9 @@ if (document.querySelector('.lvl')) {
 };
 
 if (document.querySelector('.country-popup')) {
-  countrySelect()
+  countrySelect();
+};
+
+if (document.querySelector('.select-travelmates')) {
+  trevelmatesSelect();
 };

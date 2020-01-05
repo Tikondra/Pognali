@@ -44,6 +44,7 @@
   .child {
     width: 100%;
     padding-bottom: 26px;
+    margin-bottom: 23px;
     border-bottom: 1px solid #d6d9e6;
   }
 
@@ -60,6 +61,11 @@
     margin-right: 22px;
     width: 36px;
     height: 36px;
+    padding: 1px 0 0 2px;
+  }
+
+  .child__text {
+    padding: 0;
   }
 
   .child__svg {
@@ -92,5 +98,9 @@
     &:hover {
       border-color: #959bb2;
     }
+  }
+
+  .child__text {
+    padding-bottom: 1px;
   }
 }
