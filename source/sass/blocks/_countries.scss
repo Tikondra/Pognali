@@ -207,8 +207,7 @@
   }
 
   .countries__description {
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: block;
     width: 70%;
     margin-top: 0;
     padding: 29px 24px 19px 30px;
@@ -241,10 +240,10 @@
 
     &--count {
       order: 2;
-      margin-top: auto;
+      margin-top: 18px;
       padding: 5px 0 5px 28px;
       background-size: 20px 20px;
-      background-position: 0 0;
+      background-position: 0 3px;
     }
   }
 
@@ -319,5 +318,11 @@
     flex-basis: 274px;
     margin-right: 171px;
     margin-top: -81px;
+  }
+
+  .countries__text {
+    &--count {
+      margin-top: 24px;
+    }
   }
 }

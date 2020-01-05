@@ -74,18 +74,14 @@
 }
 
 .reg-form__btn {
-  @include center-flex;
-  padding-right: 2px;
   margin-left: -60px;
   min-width: 60px;
-  background-color: #ffd74b;
   border: none;
-  border-radius: 10px;
   cursor: pointer;
-  background-image: url("../img/triangle-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: content-box;
+}
+
+.reg-form__btn-span {
+  height: 18px;
 }
 
 .reg-form__btn-text {
@@ -132,11 +128,12 @@
   }
 
   .reg-form__btn {
-    margin-left: 0;
-    padding-top: 3px;
-    padding-right: 5px;
-    width: 15.3%;
+    width: 13.3%;
     border-radius: 0 20px 20px 0;
+  }
+
+  .reg-form__btn-span {
+    height: 25px;
   }
 
   .reg-form__link {
@@ -193,22 +190,17 @@
   }
 
   .reg-form__btn {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-    padding: 0 0 0 2.6px;
-    width: 38.9%;
-    border-radius: 0 20px 20px 0;
-    background-position: right 36px top 31px;
+    width: 34.4%;
+    padding: 27px 35px 28px 36px;
   }
 
   .reg-form__btn-text {
     display: block;
-    padding-right: 37%;
-    color: #1d2e5b;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
+    text-align: left;
+  }
+
+  .reg-form__btn-span {
+    height: 26px;
   }
 
   .reg-form__input {
