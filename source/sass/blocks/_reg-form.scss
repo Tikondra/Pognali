@@ -47,6 +47,14 @@
     background-color: #ffd74b;
     opacity: 0.7;
   }
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reg-form__form {
@@ -56,12 +64,12 @@
 
 .reg-form__input {
   width: 100%;
-  padding: 21px 23px;
+  padding: 10px 19px;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  border: none;
   border-radius: 10px;
+  border: solid 4px transparent;
 
   &::placeholder {
     opacity: 0.3;
@@ -70,6 +78,26 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
+  }
+
+  &:hover {
+    background-color: #edeff6;
+
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+
+  &:invalid {
+    color: #ff0000;
+    background-color: #ffefef;
+    border: solid 4px transparent;
+  }
+
+  &:focus {
+    color: #ffffff;
+    background-color: #192144;
+    border: solid 4px #ffffff;
   }
 }
 
@@ -116,7 +144,7 @@
   }
 
   .reg-form__input {
-    padding: 29.5px 33px 25.5px;
+    padding: 23.5px 30px 23.5px;
     font-size: 24px;
     line-height: 26px;
     border-radius: 20px 0 0 20px;
@@ -128,7 +156,8 @@
   }
 
   .reg-form__btn {
-    width: 13.3%;
+    width: 13.6%;
+    margin-left: 0;
     border-radius: 0 20px 20px 0;
   }
 
@@ -190,7 +219,7 @@
   }
 
   .reg-form__btn {
-    width: 34.4%;
+    width: 36.5%;
     padding: 27px 35px 28px 36px;
   }
 
@@ -204,7 +233,7 @@
   }
 
   .reg-form__input {
-    padding: 26.5px 33px 28.5px;
+    padding: 22.5px 30px 24.5px;
   }
 
   .reg-form__link {
