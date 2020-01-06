@@ -1,5 +1,5 @@
 .food {
-  padding: 10px 6px 7px;
+  padding: 9px 6px 8px;
   border-top: 1px solid #f3c72b;
   border-bottom: 1px solid #f3c72b;
 }
@@ -17,12 +17,20 @@
   background-color: transparent;
   background-image: url("../img/dropdown.svg");
   background-repeat: no-repeat;
-  background-position: right -1px top 6px;
+  background-position: right -1px top 7px;
   border: none;
 
   &--open {
     margin-bottom: 13px;
     background-image: url("../img/dropdown-up.svg");
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -45,6 +53,14 @@
 
 .food__item {
   margin-bottom: 11px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .food__input:checked ~ .food__label .food__btn {
