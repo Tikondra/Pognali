@@ -203,8 +203,44 @@ function trevelmatesSelect() {
     lvl.classList.toggle('level-select__list--open');
     lvlBtn.classList.toggle('level-select__title--open');
   });
-
 };
+
+function step() {
+  var stepList = document.querySelector('.add-plan__list');
+  var step1 = stepList.querySelector('.step--1');
+  var step2 = stepList.querySelector('.step--2');
+  var step3 = stepList.querySelector('.step--3');
+  var btn1 = stepList.querySelector('.step__btn--1');
+  var btn2 = stepList.querySelector('.step__btn--2');
+  var btn3 = stepList.querySelector('.step__btn--3');
+  var btn4 = stepList.querySelector('.step__btn--4');
+
+  step2.classList.remove('step--no-js');
+  step3.classList.remove('step--no-js');
+
+  btn1.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.remove('step--hide');
+  });
+
+  btn2.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.add('step--hide');
+    step3.classList.remove('step--hide');
+  });
+
+  btn3.addEventListener('click', function() {
+    step1.classList.remove('step--hide');
+    step2.classList.add('step--hide');
+    step3.classList.add('step--hide');
+  });
+
+  btn4.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.remove('step--hide');
+    step3.classList.add('step--hide');
+  });
+}
 
 menu();
 
@@ -227,4 +263,8 @@ if (document.querySelector('.country-popup')) {
 
 if (document.querySelector('.select-travelmates')) {
   trevelmatesSelect();
+};
+
+if (document.querySelector('.add-plan__list')) {
+  step();
 };

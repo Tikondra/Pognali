@@ -693,7 +693,7 @@
             <ul class="transport-select__list transport-select__list--no-js">
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="airplane" id="transport-select1" checked>
-                  <label class="transport-select__label transport-select__label--plane" for="transport-select1">
+                  <label class="transport-select__label transport-select__label--plane" for="transport-select1"  aria-label="Авиаперелеты">
                     <svg class="transport-select__btn transport-select__btn--plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14" height="16">
                       <use xlink:href="#icon-plane"></use>
                     </svg>
@@ -701,7 +701,7 @@
               </li>
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bus" id="transport-select2" checked>
-                  <label class="transport-select__label transport-select__label--bus" for="transport-select2">
+                  <label class="transport-select__label transport-select__label--bus" for="transport-select2" aria-label="Автотранспорт">
                     <svg class="transport-select__btn transport-select__btn--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13" height="16">
                       <use xlink:href="#icon-bus"></use>
                     </svg>
@@ -709,7 +709,7 @@
               </li>
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="bicycle" id="transport-select3">
-                  <label class="transport-select__label" for="transport-select3">
+                  <label class="transport-select__label" for="transport-select3" aria-label="Велосипед">
                     <svg class="transport-select__btn transport-select__btn--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19" height="17">
                       <use xlink:href="#icon-bike"></use>
                     </svg>
@@ -717,7 +717,7 @@
               </li>
               <li class="transport-select__item">
                 <input class="transport-select__input visually-hidden" type="checkbox" name="transport" value="walk" id="transport-select4" checked>
-                  <label class="transport-select__label" for="transport-select4">
+                  <label class="transport-select__label" for="transport-select4" aria-label="Пешком">
                     <svg class="transport-select__btn transport-select__btn--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
                       <use xlink:href="#icon-run"></use>
                     </svg>
@@ -760,7 +760,7 @@
                 <h3 class="travelmates-card__name">Таня Фирсова</h3>
 
                 <div class="travelmates-card__like-box">
-                  <button class="travelmates-card__like-btn travelmates-card__like-btn--active">
+                  <button class="travelmates-card__like-btn travelmates-card__like-btn--active" aria-label="Добавить в избраное или убрать">
                     <svg class="travelmates-card__like-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" width="13" height="11" fill="#192144">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -783,19 +783,19 @@
                   <ul class="like-country__list">
                     <li class="like-country__item">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-sri-lanka.svg">
+                        <img class="like-country__img" src="img/flag-sri-lanka.svg" width="35" height="24" alt="флаг Шри-Ланки">
                       </picture>
                       <span class="like-country__country">Шри-ланка</span>
                     </li>
                     <li class="like-country__item">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-thailand.svg">
+                        <img class="like-country__img" src="img/flag-thailand.svg" width="35" height="24" alt="флаг Тайланда">
                       </picture>
                       <span class="like-country__country">Тайланд</span>
                     </li>
                     <li class="like-country__item">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-seychelles.svg">
+                        <img class="like-country__img" src="img/flag-seychelles.svg" width="35" height="24" alt="флаг Сейшел">
                       </picture>
                       <span class="like-country__country">Сейшелы</span>
                     </li>
@@ -808,23 +808,23 @@
                       <span class="transport-card__title-span">транспорт:</span>
                     </h4>
                     <ul class="transport-card__list">
-                      <li class="transport-card__item" aria-label="Авиаперелеты">
-                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px" aria-label="Авиаперелеты">
                           <use xlink:href="#icon-plane"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Автобусные туры">
-                        <svg class="transport-card__svg transport-card__svg--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px" aria-label="Автобусные туры">
                           <use xlink:href="#icon-bus"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Велотуры">
-                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px" aria-label="Велотуры">
                           <use xlink:href="#icon-bike"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Пешие туры">
-                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px" aria-label="Пешие туры">
                           <use xlink:href="#icon-run"></use>
                         </svg>
                       </li>
@@ -867,7 +867,7 @@
                 <h3 class="travelmates-card__name">Петя Демин</h3>
 
                 <div class="travelmates-card__like-box">
-                  <button class="travelmates-card__like-btn">
+                  <button class="travelmates-card__like-btn" aria-label="Добавить в избраное или убрать">
                     <svg class="travelmates-card__like-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" width="13" height="11" fill="#192144">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -890,13 +890,13 @@
                   <ul class="like-country__list">
                     <li class="like-country__item like-country__item--demin">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-belgium.svg">
+                        <img class="like-country__img" src="img/flag-belgium.svg" width="35" height="24" alt="флаг Бельгии">
                       </picture>
                       <span class="like-country__country">Бельгия</span>
                     </li>
                     <li class="like-country__item like-country__item--demin">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-czech.svg">
+                        <img class="like-country__img" src="img/flag-czech.svg" width="35" height="24" alt="флаг Чехии">
                       </picture>
                       <span class="like-country__country">Чехия</span>
                     </li>
@@ -909,23 +909,23 @@
                       <span class="transport-card__title-span">транспорт:</span>
                     </h4>
                     <ul class="transport-card__list transport-card__list--demin">
-                      <li class="transport-card__item" aria-label="Авиаперелеты">
-                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px" aria-label="Авиаперелеты">
                           <use xlink:href="#icon-plane"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Автобусные туры">
-                        <svg class="transport-card__svg transport-card__svg--bus transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bus transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px" aria-label="Автобусные туры">
                           <use xlink:href="#icon-bus"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Велотуры">
-                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px" aria-label="Велотуры">
                           <use xlink:href="#icon-bike"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Пешие туры">
-                        <svg class="transport-card__svg transport-card__svg--active transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--active transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px" aria-label="Пешие туры">
                           <use xlink:href="#icon-run"></use>
                         </svg>
                       </li>
@@ -967,7 +967,7 @@
                 <h3 class="travelmates-card__name">Марк Смолов</h3>
 
                 <div class="travelmates-card__like-box">
-                  <button class="travelmates-card__like-btn">
+                  <button class="travelmates-card__like-btn" aria-label="Добавить в избраное или убрать">
                     <svg class="travelmates-card__like-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" width="13" height="11" fill="#192144">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -990,19 +990,19 @@
                   <ul class="like-country__list">
                     <li class="like-country__item like-country__item--smolov">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-usa.svg">
+                        <img class="like-country__img" src="img/flag-usa.svg" width="35" height="24" alt="флаг США">
                       </picture>
                       <span class="like-country__country">США</span>
                     </li>
                     <li class="like-country__item like-country__item--smolov">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-australia.svg">
+                        <img class="like-country__img" src="img/flag-australia.svg" width="35" height="24" alt="флаг Австралии">
                       </picture>
                       <span class="like-country__country">Австралия</span>
                     </li>
                     <li class="like-country__item like-country__item--smolov">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-dominica.svg">
+                        <img class="like-country__img" src="img/flag-dominica.svg" width="35" height="24" alt="флаг Доминиканы">
                       </picture>
                       <span class="like-country__country">Доминикана</span>
                     </li>
@@ -1015,23 +1015,23 @@
                       <span class="transport-card__title-span">транспорт:</span>
                     </h4>
                     <ul class="transport-card__list transport-card__list--smolov">
-                      <li class="transport-card__item" aria-label="Авиаперелеты">
-                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px" aria-label="Авиаперелеты">
                           <use xlink:href="#icon-plane"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Автобусные туры">
-                        <svg class="transport-card__svg transport-card__svg--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px" aria-label="Автобусные туры">
                           <use xlink:href="#icon-bus"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Велотуры">
-                        <svg class="transport-card__svg transport-card__svg--bike transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bike transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px" aria-label="Велотуры">
                           <use xlink:href="#icon-bike"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Пешие туры">
-                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px" aria-label="Пешие туры">
                           <use xlink:href="#icon-run"></use>
                         </svg>
                       </li>
@@ -1074,7 +1074,7 @@
                 <h3 class="travelmates-card__name">Лариса Роговая</h3>
 
                 <div class="travelmates-card__like-box">
-                  <button class="travelmates-card__like-btn">
+                  <button class="travelmates-card__like-btn" aria-label="Добавить в избраное или убрать">
                     <svg class="travelmates-card__like-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17" width="13" height="11" fill="#192144">
                       <use xlink:href="#icon-heart"></use>
                     </svg>
@@ -1096,13 +1096,13 @@
                   <ul class="like-country__list">
                     <li class="like-country__item like-country__item--rogov">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-united-kingdom.svg">
+                        <img class="like-country__img" src="img/flag-united-kingdom.svg" width="35" height="24" alt="Флаг Великобритании">
                       </picture>
                       <span class="like-country__country">Великобритания</span>
                     </li>
                     <li class="like-country__item like-country__item--rogov">
                       <picture class="like-country__img-box">
-                        <img class="like-country__img" src="img/flag-germany.svg">
+                        <img class="like-country__img" src="img/flag-germany.svg" width="35" height="24" alt="Флаг Германии">
                       </picture>
                       <span class="like-country__country">Германия</span>
                     </li>
@@ -1115,23 +1115,23 @@
                       <span class="transport-card__title-span">транспорт:</span>
                     </h4>
                     <ul class="transport-card__list">
-                      <li class="transport-card__item active" aria-label="Авиаперелеты">
-                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px">
+                      <li class="transport-card__item active">
+                        <svg class="transport-card__svg transport-card__svg--plane transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px" aria-label="Авиаперелеты">
                           <use xlink:href="#icon-plane"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Автобусные туры">
-                        <svg class="transport-card__svg transport-card__svg--bus transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bus transport-card__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px" aria-label="Автобусные туры">
                           <use xlink:href="#icon-bus"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Велотуры">
-                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px" aria-label="Велотуры">
                           <use xlink:href="#icon-bike"></use>
                         </svg>
                       </li>
-                      <li class="transport-card__item" aria-label="Пешие туры">
-                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
+                      <li class="transport-card__item">
+                        <svg class="transport-card__svg transport-card__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px" aria-label="Пешие туры">
                           <use xlink:href="#icon-run"></use>
                         </svg>
                       </li>

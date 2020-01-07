@@ -175,8 +175,8 @@
               <div class="profile__transport transport-form">
                 <h3 class="transport-form__title">Транспорт</h3>
                 <ul class="transport-form__list">
-                  <li class="transport-form__item" aria-label="Авиаперелеты">
-                    <label class="transport-form__label">
+                  <li class="transport-form__item">
+                    <label class="transport-form__label" aria-label="Авиаперелеты">
                       <input class="transport-form__check" type="checkbox" name="plane" checked>
 
                       <svg class="transport-form__svg transport-form__svg--plane" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="14px" height="16px">
@@ -184,8 +184,8 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport-form__item" aria-label="Автобусные туры">
-                    <label class="transport-form__label">
+                  <li class="transport-form__item">
+                    <label class="transport-form__label" aria-label="Автобусные туры">
                       <input class="transport-form__check" type="checkbox" name="bus" checked>
 
                       <svg class="transport-form__svg transport-form__svg--bus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="13px" height="16px">
@@ -193,8 +193,8 @@
                       </svg>
                     </label>
                   </li>
-                  <li class="transport-form__item" aria-label="Велотуры">
-                    <label class="transport-form__label">
+                  <li class="transport-form__item">
+                    <label class="transport-form__label" aria-label="Велотуры">
                     <input class="transport-form__check" type="checkbox" name="bike">
 
                       <svg class="transport-form__svg transport-form__svg--bike" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="19px" height="17px">
@@ -202,8 +202,8 @@
                         </svg>
                     </label>
                   </li>
-                  <li class="transport-form__item" aria-label="Пешие туры">
-                    <label class="transport-form__label">
+                  <li class="transport-form__item">
+                    <label class="transport-form__label" aria-label="Пешие туры">
                     <input class="transport-form__check" type="checkbox" name="run" checked>
 
                       <svg class="transport-form__svg transport-form__svg--run" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="15px" height="17px">
@@ -261,7 +261,7 @@
                     <div class="step__paginate-box">
                       <ul class="step__paginate-list">
                         <li class="step__paginate-item">
-                          <a class="step__paginate-link step__paginate-link--active" href="#">Даты</a>
+                          <a class="step__paginate-link step__paginate-link--active">Даты</a>
                         </li>
                         <li class="step__paginate-item">
                           <a class="step__paginate-link" href="#">Маршрут</a>
@@ -542,12 +542,12 @@
                       </table>
                     </div>
 
-                    <button class="step__paginate btn" type="button">
+                    <button class="step__paginate step__btn--1 btn" type="button">
                       <span class="btn__span">Следующий шаг</span>
                     </button>
                   </li>
 
-                  <li class="add-plan__step step step--2">
+                  <li class="add-plan__step step step--no-js step--hide step--2">
                     <div class="step__description-box">
                       <h3 class="step__title">
                         <span class="step__title-num">Шаг 2.</span>
@@ -564,7 +564,7 @@
                           <a class="step__paginate-link" href="#">Даты</a>
                         </li>
                         <li class="step__paginate-item">
-                          <a class="step__paginate-link step__paginate-link--active" href="#">Маршрут</a>
+                          <a class="step__paginate-link step__paginate-link--active">Маршрут</a>
                         </li>
                         <li class="step__paginate-item">
                           <a class="step__paginate-link" href="#">Развлечения</a>
@@ -748,16 +748,16 @@
                     </div>
 
                     <div class="step__button-box">
-                      <button class="step__paginate step__paginate--2 step__paginate--forward btn" type="button">
+                      <button class="step__paginate step__paginate--2 step__paginate--forward btn step__btn--2" type="button">
                         <span class="btn__span">Следующий шаг</span>
                       </button>
-                      <button class="step__paginate step__paginate--2 step__paginate--back btn" type="button">
+                      <button class="step__paginate step__paginate--2 step__paginate--back btn step__btn--3" type="button">
                         <span class="btn__span">На шаг назад</span>
                       </button>
                     </div>
                   </li>
 
-                  <li class="add-plan__step step step--3">
+                  <li class="add-plan__step step step--no-js step--hide step--3">
                     <div class="step__description-box">
                       <h3 class="step__title">
                         <span class="step__title-num">Шаг 3.</span>
@@ -777,7 +777,7 @@
                           <a class="step__paginate-link" href="#">Маршрут</a>
                         </li>
                         <li class="step__paginate-item">
-                          <a class="step__paginate-link step__paginate-link--active" href="#">Развлечения</a>
+                          <a class="step__paginate-link step__paginate-link--active">Развлечения</a>
                         </li>
                       </ul>
                     </div>
@@ -785,9 +785,9 @@
                       <li class="fun__item">
                         <h4 class="fun__country">
                           <span>Босния и герцоговина</span>
-                          <div class="fun__country-blur"></div>
+                          <span class="fun__country-blur"></span>
                         </h4>
-                        <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24">
+                        <img class="fun__flag" src="img/flag-bosnia.svg" width="35" height="24" alt="Флаг Боснии">
                         <div class="fun__text-box">
                           <textarea class="fun__text" placeholder="План действий" name="fun" required></textarea>
                           <p class="fun__text-error">Это поле должно быть заполнено</p>
@@ -795,7 +795,7 @@
                       </li>
                       <li class="fun__item fun__item--2">
                         <h4 class="fun__country">Чехия</h4>
-                        <img class="fun__flag fun__flag--czech" src="img/flag-czech.svg" width="35" height="24">
+                        <img class="fun__flag fun__flag--czech" src="img/flag-czech.svg" width="35" height="24" alt="Флаг Чехии">
                         <div class="fun__text-box">
                           <textarea class="fun__text" placeholder="План действий" name="fun" required>Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                           <p class="fun__text-error">Это поле должно быть заполнено</p>
@@ -806,7 +806,7 @@
                       <button class="step__paginate step__paginate--2 btn" type="submit">
                         <span class="btn__span">Отправить</span>
                       </button>
-                      <button class="step__paginate step__paginate--2 step__paginate--back btn" type="button">
+                      <button class="step__paginate step__paginate--2 step__paginate--back btn step__btn--4" type="button">
                         <span class="btn__span">На шаг назад</span>
                       </button>
                     </div>
