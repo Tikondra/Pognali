@@ -1,15 +1,15 @@
 .plans {
-  padding: 7px 25px 50px;
+  padding: 6px 25px 50px;
   border-radius: 30px 30px 0 0;
   background-color: #dfe3f0;
 }
 
 .plans__section-title {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 26px;
 }
 
 .plans__list {
@@ -17,27 +17,27 @@
 }
 
 .plans__item {
-  padding: 7px 23px 9px;
+  padding: 6px 23px 9px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: #ffffff;
 }
 
 .plans__title {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: #1d2e5b;
   font-size: 16px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .plans__travelmates {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   padding-left: 1px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -48,7 +48,7 @@
   letter-spacing: 1.6px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 14px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
@@ -63,6 +63,14 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $tablet) {
