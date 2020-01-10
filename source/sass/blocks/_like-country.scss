@@ -45,11 +45,6 @@
   padding-top: 2.4px;
 }
 
-.like-country__img-box {
-  width: 26px;
-  height: 18px;
-}
-
 @media (min-width: $tablet) {
   .like-country__title {
     margin-left: 40px;
@@ -85,13 +80,10 @@
     }
   }
 
-  .like-country__img-box {
+  .like-country__flag {
+    margin-top: 2px;
     width: 35px;
     height: 24px;
-  }
-
-  .like-country__img {
-    display: block;
   }
 
   .like-country__country {
@@ -118,9 +110,5 @@
 
   .like-country__country {
     margin-left: 18px;
-  }
-
-  .like-country__img-box {
-    padding-top: 2px;
   }
 }

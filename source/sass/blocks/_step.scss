@@ -6,6 +6,14 @@
   &--3 {
     padding: 22px 20px 5px;
   }
+
+  &--hide {
+    display: none;
+  }
+
+  &--no-js {
+    display: block;
+  }
 }
 
 .step__title {
@@ -49,16 +57,27 @@
   font-family: "BloggerSans", "Tahoma", sans-serif;
   color: #161c35;
   font-size: 17px;
-  font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
-  background-color: #ffd74b;
 
   &--back {
-    padding: 9px 25px 5px;
+    padding: 9px 25px 6px;
     background-color: #ffffff;
+
+    &:hover {
+      opacity: 0.7;
+      background-color: transparent;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  span {
+    background-image: none;
   }
 }
 
@@ -146,16 +165,23 @@
     line-height: 24px;
     text-transform: none;
     text-align: left;
-    background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: top 3px right;
     background-origin: content-box;
+
+    span {
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-position: right top 3px;
+    }
 
     &--2 {
       padding: 28px 15px 29px 33px;
       margin: 1px 0 2px 23px;
       max-width: 49.3%;
-      background-position: top 3px right 21px;
+
+      span {
+        background-position: top 3px right 21px;
+      }
     }
 
     &--back {
@@ -163,6 +189,10 @@
       padding: 28px 15px 29px 34px;
       background-image: url("../img/triangle-arrow-left.svg");
       background-position: top 3px left -33px;
+
+      span {
+        background-image: none;
+      }
     }
   }
 
@@ -188,11 +218,23 @@
     border-radius: 60px;
 
     &--2 {
-      margin-bottom: 45px;
+      margin-bottom: 145px;
     }
 
     &--3 {
       padding: 48px 20px 104px;
+    }
+
+    &--hide {
+      display: none;
+    }
+
+    &--no-js {
+      display: flex;
+    }
+
+    &--no-js.step--2 {
+      margin-bottom: 45px;
     }
   }
 

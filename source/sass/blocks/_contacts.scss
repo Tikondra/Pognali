@@ -5,6 +5,10 @@
   font-weight: 700;
   text-decoration: none;
 
+  &--reg {
+    color: #ffd74b;
+  }
+
   &--email {
     text-transform: uppercase;
   }
@@ -12,15 +16,12 @@
 
 .contacts__link-text {
   margin: 0;
-
-  &--reg {
-    color: #ffd74b;
-  }
+  padding-top: 1px;
 }
 
 .contacts__svg-box {
   @include center-flex;
-  padding-top: 1px;
+  padding-top: 2px;
   width: 45px;
   height: 45px;
   margin-right: 16px;
@@ -99,6 +100,24 @@
     }
   }
 
+  .contacts__link {
+    &:hover {
+      color: #ffbd30;
+
+      .contacts__svg {
+        fill: #ffbd30;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 189, 48, 0.3);
+
+      .contacts__svg {
+        opacity: 0.3;
+      }
+    }
+  }
+
   .contacts__icon {
     @include center-flex;
     width: 50px;
@@ -132,7 +151,7 @@
 
     &--reg {
       display: flex;
-      padding: 3px 0 0 0;
+      padding: 3px 1px 0 0;
     }
   }
 

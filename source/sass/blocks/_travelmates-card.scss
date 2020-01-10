@@ -13,11 +13,16 @@
   overflow: hidden;
 }
 
+.travelmates-card__avatar {
+  margin-bottom: -34px;
+  overflow: hidden;
+}
+
 .travelmates-card__img {
   display: block;
   margin-right: 16px;
   border-radius: 50%;
-  margin-bottom: -34px;
+  transition: 0.3s ease;
 }
 
 .travelmates-card__content {
@@ -32,6 +37,14 @@
   margin-top: -43px;
 }
 
+.travelmates-card__like-svg {
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
 .travelmates-card__like-btn {
   @include center-flex;
   margin-right: 6px;
@@ -42,6 +55,20 @@
   border: none;
   border-radius: 50%;
 
+  &:hover {
+    background-color: #e2e5f2;
+
+    .travelmates-card__like-svg {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .travelmates-card__like-svg {
+      opacity: 0.1;
+    }
+  }
+
   &--active {
     background-color: #f9eaea;
 
@@ -50,6 +77,16 @@
 
       &--active {
         display: block;
+      }
+    }
+
+    &:hover {
+      background-color: #f9d8d8;
+    }
+
+    &:active {
+      .travelmates-card__like-svg {
+        opacity: 0.3;
       }
     }
   }
@@ -81,6 +118,14 @@
     height: 5px;
     background-color: #f97676;
     border-radius: 4px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -154,6 +199,10 @@
   text-align: center;
   border-radius: 20px;
   background-color: #ffd74b;
+
+  span {
+    background-image: none;
+  }
 }
 
 .travelmates-card__btn-more {
@@ -171,6 +220,14 @@
   background-image: url("../img/show-more-plus.svg");
   background-repeat: no-repeat;
   background-position: center left;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .travelmates-card__pagination {
@@ -286,7 +343,7 @@
   }
 
   .travelmates-card__btn-invite {
-    flex-basis: 148px;
+    width: 148px;
     order: 2;
     margin-left: 14px;
     padding: 10px 22px 10px 20px;
@@ -359,6 +416,10 @@
       border-radius: 50%;
       background-color: #ffd74b;
     }
+
+    &:hover {
+      color: rgba(22, 28, 53, 0.6);
+    }
   }
 }
 
@@ -389,6 +450,18 @@
       top: 50%;
       margin-top: -93.5px;
     }
+
+    &:hover {
+      box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+      .travelmates-card__img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .travelmates-card__avatar {
+    margin-bottom: 0;
   }
 
   .travelmates-card__img {
@@ -479,5 +552,13 @@
 
   .travelmates-card__btn-pagination {
     width: 5%;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

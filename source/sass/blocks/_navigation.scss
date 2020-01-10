@@ -47,6 +47,8 @@
   .navigation__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 750px;
 
     &::before {
       content: "";
@@ -54,7 +56,7 @@
       width: 60px;
       height: 2px;
       margin-top: 3px;
-      margin-right: 5.7%;
+      margin-right: 6%;
       border-radius: 1px;
       background-color: #ffffff;
     }
@@ -73,7 +75,7 @@
   }
 
   .navigation__item {
-    margin-right: 2.4%;
+    margin-right: 2.5%;
   }
 
   .navigation__link {

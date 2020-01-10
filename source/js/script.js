@@ -68,10 +68,10 @@ function menu () {
 };
 
 function countryFilter () {
-  let filter = document.querySelector('.filter-country__content');
-  let btnOpen = filter.querySelector('.filter-country__btn');
-  let btnClose = filter.querySelector('.filter-country__close-btn');
-  let elMobile = filter.querySelectorAll('.filter-country__js-el');
+  var filter = document.querySelector('.filter-country__content');
+  var btnOpen = filter.querySelector('.filter-country__btn');
+  var btnClose = filter.querySelector('.filter-country__close-btn');
+  var elMobile = filter.querySelectorAll('.filter-country__js-el');
 
   for (var i = 0; i < elMobile.length; i++) {
     elMobile[i].classList.add('filter-country__js-el--hide');
@@ -94,9 +94,9 @@ function countryFilter () {
 };
 
 function business () {
-  let btnOpen = document.querySelector('.rates__business-btn');
-  let btnClose = document.querySelector('.business-rates__close-btn');
-  let businessRates = document.querySelector('.business-rates');
+  var btnOpen = document.querySelector('.rates__business-btn');
+  var btnClose = document.querySelector('.business-rates__close-btn');
+  var businessRates = document.querySelector('.business-rates');
 
   businessRates.classList.add('business-rates--hide');
   businessRates.classList.remove('business-rates--no-js');
@@ -113,9 +113,9 @@ function business () {
 
 function statusBar () {
 
-  let status = document.querySelectorAll('.lvl');
-  let lvl = document.querySelectorAll('.lvl__status');
-  let arrayLvl = [];
+  var status = document.querySelectorAll('.lvl');
+  var lvl = document.querySelectorAll('.lvl__status');
+  var arrayLvl = [];
 
   for (var i = 0; i < lvl.length; i++) {
     arrayLvl.push(lvl[i].innerHTML);
@@ -148,9 +148,9 @@ function statusBar () {
 };
 
 function countrySelect() {
-  let box = document.querySelector('.country-popup');
-  let btnOpen = document.querySelector('.country-popup__title');
-  let popup = document.querySelector('.country-popup__box');
+  var box = document.querySelector('.country-popup');
+  var btnOpen = document.querySelector('.country-popup__title');
+  var popup = document.querySelector('.country-popup__box');
 
 
   box.classList.remove('country-popup--no-js');
@@ -162,17 +162,17 @@ function countrySelect() {
 };
 
 function trevelmatesSelect() {
-  let form = document.querySelector('.select-travelmates');
-  let hobbyBtn = form.querySelector('.hobby__title');
-  let hobby = form.querySelector('.hobby__list');
-  let musicBtn = form.querySelector('.music__title');
-  let music = form.querySelector('.music__list');
-  let foodBtn = form.querySelector('.food__title');
-  let food = form.querySelector('.food__list');
-  let transportBtn = form.querySelector('.transport-select__title');
-  let transport = form.querySelector('.transport-select__list');
-  let lvlBtn = form.querySelector('.level-select__title');
-  let lvl = form.querySelector('.level-select__list');
+  var form = document.querySelector('.select-travelmates');
+  var hobbyBtn = form.querySelector('.hobby__title');
+  var hobby = form.querySelector('.hobby__list');
+  var musicBtn = form.querySelector('.music__title');
+  var music = form.querySelector('.music__list');
+  var foodBtn = form.querySelector('.food__title');
+  var food = form.querySelector('.food__list');
+  var transportBtn = form.querySelector('.transport-select__title');
+  var transport = form.querySelector('.transport-select__list');
+  var lvlBtn = form.querySelector('.level-select__title');
+  var lvl = form.querySelector('.level-select__list');
 
   hobby.classList.remove('hobby__list--no-js');
   hobbyBtn.addEventListener('click', function() {
@@ -203,8 +203,53 @@ function trevelmatesSelect() {
     lvl.classList.toggle('level-select__list--open');
     lvlBtn.classList.toggle('level-select__title--open');
   });
-
 };
+
+function step() {
+  var stepList = document.querySelector('.add-plan__list');
+  var step1 = stepList.querySelector('.step--1');
+  var step2 = stepList.querySelector('.step--2');
+  var step3 = stepList.querySelector('.step--3');
+  var btn1 = stepList.querySelector('.step__btn--1');
+  var btn2 = stepList.querySelector('.step__btn--2');
+  var btn3 = stepList.querySelector('.step__btn--3');
+  var btn4 = stepList.querySelector('.step__btn--4');
+  var dots = document.querySelectorAll('.add-plan__dot');
+
+  step2.classList.remove('step--no-js');
+  step3.classList.remove('step--no-js');
+
+  btn1.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.remove('step--hide');
+    dots[0].classList.remove('add-plan__dot--active');
+    dots[1].classList.add('add-plan__dot--active');
+  });
+
+  btn2.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.add('step--hide');
+    step3.classList.remove('step--hide');
+    dots[1].classList.remove('add-plan__dot--active');
+    dots[2].classList.add('add-plan__dot--active');
+  });
+
+  btn3.addEventListener('click', function() {
+    step1.classList.remove('step--hide');
+    step2.classList.add('step--hide');
+    step3.classList.add('step--hide');
+    dots[0].classList.add('add-plan__dot--active');
+    dots[1].classList.remove('add-plan__dot--active');
+  });
+
+  btn4.addEventListener('click', function() {
+    step1.classList.add('step--hide');
+    step2.classList.remove('step--hide');
+    step3.classList.add('step--hide');
+    dots[1].classList.add('add-plan__dot--active');
+    dots[2].classList.remove('add-plan__dot--active');
+  });
+}
 
 menu();
 
@@ -227,4 +272,8 @@ if (document.querySelector('.country-popup')) {
 
 if (document.querySelector('.select-travelmates')) {
   trevelmatesSelect();
+};
+
+if (document.querySelector('.add-plan__list')) {
+  step();
 };

@@ -47,6 +47,14 @@
   &--hide {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .filter-country__btn-text {
@@ -66,6 +74,16 @@
   border: none;
   border-radius: 20px;
   background-color: #d6daed;
+
+  &:hover {
+    background-color: #c8cee8;
+  }
+
+  &:active {
+    span {
+      opacity: 0.3;
+    }
+  }
 }
 
 .filter-country__close-span {

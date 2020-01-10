@@ -112,7 +112,7 @@
   margin-top: auto;
 }
 
-@media (max-width: $no-js) {
+@media (max-width: 1439px) {
   .page-header--no-js {
     position: static;
 
@@ -202,6 +202,29 @@
     align-self: flex-end;
     padding: 10px 30px 10px 28px;
     font-size: 20px;
+  }
+
+  @media (max-width: 1439px) {
+    .page-header--no-js {
+      padding: 18px 0;
+
+      .page-header__info {
+        background-color: #ffffff;
+      }
+
+      .page-header__navigation {
+        display: block;
+        margin: 38px 0 70px;
+      }
+
+      .page-header__contacts {
+        display: block;
+      }
+
+      .page-header__social {
+        display: block;
+      }
+    }
   }
 }
 

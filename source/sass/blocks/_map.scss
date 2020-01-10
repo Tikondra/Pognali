@@ -1,4 +1,14 @@
 .map {
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: $retina) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+}
+
+.map__content {
   margin: -30px 0;
   width: 100%;
   min-height: 332px;
@@ -6,6 +16,14 @@
 
 @media (min-width: $tablet) {
   .map {
+    background-image: url("../img/map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+
+  .map__content {
     margin: -60px 0;
     min-height: 581px;
   }
@@ -13,6 +31,14 @@
 
 @media (min-width: $desktop) {
   .map {
+    background-image: url("../img/map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
+  }
+
+  .map__content {
     min-height: 516px;
   }
 }

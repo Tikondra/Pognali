@@ -60,7 +60,7 @@
   justify-content: space-between;
   align-items: baseline;
   margin-top: -11px;
-  padding: 24px 24px 22px;
+  padding: 23px 24px;
   background-color: #ffffff;
   border-radius: 10px;
 
@@ -71,7 +71,7 @@
     left: 25px;
     width: 35px;
     height: 24px;
-    background-image: url("../img/flag-thailand.svg");
+    background-image: url("../img/icon-thailand.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,7 +88,7 @@
     margin-top: -12px;
 
     &::before {
-      background-image: url("../img/flag-czech.svg");
+      background-image: url("../img/icon-czech.svg");
     }
   }
 }
@@ -232,7 +232,7 @@
   .countries__text {
     margin: 0;
     font-size: 20px;
-    line-height: 17.68px;
+    line-height: 17px;
 
     &--2 {
       letter-spacing: -0.3px;
@@ -280,7 +280,7 @@
   }
 
   .countries__section-text {
-    margin-bottom: 70px;
+    margin-bottom: 90px;
     padding: 0;
   }
 

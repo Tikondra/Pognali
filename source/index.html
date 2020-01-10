@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="js/picturefill.min.js" async></script>
+    <script async src="js/picturefill.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div style="display: none;">
@@ -14,6 +18,24 @@
 
     <header class="page-header page-header--index page-header--no-js">
       <div class="wrapper page-header__content page-header__content--index">
+        <a class="logo page-header__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+            <img class="logo__img page-header__img page-header__img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
+          </picture>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
+            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
+            <img class="logo__img page-header__img page-header__img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
+          </picture>
+        </a>
         <button class="page-header__menu-open" type="button" aria-label="меню"></button>
 
         <div class="page-header__info page-header__info--close">
@@ -110,25 +132,6 @@
             </ul>
           </div>
         </div>
-
-        <a class="logo page-header__logo">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.webp 1x, img/logo-desktop-white@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
-            <source type="image/webp" srcset="img/logo-mobile-white@1x.webp 1x, img/logo-mobile-white@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
-            <img class="logo__img page-header__img page-header__img--white" src="img/logo-mobile-white@1x.png" srcset="img/logo-mobile-white@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
-          </picture>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.webp 1x, img/logo-desktop-blue@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.webp 1x, img/logo-tablet-blue@2x.webp 2x">
-            <source type="image/webp" srcset="img/logo-mobile-blue@1x.webp 1x, img/logo-mobile-blue@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop-blue@1x.png 1x, img/logo-desktop-blue@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet-blue@1x.png 1x, img/logo-tablet-blue@2x.png 2x">
-            <img class="logo__img page-header__img page-header__img--blue" src="img/logo-mobile-blue@1x.png" srcset="img/logo-mobile-blue@2x.png 2x" width="100" height="19" alt="Логотип Погнали">
-          </picture>
-        </a>
       </div>
     </header>
 
@@ -142,13 +145,13 @@
 
           <div class="intro__contacts">
             <a class="intro__link intro__link--tel" href="tel:88005558628">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 18" width="18px" height="18px" fill="#161c35" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 18" width="18" height="18" fill="#161c35" xml:space="preserve">
                 <use xlink:href="#icon-topmenu-phone"></use>
               </svg>
             </a>
 
             <a class="intro__link intro__link--email" href="mailto:mail@htmlacademy.ru">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 14" width="18px" height="18px" fill="#161c35" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 14" width="18" height="18" fill="#161c35" xml:space="preserve">
                 <use xlink:href="#icon-topmenu-mail"></use>
               </svg>
             </a>
@@ -179,7 +182,7 @@
         <div class="about__content">
           <h2 class="about__title">О сервисе</h2>
           <p class="about__text">
-            Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий <br class="br-tablet">и черпайте вдохновение в&nbsp;чужих.
+            Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими идеями путешествий&nbsp;<br class="br br--tablet">и черпайте вдохновение в&nbsp;чужих.
           </p>
           <p class="about__text about__text--bold">
             А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
@@ -256,10 +259,10 @@
           <div class="travelmates__section-description">
             <h2 class="travelmates__main-title">Попутчики</h2>
             <p class="travelmates__main-text">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, <br class="br-tablet br-desktop">а другому маршрут для хайкинга.
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,&nbsp;<br class="br br--tablet br--desktop">а другому маршрут для хайкинга.
             </p>
             <p class="travelmates__main-text travelmates__main-text--bold">
-              Теперь можно легко <br class="br-tablet br-desktop">найти единомышленников!
+              Теперь можно легко&nbsp;<br class="br br--tablet br--desktop">найти единомышленников!
             </p>
           </div>
           <ul class="travelmates__list">
@@ -286,13 +289,19 @@
                 <div class="travelmates__flags travelmates-flags">
                   <ul class="travelmates-flags__list">
                     <li class="travelmates-flags__item" data-hover="Шри-Ланка">
-                      <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Шри-Ланка">
+                        <use xlink:href="#icon-sri-lanka"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Тайланд">
-                      <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Тайланд">
+                        <use xlink:href="#icon-thailand"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Сейшелы">
-                      <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Сейшелы">
+                        <use xlink:href="#icon-seychelles"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -304,23 +313,23 @@
                 </p>
 
                 <ul class="travelmates__transport-box transport">
-                  <li class="transport__item" aria-label="Авиаперелеты" data-hover="Авиаперелет">
-                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="19px" height="21px">
+                  <li class="transport__item" data-hover="Авиаперелет">
+                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="19px" height="21px" aria-label="Авиаперелеты">
                         <use xlink:href="#icon-plane"></use>
                       </svg>
                   </li>
-                  <li class="transport__item transport__item--bus" aria-label="Автобусные туры" data-hover="Автотранспорт">
-                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21"  width="17px" height="21px">
+                  <li class="transport__item transport__item--bus" data-hover="Автотранспорт">
+                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21"  width="17px" height="21px" aria-label="Автобусные туры">
                         <use xlink:href="#icon-bus"></use>
                       </svg>
                   </li>
-                  <li class="transport__item transport__item--bike" aria-label="Велотуры" data-hover="Велосипед">
-                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21"  width="24px" height="21px">
+                  <li class="transport__item transport__item--bike" data-hover="Велосипед">
+                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21"  width="24px" height="21px" aria-label="Велотуры">
                         <use xlink:href="#icon-bike"></use>
                       </svg>
                   </li>
-                  <li class="transport__item transport__item--run" aria-label="Пешие туры" data-hover="Пешком">
-                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20px" height="21px">
+                  <li class="transport__item transport__item--run" data-hover="Пешком">
+                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20px" height="21px" aria-label="Пешие туры">
                         <use xlink:href="#icon-run"></use>
                       </svg>
                   </li>
@@ -349,15 +358,15 @@
               <div class="travelmates__box2 travelmates__box2--demin">
                 <div class="travelmates__flags travelmates__flags--demin travelmates-flags">
                   <ul class="travelmates-flags__list">
-                    <li class="travelmates-flags__item" data-hover="Германия">
-                      <picture>
-                        <img src="img/flag-germany.svg" width="35" height="24" alt="Германия">
-                      </picture>
+                    <li class="travelmates-flags__item" data-hover="Бельгия">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Бельгия">
+                        <use xlink:href="#icon-belgium"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Чехия">
-                      <picture>
-                        <img src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
-                      </picture>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Чехия">
+                        <use xlink:href="#icon-czech"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -369,23 +378,23 @@
                 </p>
 
                 <ul class="travelmates__transport-box transport transport--demin">
-                    <li class="transport__item" aria-label="Авиаперелеты"  data-hover="Авиаперелет">
-                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="19px" height="21px">
+                    <li class="transport__item"  data-hover="Авиаперелет">
+                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 21" width="19px" height="21px" aria-label="Авиаперелеты">
                         <use xlink:href="#icon-plane"></use>
                       </svg>
                     </li>
-                    <li class="transport__item transport__item--bus" aria-label="Автобусные туры"  data-hover="Автотранспорт">
-                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="17px" height="21px">
+                    <li class="transport__item transport__item--bus"  data-hover="Автотранспорт">
+                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 21" width="17px" height="21px" aria-label="Автобусные туры">
                         <use xlink:href="#icon-bus"></use>
                       </svg>
                     </li>
-                    <li class="transport__item transport__item--bike" aria-label="Велотуры"  data-hover="Велосипед">
-                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="24px" height="21px">
+                    <li class="transport__item transport__item--bike"  data-hover="Велосипед">
+                      <svg class="transport__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" width="24px" height="21px" aria-label="Велотуры">
                         <use xlink:href="#icon-bike"></use>
                       </svg>
                     </li>
-                    <li class="transport__item transport__item--run" aria-label="Пешие туры"  data-hover="Пешком">
-                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20px" height="21px">
+                    <li class="transport__item transport__item--run"  data-hover="Пешком">
+                      <svg class="transport__svg transport__svg--active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" width="20px" height="21px" aria-label="Пешие туры">
                         <use xlink:href="#icon-run"></use>
                       </svg>
                     </li>
@@ -478,7 +487,7 @@
           </p>
 
           <div class="reg-form__contacts contacts">
-            <a class="contacts__link contacts__link--tel" href="tel:88005558628">
+            <a class="contacts__link contacts__link--reg contacts__link--tel" href="tel:88005558628">
               <div class="contacts__svg-box contacts__svg-box--reg">
                 <svg class="contacts__svg contacts__svg--tel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="18px" height="18px">
                   <use xlink:href="#icon-contacts-phone"></use>
@@ -489,7 +498,7 @@
               </p>
             </a>
 
-            <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">
+            <a class="contacts__link contacts__link--reg contacts__link--email" href="mailto:mail@htmlacademy.ru">
               <div class="contacts__svg-box contacts__svg-box--email contacts__svg-box--reg">
                 <svg class="contacts__svg contacts__svg--email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 26" width="18" height="13">
                   <use xlink:href="#icon-contacts-mail"></use>
@@ -516,14 +525,14 @@
             <p class="location__address-text">ул. Большая Конюшенная, 19/8</p>
           </div>
 
-          <a class="location__btn btn" href="#">
+          <a class="location__btn btn" href="https://goo.gl/maps/SMdtepgZgrp1qrbV8">
             <span class="btn__span">Проложить маршрут</span>
           </a>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map" id="map"></div>
+        <div class="map__content" id="map"></div>
       </section>
     </main>
     <footer class="page-footer">
@@ -575,7 +584,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDEFDHWeEdFUnwN5qqoweAa83JHwZOhkk&amp;callback=initMap"></script>
   </body>
 </html>

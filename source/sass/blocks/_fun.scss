@@ -7,16 +7,16 @@
   max-width: 84%;
   width: 100%;
   padding-left: 11px;
-  margin: 2px -20px 17px 0;
+  margin: 1px -20px 16px 0;
   color: #1d2e5b;
   font-size: 18px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 20px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: -13px;
     width: 15px;
     height: 2px;
@@ -26,7 +26,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 8px;
     left: -3px;
     width: 6px;
     height: 6px;
@@ -36,6 +36,7 @@
 }
 
 .fun__country-blur {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -68,7 +69,7 @@
   }
 
   &--2 {
-    margin: 24px 0 21px;
+    margin: 24px 0 22px;
 
     &::before {
       display: none;
@@ -76,7 +77,29 @@
   }
 }
 
+.fun__text-box {
+  position: relative;
+  width: 100%;
+}
+
+.fun__text-error {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 1px;
+  right: 1px;
+  bottom: 1px;
+  margin: 0;
+  padding: 11px 13px;
+  font-size: 16px;
+  line-height: 18px;
+  color: red;
+  background-color: #ffefef;
+  border-radius: 0 0 4px 4px;
+}
+
 .fun__text {
+  display: block;
   position: relative;
   z-index: 1;
   padding: 8px 13px;
@@ -90,9 +113,34 @@
   border-radius: 4px;
   border: 1px solid #cbced9;
   resize: none;
+  outline: none;
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  &:hover {
+    border: solid 1px #959bb2;
+  }
+
+  &:focus {
+    border: solid 1px #161c35;
+  }
+
+  &:invalid {
+    border-color: #f47e7e;
+
+    + .fun__text-error {
+      display: block;
+    }
+
+    &:hover {
+      border-color: rgba(#f47e7e, 0.5);
+    }
+
+    &:focus {
+      border-color: rgba(#f47e7e, 0.3);
+    }
   }
 }
 
@@ -135,8 +183,18 @@
     }
   }
 
-  .fun__text {
+  .fun__text-box {
     width: 90.3%;
+  }
+
+  .fun__text-error {
+    font-size: 20px;
+    line-height: 24px;
+    left: 13px;
+    right: -11px;
+  }
+
+  .fun__text {
     min-height: 142px;
     padding: 15px 30px 17px 17px;
     margin-left: 12px;
@@ -193,8 +251,16 @@
     margin: 5px 43px 0 auto;
   }
 
-  .fun__text {
+  .fun__text-box {
     width: 78.6%;
+  }
+
+  .fun__text-error {
+    left: 2px;
+    right: 0;
+  }
+
+  .fun__text {
     padding: 22px 15px 17px 24.5px;
     margin-left: 1px;
   }

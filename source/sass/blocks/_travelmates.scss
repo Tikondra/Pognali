@@ -98,6 +98,7 @@
 .travelmates__img {
   display: block;
   width: 100%;
+  transition: transform 0.3s ease;
 }
 
 .travelmates__lvl {
@@ -324,6 +325,7 @@
 
     &--bold {
       margin-top: 38px;
+      margin-bottom: 120px;
     }
   }
 

@@ -16,6 +16,14 @@
   &--active {
     opacity: 1;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .country-patch__item {

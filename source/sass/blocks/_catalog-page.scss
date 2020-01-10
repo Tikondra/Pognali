@@ -1,5 +1,5 @@
 .catalog-page__title-box {
-  padding: 91px 25px 0;
+  padding: 90.5px 25px 0;
   border-radius: 0 0 20px 20px;
   background-color: #161c35;
 }
@@ -75,6 +75,14 @@
     background-image: url("../img/return.svg");
     background-repeat: no-repeat;
     background-position: top 3px right;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .catalog-page__title {

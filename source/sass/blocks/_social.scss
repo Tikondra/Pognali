@@ -7,7 +7,7 @@
   @include center-flex;
   width: 45px;
   height: 45px;
-  padding-top: 2px;
+  padding-top: 5px;
   background-color: #ffd74b;
   border-radius: 50%;
 
@@ -16,12 +16,12 @@
   }
 
   &--vk {
-    padding-top: 3px;
+    padding-top: 6px;
   }
 
   &--inst {
-    padding-left: 2px;
-    padding-top: 1px;
+    padding-left: 1px;
+    padding-top: 4px;
   }
 }
 
@@ -38,21 +38,24 @@
   .social__link {
     width: 60px;
     height: 60px;
-    padding-top: 0;
+    padding: 3px 2px 0 0;
 
     &--vk {
-      padding-top: 2px;
-      padding-right: 2px;
+      padding-top: 6px;
     }
 
-    &--inst {
-      padding-left: 0;
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      .social__svg {
+        opacity: 0.3;
+      }
     }
   }
 
   .social__svg {
-    margin: 2px 0 0 6px;
-
     &--fb {
       width: 14px;
       height: 28px;

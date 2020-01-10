@@ -1,19 +1,15 @@
-.br-tablet {
-  display: none;
-}
-
-.br-desktop {
+.br {
   display: none;
 }
 
 @media (min-width: $tablet) and (max-width: 769px) {
-  .br-tablet {
+  .br--tablet {
     display: inline;
   }
 }
 
 @media (min-width: $desktop) and (max-width: 1441px) {
-  .br-desktop {
+  .br--desktop {
     display: inline;
   }
 }
