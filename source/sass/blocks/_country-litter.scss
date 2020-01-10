@@ -49,8 +49,7 @@
   }
 
   &--active {
-    color: #ffffff;
-    background-color: #1d2e5b;
+    background-color: #edeff6;
   }
 }
 
@@ -123,6 +122,8 @@
 
     &--active {
       width: 52px;
+      color: #ffffff;
+      background-color: #1d2e5b;
     }
   }
 }

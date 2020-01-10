@@ -238,10 +238,11 @@
     &--czech {
       margin: 1px 17px 0 16px;
     }
-  }
 
-  .country-step__flag-img {
-    width: 100%;
+    svg {
+      width: 71px;
+      height: 47px;
+    }
   }
 
   .country-step__del-svg {

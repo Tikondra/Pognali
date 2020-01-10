@@ -218,7 +218,7 @@
     border-radius: 60px;
 
     &--2 {
-      margin-bottom: 45px;
+      margin-bottom: 145px;
     }
 
     &--3 {
@@ -231,6 +231,10 @@
 
     &--no-js {
       display: flex;
+    }
+
+    &--no-js.step--2 {
+      margin-bottom: 45px;
     }
   }
 

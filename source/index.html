@@ -146,13 +146,13 @@
 
           <div class="intro__contacts">
             <a class="intro__link intro__link--tel" href="tel:88005558628">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 18" width="18px" height="18px" fill="#161c35" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 18" width="18" height="18" fill="#161c35" xml:space="preserve">
                 <use xlink:href="#icon-topmenu-phone"></use>
               </svg>
             </a>
 
             <a class="intro__link intro__link--email" href="mailto:mail@htmlacademy.ru">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 14" width="18px" height="18px" fill="#161c35" xml:space="preserve">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 18 14" width="18" height="18" fill="#161c35" xml:space="preserve">
                 <use xlink:href="#icon-topmenu-mail"></use>
               </svg>
             </a>
@@ -290,13 +290,19 @@
                 <div class="travelmates__flags travelmates-flags">
                   <ul class="travelmates-flags__list">
                     <li class="travelmates-flags__item" data-hover="Шри-Ланка">
-                      <img src="img/flag-sri-lanka.svg" width="35" height="24" alt="Шри-Ланка">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Шри-Ланка">
+                        <use xlink:href="#icon-sri-lanka"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Тайланд">
-                      <img src="img/flag-thailand.svg" width="35" height="24" alt="Тайланд">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Тайланд">
+                        <use xlink:href="#icon-thailand"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Сейшелы">
-                      <img src="img/flag-seychelles.svg" width="35" height="24" alt="Сейшелы">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Сейшелы">
+                        <use xlink:href="#icon-seychelles"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -354,14 +360,14 @@
                 <div class="travelmates__flags travelmates__flags--demin travelmates-flags">
                   <ul class="travelmates-flags__list">
                     <li class="travelmates-flags__item" data-hover="Бельгия">
-                      <picture>
-                        <img src="img/flag-belgium.svg" width="35" height="24" alt="Бельгия">
-                      </picture>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Бельгия">
+                        <use xlink:href="#icon-belgium"></use>
+                      </svg>
                     </li>
                     <li class="travelmates-flags__item" data-hover="Чехия">
-                      <picture>
-                        <img src="img/flag-czech.svg" width="35" height="24" alt="Чехия">
-                      </picture>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="24" aria-label="Чехия">
+                        <use xlink:href="#icon-czech"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
@@ -520,14 +526,14 @@
             <p class="location__address-text">ул. Большая Конюшенная, 19/8</p>
           </div>
 
-          <a class="location__btn btn" href="#">
+          <a class="location__btn btn" href="https://goo.gl/maps/SMdtepgZgrp1qrbV8">
             <span class="btn__span">Проложить маршрут</span>
           </a>
         </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map" id="map"></div>
+        <div class="map__content" id="map"></div>
       </section>
     </main>
     <footer class="page-footer">

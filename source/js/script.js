@@ -214,6 +214,7 @@ function step() {
   var btn2 = stepList.querySelector('.step__btn--2');
   var btn3 = stepList.querySelector('.step__btn--3');
   var btn4 = stepList.querySelector('.step__btn--4');
+  var dots = document.querySelectorAll('.add-plan__dot');
 
   step2.classList.remove('step--no-js');
   step3.classList.remove('step--no-js');
@@ -221,24 +222,32 @@ function step() {
   btn1.addEventListener('click', function() {
     step1.classList.add('step--hide');
     step2.classList.remove('step--hide');
+    dots[0].classList.remove('add-plan__dot--active');
+    dots[1].classList.add('add-plan__dot--active');
   });
 
   btn2.addEventListener('click', function() {
     step1.classList.add('step--hide');
     step2.classList.add('step--hide');
     step3.classList.remove('step--hide');
+    dots[1].classList.remove('add-plan__dot--active');
+    dots[2].classList.add('add-plan__dot--active');
   });
 
   btn3.addEventListener('click', function() {
     step1.classList.remove('step--hide');
     step2.classList.add('step--hide');
     step3.classList.add('step--hide');
+    dots[0].classList.add('add-plan__dot--active');
+    dots[1].classList.remove('add-plan__dot--active');
   });
 
   btn4.addEventListener('click', function() {
     step1.classList.add('step--hide');
     step2.classList.remove('step--hide');
     step3.classList.add('step--hide');
+    dots[1].classList.add('add-plan__dot--active');
+    dots[2].classList.remove('add-plan__dot--active');
   });
 }
 
