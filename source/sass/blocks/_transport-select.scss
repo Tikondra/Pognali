@@ -6,7 +6,6 @@
 .transport-select__title {
   width: 100%;
   margin: 0;
-  margin-bottom: 15px;
   padding: 0;
   color: #1d2e5b;
   font-size: 16px;
@@ -21,6 +20,7 @@
   border: none;
 
   &--open {
+    margin-bottom: 15px;
     background-image: url("../img/dropdown-up.svg");
   }
 
@@ -98,6 +98,10 @@
     font-weight: 500;
     line-height: 30px;
     background-image: none;
+
+    &--open {
+      margin-bottom: 0;
+    }
   }
 
   .transport-select__title-span {
@@ -150,12 +154,12 @@
   }
 
   .transport-select__title {
-    margin-bottom: 16px;
     background-image: url("../img/dropdown.svg");
     background-position: right 1px top 12px;
     background-size: 10px 5px;
 
     &--open {
+      margin-bottom: 16px;
       background-image: url("../img/dropdown-up.svg");
     }
   }
