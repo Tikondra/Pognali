@@ -101,6 +101,10 @@
   }
 
   .contacts__link {
+    &--reg {
+      min-width: 427px;
+    }
+
     &:hover {
       color: #ffbd30;
 
